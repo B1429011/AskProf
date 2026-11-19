@@ -56,7 +56,7 @@ def find_faculty_url(home_url, html):
             return urljoin(home_url, href)
     return None
 
-def extract_faculty(html, department):
+def extract_faculty(html, department, location=""):
     cards=re.split(r'<div class="card card_list pic">', html, flags=re.I)[1:]
     rows=[]
     for card in cards:
@@ -70,7 +70,7 @@ def extract_faculty(html, department):
         specialty_m=re.search(r'專長領域：\s*([^<]+)', card, re.S)
         degree_m=re.search(r'學歷：\s*([^<]+)', card, re.S)
         detail_m=re.search(r'href="([^"]*FullTimeProfessorManagement/Detail/[^"]+)"', card, re.I)
-        rows.append({"name":name,"department":department,"email":email,"phone":clean(phone_m.group(1)) if phone_m else "","degree":clean(degree_m.group(1)) if degree_m else "","specialty":clean(specialty_m.group(1)) if specialty_m else "","profileUrl":urljoin(ROOT, detail_m.group(1)) if detail_m else ""})
+        rows.append({"name":name,"department":department,"location":location,"email":email,"phone":clean(phone_m.group(1)) if phone_m else "","degree":clean(degree_m.group(1)) if degree_m else "","specialty":clean(specialty_m.group(1)) if specialty_m else "","profileUrl":urljoin(ROOT, detail_m.group(1)) if detail_m else ""})
     return rows
 
 def main():
@@ -79,10 +79,11 @@ def main():
     faculty=[]; failures=[]
     for i,d in enumerate(departments, 1):
         try:
-            home=get(d["url"]); f_url=find_faculty_url(d["url"], home)
+            home=get(d["url"]); location_m=re.search(r'學系位置：\s*([^<]+)', home, re.S); d["location"]=clean(location_m.group(1)) if location_m else ""
+            f_url=find_faculty_url(d["url"], home)
             d["facultyUrl"]=f_url or ""
             if f_url:
-                faculty.extend(extract_faculty(get(f_url), d["name"]))
+                faculty.extend(extract_faculty(get(f_url), d["name"], d.get("location", "")))
             else: failures.append({"department":d["name"],"reason":"官方系所頁未找到專任教師入口"})
         except Exception as e:
             failures.append({"department":d["name"],"reason":str(e)})

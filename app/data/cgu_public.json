@@ -7,186 +7,223 @@
     {
       "name": "醫學系",
       "url": "https://www.cgu.edu.tw/med/",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "中醫學系",
       "url": "https://www.cgu.edu.tw/cm/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/cm/FullTimeProfessorManagement?nodeId=7135"
     },
     {
       "name": "護理學系",
       "url": "https://www.cgu.edu.tw/nurse/",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "facultyUrl": "https://www.cgu.edu.tw/nurse/FullTimeProfessorManagement?nodeId=12019"
     },
     {
       "name": "生物醫學系(含臨床試驗與評估碩士班)",
       "url": "https://www.cgu.edu.tw/ls",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "呼吸治療學系",
       "url": "https://www.cgu.edu.tw/rc/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/rc/FullTimeProfessorManagement?nodeId=2859"
     },
     {
       "name": "物理治療學系",
       "url": "https://www.cgu.edu.tw/pt/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/pt/FullTimeProfessorManagement?nodeId=12560"
     },
     {
       "name": "職能治療學系",
       "url": "https://www.cgu.edu.tw/dot/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/dot/FullTimeProfessorManagement?nodeId=8775"
     },
     {
       "name": "醫學影像暨放射科學系",
       "url": "https://www.cgu.edu.tw/mirs",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "醫學生物技術暨檢驗學系",
       "url": "https://www.cgu.edu.tw/mip/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/2d752816-734f-404c-8a20-9d6dbf9adb78?nodeId=11932"
     },
     {
       "name": "生物醫學研究所",
       "url": "https://www.cgu.edu.tw/gibms",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/gibms/FullTimeProfessorManagement?nodeId=4334"
     },
     {
       "name": "臨床醫學研究所",
       "url": "https://www.cgu.edu.tw/gicm/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/gicm/FullTimeProfessorManagement?nodeId=6295"
     },
     {
       "name": "早期療育研究所",
       "url": "https://www.cgu.edu.tw/gioei/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/gioei/FullTimeProfessorManagement?nodeId=4029"
     },
     {
       "name": "顱顏口腔醫學研究所",
       "url": "https://www.cgu.edu.tw/cdgi/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/cdgi/FullTimeProfessorManagement?nodeId=15512"
     },
     {
       "name": "免疫轉譯醫學研究所",
       "url": "https://www.cgu.edu.tw/IITM/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/IITM/FullTimeProfessorManagement?nodeId=16905"
     },
     {
       "name": "中醫學系天然藥物碩士班",
       "url": "https://www.cgu.edu.tw/gips/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/gips/FullTimeProfessorManagement?nodeId=5905"
     },
     {
       "name": "中醫學系傳統中醫學碩士班",
       "url": "https://www.cgu.edu.tw/gtcm/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/gtcm/FullTimeProfessorManagement?nodeId=18665"
     },
     {
       "name": "新興病毒分子醫學國際碩士學位學程",
       "url": "https://www.cgu.edu.tw/mmevi",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/mmevi/FullTimeProfessorManagement?nodeId=7831"
     },
     {
       "name": "生物科技產業碩/博士學位學程",
       "url": "https://www.cgu.edu.tw/biotech",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/biotech/FullTimeProfessorManagement?nodeId=15156"
     },
     {
       "name": "健康暨長期照護產業碩士學位學程",
       "url": "https://www.cgu.edu.tw/mdhci",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/mdhci/FullTimeProfessorManagement?nodeId=15044"
     },
     {
       "name": "顯微手術國際碩士學位學程",
       "url": "https://www.cgu.edu.tw/rm",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "電機工程學系",
       "url": "https://www.cgu.edu.tw/ee",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "電子工程學系",
       "url": "https://www.cgu.edu.tw/elec",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/elec/FullTimeProfessorManagement?nodeId=14942"
     },
     {
       "name": "機械工程學系",
       "url": "https://www.cgu.edu.tw/me",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "資訊工程學系",
       "url": "https://www.cgu.edu.tw/csie/",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "facultyUrl": "https://www.cgu.edu.tw/csie/FullTimeProfessorManagement?nodeId=13465"
     },
     {
       "name": "化工與材料工程學系",
       "url": "https://www.cgu.edu.tw/ce/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/ce/FullTimeProfessorManagement?nodeId=12456"
     },
     {
       "name": "生物醫學工程學系",
       "url": "https://www.cgu.edu.tw/bme",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/a9ed444b-19e6-4316-97c3-eebe7667a16f?nodeId=16002"
     },
     {
       "name": "光電工程研究所",
       "url": "https://www.cgu.edu.tw/gioeoe/",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "奈米工程及設計碩士學位學程",
       "url": "https://www.cgu.edu.tw/need",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "工商管理學系",
       "url": "https://www.cgu.edu.tw/ibm/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement?nodeId=3971"
     },
     {
       "name": "工業設計學系",
       "url": "https://www.cgu.edu.tw/id/",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "資訊管理學系",
       "url": "https://www.cgu.edu.tw/im/",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "醫務管理學系",
       "url": "https://www.cgu.edu.tw/hcm/",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "數位金融科技學系",
       "url": "https://www.cgu.edu.tw/ft",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/ft/FullTimeProfessorManagement?nodeId=11147"
     },
     {
       "name": "管理研究所博士班",
       "url": "https://www.cgu.edu.tw/cmphd/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/cmphd/FullTimeProfessorManagement?nodeId=7165"
     },
     {
       "name": "智慧醫療創新碩士學位學程",
       "url": "https://www.cgu.edu.tw/ism",
+      "location": "",
       "facultyUrl": ""
     },
     {
       "name": "人工智慧學系",
       "url": "https://www.cgu.edu.tw/ai",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "facultyUrl": "https://www.cgu.edu.tw/ai/FullTimeProfessorManagement?nodeId=17057"
     },
     {
       "name": "健康數據科學研究所",
       "url": "https://www.cgu.edu.tw/hds/",
+      "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/hds/FullTimeProfessorManagement?nodeId=17174"
     }
   ],
@@ -194,6 +231,7 @@
     {
       "name": "楊賢鴻 教授兼系主任/ Hsien Hung Yang",
       "department": "中醫學系",
+      "location": "",
       "email": "dryang@mail.cgu.edu.tw",
       "phone": "03-2118800轉3398",
       "degree": "國立陽明交通大學醫學院臨床醫學研究所博士",
@@ -203,6 +241,7 @@
     {
       "name": "劉耕豪 助理教授兼醫預科主任/ Geng-Hao Liu",
       "department": "中醫學系",
+      "location": "",
       "email": "wisdomhao@gmail.com",
       "phone": "03-2118800轉3869",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -212,6 +251,7 @@
     {
       "name": "潘台龍 教授/ Tai-Long Pan",
       "department": "中醫學系",
+      "location": "",
       "email": "pan@mail.cgu.edu.tw",
       "phone": "03-2118800轉5105",
       "degree": "瑞士巴塞爾大學動物博士",
@@ -221,6 +261,7 @@
     {
       "name": "張瑛玲 副教授/ Ying-Ling Chang",
       "department": "中醫學系",
+      "location": "",
       "email": "c1220@mail.cgu.edu.tw",
       "phone": "03-2118800轉5103",
       "degree": "中國醫藥學院中國藥學博士",
@@ -230,6 +271,7 @@
     {
       "name": "楊建中 副教授/ Chien-Chung Yang",
       "department": "中醫學系",
+      "location": "",
       "email": "r55161@cgmh.org.tw",
       "phone": "463-2613",
       "degree": "長庚大學生物醫學研究所博士",
@@ -239,6 +281,7 @@
     {
       "name": "陳星諭 副教授/ Hsing-Yu Chen",
       "department": "中醫學系",
+      "location": "",
       "email": "8705016@cgmh.org.tw",
       "phone": "09-75366119",
       "degree": "長庚大學中醫學系",
@@ -248,6 +291,7 @@
     {
       "name": "陳俊良 助理教授/ Jiun-Liang Chen",
       "department": "中醫學系",
+      "location": "",
       "email": "a12015@cgmh.org.tw",
       "phone": "463-2611",
       "degree": "國立陽明大學傳統醫藥研究所博士",
@@ -257,6 +301,7 @@
     {
       "name": "鄭為仁 助理教授/ Wei-Jen Cheng",
       "department": "中醫學系",
+      "location": "",
       "email": "misterarren@gmail.com",
       "phone": "463-2613",
       "degree": "長庚大學臨床醫學研究所醫學博士",
@@ -266,6 +311,7 @@
     {
       "name": "陳玉昇 助理教授/ Yu-Sheng Chen",
       "department": "中醫學系",
+      "location": "",
       "email": "cusp01@cgmh.org.tw",
       "phone": "463-2613",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -275,6 +321,7 @@
     {
       "name": "高銘偵 講師/ Ming-Chen Kao",
       "department": "中醫學系",
+      "location": "",
       "email": "small401@cgmh.org.tw",
       "phone": "463-2663",
       "degree": "長庚大學傳統中醫學碩士",
@@ -284,6 +331,7 @@
     {
       "name": "郭順利 講師/ Shun-Li Kuo",
       "department": "中醫學系",
+      "location": "",
       "email": "barrington_kuo@hotmail.com",
       "phone": "463-2613",
       "degree": "長庚大學臨床醫學研究所博士班",
@@ -293,6 +341,7 @@
     {
       "name": "呂彥禮 教授兼副主任/ Yann-Lii Leu",
       "department": "中醫學系",
+      "location": "",
       "email": "ylleu@mail.cgu.edu.tw",
       "phone": "03-2118800轉5524",
       "degree": "國立成功大學化學所博士",
@@ -302,6 +351,7 @@
     {
       "name": "方嘉佑 教授/ Jia-You Fang",
       "department": "中醫學系",
+      "location": "",
       "email": "fajy@mail.cgu.edu.tw",
       "phone": "03-2118800轉5521",
       "degree": "高雄醫學大學藥學所博士",
@@ -311,6 +361,7 @@
     {
       "name": "陳金銓 教授/ Chin-Chuan Chen",
       "department": "中醫學系",
+      "location": "",
       "email": "chinchuan@mail.cgu.edu.tw",
       "phone": "03-2118800轉3719",
       "degree": "美國科羅拉多大學醫學分校 生化暨分子遺傳博士",
@@ -320,6 +371,7 @@
     {
       "name": "李宗諺 教授/ Tzung-Yan Lee",
       "department": "中醫學系",
+      "location": "",
       "email": "joyamen@mail.cgu.edu.tw",
       "phone": "03-2118800轉3537",
       "degree": "國立陽明大學傳統醫藥學研究所博士",
@@ -329,6 +381,7 @@
     {
       "name": "廖庠睿 教授/ Hsiang-Ruei Liao",
       "department": "中醫學系",
+      "location": "",
       "email": "liaoch@mail.cgu.edu.tw",
       "phone": "03-2118800轉5522",
       "degree": "台灣大學藥理所博士",
@@ -338,6 +391,7 @@
     {
       "name": "謝珮文 教授/ Pei-Wen Hsieh",
       "department": "中醫學系",
+      "location": "",
       "email": "pewehs@mail.cgu.edu.tw",
       "phone": "03-2118800轉3105",
       "degree": "高雄醫學大學藥學所博士",
@@ -347,6 +401,7 @@
     {
       "name": "巴巴洛 助理教授 / Roshan Satange",
       "department": "中醫學系",
+      "location": "",
       "email": "roshan.satange@mail.cgu.edu.tw",
       "phone": "3212、5523",
       "degree": "中興大學醫學生物科技博士",
@@ -356,6 +411,7 @@
     {
       "name": "劉軒妙 助理研究員 / Hsuan-Miao Liu",
       "department": "中醫學系",
+      "location": "",
       "email": " hsuanmliu@mail.cgu.edu.tw",
       "phone": "3537",
       "degree": "國立陽明交通大學醫學院藥理學研究所博士",
@@ -365,6 +421,7 @@
     {
       "name": "唐婉如 教授兼系主任",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "wtang@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5448",
       "degree": "美國堪薩斯大學醫學中心護理博士",
@@ -374,6 +431,7 @@
     {
       "name": "邱逸榛 教授兼副系主任",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "yulandac@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5148",
       "degree": "美國密西根大學護理博士",
@@ -383,6 +441,7 @@
     {
       "name": "徐亞瑛 特聘教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "yeaing@mail.cgu.edu.tw",
       "phone": "02-211-8800#5275/5736",
       "degree": "美國奧勒崗健康科學大學護理博士",
@@ -392,6 +451,7 @@
     {
       "name": "蔡芸芳 特聘教授兼受試者保護辦公室主任",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "yftsai@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5958",
       "degree": "美國威斯康辛大學麥迪遜校區護理博士",
@@ -401,6 +461,7 @@
     {
       "name": "蔡秀欣 教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "kitty@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5075",
       "degree": "長庚大學護理學博士",
@@ -410,6 +471,7 @@
     {
       "name": "蕭秋月 教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "chsiao@mail.cgu.edu.tw",
       "phone": "3-211-8800 # 5480",
       "degree": "北卡羅來納大學教堂分校護理博士",
@@ -419,6 +481,7 @@
     {
       "name": "翁麗雀 教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "ax2488@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 3205",
       "degree": "台灣大學護理學博士",
@@ -428,6 +491,7 @@
     {
       "name": "李絳桃 教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "jtlee@gap.cgu.edu.tw",
       "phone": "03-211-8800 # 5197",
       "degree": "國立台灣師範大學衛教學博士",
@@ -437,6 +501,7 @@
     {
       "name": "陳綱華 副教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "khc@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5211",
       "degree": "中山醫學大學護理學博士",
@@ -446,6 +511,7 @@
     {
       "name": "邵榮華 副教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "shao@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5481",
       "degree": "澳洲昆士蘭科技大學護理博士",
@@ -455,6 +521,7 @@
     {
       "name": "連心瑜 副教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "angela@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5186",
       "degree": "國立臺灣大學護理學博士",
@@ -464,6 +531,7 @@
     {
       "name": "余幸宜 副教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "kanano@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5064",
       "degree": "陽明大學護理學博士",
@@ -473,6 +541,7 @@
     {
       "name": "周昀臻 副教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "yjchou@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 3512",
       "degree": "國立臺灣大學護理學博士",
@@ -482,6 +551,7 @@
     {
       "name": "張瑀玲 副教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "ylchang@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5089",
       "degree": "長庚大學護理學博士",
@@ -491,6 +561,7 @@
     {
       "name": "李佳純 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "chiachunli@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5265",
       "degree": "美國德州大學(奧斯汀)護理博士",
@@ -500,6 +571,7 @@
     {
       "name": "王怡文 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "wangyw@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5326",
       "degree": "美國凱斯西儲大學博士",
@@ -509,6 +581,7 @@
     {
       "name": "張綺紋 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "cwchang@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5198",
       "degree": "陽明大學護理學博士",
@@ -518,6 +591,7 @@
     {
       "name": "靳燕芬 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "yenfan@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5189",
       "degree": "長庚大學護理學博士",
@@ -527,6 +601,7 @@
     {
       "name": "姜月桃 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": " lisachiang@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 3866",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -536,6 +611,7 @@
     {
       "name": "黃淳霞 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "chhuang@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5146",
       "degree": "國立陽明大學護理學博士",
@@ -545,6 +621,7 @@
     {
       "name": "蔡玉霞 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "yhtsai@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5184",
       "degree": "臺灣大學護理學博士",
@@ -554,6 +631,7 @@
     {
       "name": "林青蓉 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "ma0402@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 3472",
       "degree": "臺灣大學護理學研究所博士",
@@ -563,6 +641,7 @@
     {
       "name": "徐清樺 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "chhsu@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5182",
       "degree": "國立陽明交通大學護理學系研究所博士",
@@ -572,6 +651,7 @@
     {
       "name": "陳思穎 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "d000019880@cgu.edu.tw",
       "phone": "03-2118800 #5212",
       "degree": "長庚大學護理學系博士",
@@ -581,6 +661,7 @@
     {
       "name": "鄧喬欣 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "chiaohsinteng@cgu.edu.tw",
       "phone": "03-2118800 #5187",
       "degree": "美國北卡羅來納大學教堂山分校",
@@ -590,6 +671,7 @@
     {
       "name": "楊卉穎 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "hyyang@cgu.edu.tw",
       "phone": "03-2118800 分機 5735",
       "degree": "國立臺灣大學護理學博士",
@@ -599,6 +681,7 @@
     {
       "name": "陳敏如 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "mrchen@cgu.edu.tw",
       "phone": "03-2118800 # 5087",
       "degree": "臺灣大學護理學系博士",
@@ -608,6 +691,7 @@
     {
       "name": "潘若凡 助理教授",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "d000020907@cgu.edu.tw",
       "phone": "03-2118800 # 5737",
       "degree": "英國曼徹斯特大學護理學博士",
@@ -617,6 +701,7 @@
     {
       "name": "蔡佳玲 講師",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "jialing@gap.cgu.edu.tw",
       "phone": "03-211-8800 # 5147",
       "degree": "國立台灣大學護理所碩士",
@@ -626,6 +711,7 @@
     {
       "name": "李信慧 助教",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "lsh65@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5193",
       "degree": "長庚大學學士",
@@ -635,6 +721,7 @@
     {
       "name": "李靖華 助教",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "chlee@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5957",
       "degree": "待列",
@@ -644,6 +731,7 @@
     {
       "name": "李蓓珍 行政助理",
       "department": "護理學系",
+      "location": "第二醫學大樓七樓 33302桃園市龜山區文化一路259號",
       "email": "polly@mail.cgu.edu.tw",
       "phone": "03-211-8800 # 5195",
       "degree": "待列",
@@ -653,6 +741,7 @@
     {
       "name": "謝孟哲系主任 / Meng-Jer Hsieh , M.D.",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "mengjer@cgmh.org.tw",
       "phone": "(03)3281200轉8442",
       "degree": "高雄醫學大學醫學系",
@@ -662,6 +751,7 @@
     {
       "name": "蔡熒煌教授 / Ying-Huang Tsai, M.D.",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "chestmed@cgmh.org.tw",
       "phone": "(03)2118800轉5236",
       "degree": "臺北醫學大學醫學系",
@@ -671,6 +761,7 @@
     {
       "name": "黃崇旂教授 / Chung-Chi Huang, M.D.",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "cch4848@cgmh.org.tw",
       "phone": "(03)2118800轉5230",
       "degree": "臺北醫學大學醫學系",
@@ -680,6 +771,7 @@
     {
       "name": "萬國華教授 / Gwo-Hwa Wan, Ph. D",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "ghwan@mail.cgu.edu.tw",
       "phone": "(03)2118800轉5227",
       "degree": "臺灣大學公共衛生研究所博士",
@@ -689,6 +781,7 @@
     {
       "name": "林蕙鈴教授 / Hui-Ling Lin, Ph. D, RRT, RN, FAARC",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "huiling@mail.cgu.edu.tw",
       "phone": "(03)2118800轉5228",
       "degree": "國立清華大學生醫工程與環境科學博士",
@@ -698,6 +791,7 @@
     {
       "name": "賴盈如教授 / Ying-Ju Lai , Ph.D",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "yingjulai@mail.cgu.edu.tw",
       "phone": "(03)2118800轉5229",
       "degree": "德國基森大學生命科學博士",
@@ -707,6 +801,7 @@
     {
       "name": "陳妍慧副教授 / Yen-Huey Chen, Ph. D. PT",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "yhchen@mail.cgu.edu.tw",
       "phone": "(03)2118800轉5233",
       "degree": "師範大學運動生理博士",
@@ -716,6 +811,7 @@
     {
       "name": "胡漢忠助理教授 / Han-Chung Hu, M.D.",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "h3226@cgmh.org.tw",
       "phone": "(03)3281200轉8474",
       "degree": "中山醫學大學醫學系",
@@ -725,6 +821,7 @@
     {
       "name": "李欣烜助理教授 / Hsin- Hsien Li, Ph. D. RT",
       "department": "呼吸治療學系",
+      "location": "",
       "email": "hsinhsien@mail.cgu.edu.tw",
       "phone": "(03)2118800轉5543",
       "degree": "國立陽明交通大學急重症醫學研究所",
@@ -734,6 +831,7 @@
     {
       "name": "鄭智修 / Cheng, Chih-Hsiu",
       "department": "物理治療學系",
+      "location": "",
       "email": "chcheng@mail.cgu.edu.tw",
       "phone": "3714",
       "degree": "臺灣大學工學院醫學工程學研究所博士",
@@ -743,6 +841,7 @@
     {
       "name": "張雅如 / Chang, Ya-Ju",
       "department": "物理治療學系",
+      "location": "",
       "email": "yjchang@mail.cgu.edu.tw",
       "phone": "5515",
       "degree": "PhD, The University of Iowa, USA",
@@ -752,6 +851,7 @@
     {
       "name": "王鐘賢 / Wang, Jong-Shyan",
       "department": "物理治療學系",
+      "location": "",
       "email": "s5492@mail.cgu.edu.tw",
       "phone": "5748",
       "degree": "成功大學基礎醫學所博士",
@@ -761,6 +861,7 @@
     {
       "name": "謝宗勳 / Hsieh, Tsung-Hsun",
       "department": "物理治療學系",
+      "location": "",
       "email": "hsiehth@mail.cgu.edu.tw",
       "phone": "3860",
       "degree": "成功大學生物醫學工程研究所博士",
@@ -770,6 +871,7 @@
     {
       "name": "劉文瑜 / Liu, Wen-Yu",
       "department": "物理治療學系",
+      "location": "",
       "email": "wylpt@mail.cgu.edu.tw",
       "phone": "3492",
       "degree": "PhD, Programs in Rehabilitation Sciences, College of Nursing and Health Professions, MCP Hahnemann University (Now Drexel University), Philadelphia, PA, USA",
@@ -779,6 +881,7 @@
     {
       "name": "莊麗玲 / Chuang, Li-Ling",
       "department": "物理治療學系",
+      "location": "",
       "email": "lchuang@gap.cgu.edu.tw",
       "phone": "3177",
       "degree": "美國伊利諾大學香檳校區 肌動學博士",
@@ -788,6 +891,7 @@
     {
       "name": "陳昭縈 / Chen, Chao-Ying",
       "department": "物理治療學系",
+      "location": "",
       "email": "chao-ying.chen@gap.cgu.edu.tw",
       "phone": "5487",
       "degree": "美國俄亥俄州州立大學 (The Ohio State University) / School of Health and Rehabilitation Sciences博士",
@@ -797,6 +901,7 @@
     {
       "name": "連恒裕 / Lien, Hen-Yu",
       "department": "物理治療學系",
+      "location": "",
       "email": "hyl@mail.cgu.edu.tw",
       "phone": "5741",
       "degree": "美國紐約大學博士",
@@ -806,6 +911,7 @@
     {
       "name": "陳柏村 / Chen, Po-Tsun",
       "department": "物理治療學系",
+      "location": "",
       "email": "ptchen@mail.cgu.edu.tw ",
       "phone": "3718",
       "degree": "成功大學生物醫學工程博士",
@@ -815,6 +921,7 @@
     {
       "name": "顏竹伶 / Yen, Chu-Ling",
       "department": "物理治療學系",
+      "location": "",
       "email": "clyen@mail.cgu.edu.tw",
       "phone": "3059",
       "degree": "美國愛荷華大學博士",
@@ -824,6 +931,7 @@
     {
       "name": "彭宜玲 / Peng, Yi-Ling",
       "department": "物理治療學系",
+      "location": "",
       "email": "elena.peng@cgu.edu.tw",
       "phone": "5527",
       "degree": "美國德州大學奧斯丁分校 運動學與健康教育博士",
@@ -833,6 +941,7 @@
     {
       "name": "吳若嫣 / Wu, Ruo-Yan",
       "department": "物理治療學系",
+      "location": "",
       "email": "ry.wu@cgu.edu.tw ",
       "phone": "5438",
       "degree": "國立陽明交通大學物理治療暨輔助科技學系博士",
@@ -842,6 +951,7 @@
     {
       "name": "翁珮玲 / Wong, Pei-Ling",
       "department": "物理治療學系",
+      "location": "",
       "email": "plwong@cgu.edu.tw",
       "phone": "3767",
       "degree": "國立陽明交通大學物理治療暨輔助科技學系博士",
@@ -851,6 +961,7 @@
     {
       "name": "李冠逸 教授兼系主任 / Kuan-yi Li, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "kyli@mail.cgu.edu.tw",
       "phone": "(03)2118800#3676",
       "degree": "美國明尼蘇達大學肌動學博士",
@@ -860,6 +971,7 @@
     {
       "name": "吳菁宜 特聘教授兼醫學院副院長 / Ching-yi Wu, ScD",
       "department": "職能治療學系",
+      "location": "",
       "email": "cywu@mail.cgu.edu.tw ",
       "phone": "(03)2118800#5761",
       "degree": "美國波士頓大學 職能治療學博士",
@@ -869,6 +981,7 @@
     {
       "name": "鄭嘉雄 教授 / Chia-Hsiung Cheng, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "ch.cheng@mail.cgu.edu.tw",
       "phone": "(03)2118800#3854",
       "degree": "國立陽明大學 腦科學研究所 博士",
@@ -878,6 +991,7 @@
     {
       "name": "謝妤葳 教授 / Yu-Wei Hsieh, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "ywhsieh@mail.cgu.edu.tw",
       "phone": "(03)2118800#3820",
       "degree": "國立臺灣大學職能治療學研究所 博士",
@@ -887,6 +1001,7 @@
     {
       "name": "詹佩穎 教授 / Pei-Ying S Chan, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "chanp@cgu.edu.tw",
       "phone": "(03)2118800#5441",
       "degree": "美國佛羅里達大學呼吸生理所 博士",
@@ -896,6 +1011,7 @@
     {
       "name": "黃湘涵 教授 / Hsiang-Han Huang, ScD",
       "department": "職能治療學系",
+      "location": "",
       "email": "hsianghan@mail.cgu.edu.tw",
       "phone": "(03)2118800#3821",
       "degree": "美國波士頓大學復健科學 博士",
@@ -905,6 +1021,7 @@
     {
       "name": "孟令夫 副教授 / Ling-fu Meng, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "lfmeng@mail.cgu.edu.tw",
       "phone": "(03)2118800#5471",
       "degree": "台灣師範大學特殊教育 博士",
@@ -914,6 +1031,7 @@
     {
       "name": "莊宜靜 副教授 / I-Ching Chuang, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "ichin@mail.cgu.edu.tw",
       "phone": "(03)2118800#3954",
       "degree": "國立台灣大學職能治療學系 博士",
@@ -923,6 +1041,7 @@
     {
       "name": "楊婕淩 副教授 / Chieh-ling Yang, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": " chieh-ling.yang@cgu.edu.tw",
       "phone": "(03)2118800 # 3058",
       "degree": "美國馬里蘭大學巴爾第摩分校 復健科學博士",
@@ -932,6 +1051,7 @@
     {
       "name": "陳柏伃 助理教授 / Poyu Chen, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": " poyuchen@mail.cgu.edu.tw",
       "phone": "(03)2118800#5449",
       "degree": "中正大學心理學系 博士",
@@ -941,6 +1061,7 @@
     {
       "name": "胡貽霖 助理教授 / Yi-Ling Hu, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "huy@cgu.edu.tw",
       "phone": "(03)2118800#3057",
       "degree": "美國聖路易華盛頓大學復健科學所 博士",
@@ -950,6 +1071,7 @@
     {
       "name": "陳韻如 助理教授 / Yun-Ju Chen, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": " chenyunj@cgu.edu.tw",
       "phone": "03-2118800#3633",
       "degree": "美國南加州大學 職能科學博士",
@@ -959,6 +1081,7 @@
     {
       "name": "陳怡臻 助理教授 / I-Chen Chen, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "chenichen@cgu.edu.tw",
       "phone": "03-2118800#2648",
       "degree": "美國威斯康辛州立大學麥迪遜分校 職能科學博士",
@@ -968,6 +1091,7 @@
     {
       "name": "劉嘉倫 助理教授 / Chia-Lun Liu, Ph.D.",
       "department": "職能治療學系",
+      "location": "",
       "email": "chialunliu@cgu.edu.tw",
       "phone": "03-2118800#5534",
       "degree": "英國牛津大學實驗心理學系博士",
@@ -977,6 +1101,7 @@
     {
       "name": "何孟洋 副教授 / Meng-Yang Ho, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "myho@mail.cgu.edu.tw",
       "phone": "(03)2118800#3122",
       "degree": "PhD (Department of Psychiatry, University of Nottingham, UK)",
@@ -986,6 +1111,7 @@
     {
       "name": "蘇逸人 教授 / Yi-Jen Su, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": "suyijen@mail.cgu.edu.tw",
       "phone": "(03)2118800#3421",
       "degree": "臺灣大學心理學研究所 臨床心理學博士",
@@ -995,6 +1121,7 @@
     {
       "name": "古黃守廉 副教授 / Shoou-Lian Hwang-Gu, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": " slhwang@mail.cgu.edu.tw",
       "phone": "(03)2118800#5466",
       "degree": "國立政治大學臨床心理學博士",
@@ -1004,6 +1131,7 @@
     {
       "name": "呂信慧 副教授 / Hsin-Hui Lu, PhD",
       "department": "職能治療學系",
+      "location": "",
       "email": " hhl@cgu.edu.tw",
       "phone": "03-2118800#5732",
       "degree": "臺灣大學心理學研究所 博士",
@@ -1013,6 +1141,7 @@
     {
       "name": "游佳融 / Chia-Jung Yu",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "yucj1124@mail.cgu.edu.tw",
       "phone": "3424",
       "degree": "臺灣大學博士",
@@ -1022,6 +1151,7 @@
     {
       "name": "洪錦堂 / Jim-Tong Horng",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "jimtong@mail.cgu.edu.tw",
       "phone": "5156",
       "degree": "英國劍橋大學博士",
@@ -1031,6 +1161,7 @@
     {
       "name": "白麗美 / Li-Mei Pai",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "pai@mail.cgu.edu.tw",
       "phone": "5520",
       "degree": "美國北卡羅來納州立大學博士",
@@ -1040,6 +1171,7 @@
     {
       "name": "鄭邑荃 / Yi-Chuan Cheng",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "yccheng@mail.cgu.edu.tw",
       "phone": "3396",
       "degree": "英國諾丁漢大學博士",
@@ -1049,6 +1181,7 @@
     {
       "name": "吳嘉霖 / Chia-Lin Wu",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "clwu@mail.cgu.edu.tw",
       "phone": "5159",
       "degree": "清華大學博士",
@@ -1058,6 +1191,7 @@
     {
       "name": "王齡玉 / Ling-Yu Wang",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "lywang@mail.cgu.edu.tw",
       "phone": "3989",
       "degree": "美國加州大學戴維斯分校博士",
@@ -1067,6 +1201,7 @@
     {
       "name": "柯博元 / Po-Yuan Ke",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "pyke0324@mail.cgu.edu.tw",
       "phone": "5115",
       "degree": "台灣大學醫學院 博士",
@@ -1076,6 +1211,7 @@
     {
       "name": "徐淑媛 / Shu-Yuan Hsu",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "hsusy@mail.cgu.edu.tw",
       "phone": "5088",
       "degree": "長庚大學博士",
@@ -1085,6 +1221,7 @@
     {
       "name": "陳星甫 / Shin-Fu Chen",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "sfchen@cgu.edu.tw",
       "phone": "+886-3-211-8800 ext. 3199",
       "degree": "臺灣大學博士",
@@ -1094,6 +1231,7 @@
     {
       "name": "宋欣錦 / Hsin-Ching Sung",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "hcs@mail.cgu.edu.tw",
       "phone": "5977",
       "degree": "台灣大學博士",
@@ -1103,6 +1241,7 @@
     {
       "name": "陳學亭 / Syue-Ting Chen",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "stchen2021@mail.cgu.edu.tw",
       "phone": "3062",
       "degree": "台灣大學博士",
@@ -1112,6 +1251,7 @@
     {
       "name": "譚賢明 / Bertrand Tan",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "btan@mail.cgu.edu.tw",
       "phone": "5067",
       "degree": "台灣大學博士",
@@ -1121,6 +1261,7 @@
     {
       "name": "郁兆蘭 / Chao-Lan Yu",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "clyu@mail.cgu.edu.tw",
       "phone": "3730",
       "degree": "美國密西根大學微生物及免疫博士",
@@ -1130,6 +1271,7 @@
     {
       "name": "皮海薇 / Hai-Wei Pi",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "haiwei@mail.cgu.edu.tw",
       "phone": "3361",
       "degree": "美國紐約州立大學博士",
@@ -1139,6 +1281,7 @@
     {
       "name": "梅雅俊 / Yaa-Jyuhn James Meir",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "jmeir@mail.cgu.edu.tw",
       "phone": "3641",
       "degree": "美國范登堡大學博士",
@@ -1148,6 +1291,7 @@
     {
       "name": "Scott C. Schuyler /",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "schuyler@mail.cgu.edu.tw",
       "phone": "3596",
       "degree": "美國哈佛大學博士",
@@ -1157,6 +1301,7 @@
     {
       "name": "楊淑元 / Shu Yuan Yang",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "yangsy@mail.cgu.edu.tw",
       "phone": "3828",
       "degree": "美國耶魯大學博士",
@@ -1166,6 +1311,7 @@
     {
       "name": "賴銘志 / Ming-Chih Lai",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "mclai@mail.cgu.edu.tw",
       "phone": "3354",
       "degree": "國防醫學院博士",
@@ -1175,6 +1321,7 @@
     {
       "name": "許勝傑 / Sheng-Chieh Hsu",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "schsu@mail.cgu.edu.tw",
       "phone": "3690",
       "degree": "陽明交通大學博士",
@@ -1184,6 +1331,7 @@
     {
       "name": "陳盈汝 / Yin-Ju Chen",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "yinjuchen@mail.cgu.edu.tw",
       "phone": "3494",
       "degree": "長庚大學博士",
@@ -1193,6 +1341,7 @@
     {
       "name": "蕭慧怡 / Hui-Yi Hsiao",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "ivyhsiao@mail.cgu.edu.tw",
       "phone": "3717",
       "degree": "美國紐約大學博士",
@@ -1202,6 +1351,7 @@
     {
       "name": "葉昭廷 / Chau-Ting Yeh",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "chauting@adm.cgmh.org.tw",
       "phone": "403-8125",
       "degree": "美國南加州大學博士",
@@ -1211,6 +1361,7 @@
     {
       "name": "劉心雲 / Shin Yun Liu",
       "department": "生物醫學研究所",
+      "location": "",
       "email": "ShinYunL@cgu.edu.tw",
       "phone": "2649",
       "degree": "國立台灣大學 解剖暨細胞生物學研究所",
@@ -1220,6 +1371,7 @@
     {
       "name": "黃祥富",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "shiangfu.huang@gmail.com",
       "phone": "5125",
       "degree": "長庚大學 M.D. Ph.D.",
@@ -1229,6 +1381,7 @@
     {
       "name": "蘇中慧",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "jonghwei@mail.cgu.edu.tw",
       "phone": "3482; 3488",
       "degree": "美國羅格斯大學 Ph.D.",
@@ -1238,6 +1391,7 @@
     {
       "name": "康宏佑",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "hkang3@mail.cgu.edu.tw",
       "phone": "407-8898, 8851",
       "degree": "美國威斯康辛大學",
@@ -1247,6 +1401,7 @@
     {
       "name": "張沛鈞",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "peyjiumc@mail.cgu.edu.tw    ",
       "phone": "405-2095",
       "degree": "陽明大學 Ph.D.",
@@ -1256,6 +1411,7 @@
     {
       "name": "中野敏明",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "nakano33@mail.cgu.edu.tw",
       "phone": "407-8190",
       "degree": "日本廣島大學 Ph.D.",
@@ -1265,6 +1421,7 @@
     {
       "name": "張國志",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "gjchang@mail.cgu.edu.tw",
       "phone": "3481, 3497",
       "degree": "台灣大學 Ph.D.",
@@ -1274,6 +1431,7 @@
     {
       "name": "蔡七女",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "pink7@cgu.edu.tw",
       "phone": "3480, 3487",
       "degree": "陽明大學 Ph.D.",
@@ -1283,6 +1441,7 @@
     {
       "name": "洪千惠",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "hungc01@mail.cgu.edu.tw",
       "phone": "405-2098",
       "degree": "陽明大學 Ph.D.",
@@ -1292,6 +1451,7 @@
     {
       "name": "石宗憲",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "csshi@mail.cgu.edu.tw",
       "phone": "405-2100",
       "degree": "成功大學 Ph.D.",
@@ -1301,6 +1461,7 @@
     {
       "name": "林志榮",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "jr@mail.cgu.edu.tw",
       "phone": "3756",
       "degree": "台灣大學 Ph.D.",
@@ -1310,6 +1471,7 @@
     {
       "name": "劉碧華",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "phliu@mail.cgu.edu.tw",
       "phone": "3758",
       "degree": "台灣大學 Ph.D.",
@@ -1319,6 +1481,7 @@
     {
       "name": "趙需文",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "chaohw3619@cgu.edu.tw",
       "phone": "3489",
       "degree": "國防醫學院Ph.D.",
@@ -1328,6 +1491,7 @@
     {
       "name": "陳志銘",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "d000021007@cgu.edu.tw",
       "phone": "3489",
       "degree": "美國約翰霍普金斯大學 Ph.D.",
@@ -1337,6 +1501,7 @@
     {
       "name": "莊錦豪 (兼任)",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": " jhchuang@adm.cgmh.org.tw",
       "phone": "407-8811, 8715",
       "degree": "台大M.D. McGill實驗外科碩士",
@@ -1346,6 +1511,7 @@
     {
       "name": "王逢興(兼任)",
       "department": "臨床醫學研究所",
+      "location": "",
       "email": "wangfs@ms33.hinet.net",
       "phone": "407-6406",
       "degree": "台灣大學 Ph.D.",
@@ -1355,6 +1521,7 @@
     {
       "name": "陳嘉玲 / Chia-Ling Chen",
       "department": "早期療育研究所",
+      "location": "",
       "email": "clingchen@gmail.com",
       "phone": "03-2118800 #3663",
       "degree": "長庚大學臨床醫學博士",
@@ -1364,6 +1531,7 @@
     {
       "name": "陳麗如 / Li-Ju Chen",
       "department": "早期療育研究所",
+      "location": "",
       "email": "lizzy@mail.cgu.edu.tw",
       "phone": "03-2118800 #3781/3784",
       "degree": "彰化師範大學特殊教育研究所博士",
@@ -1373,6 +1541,7 @@
     {
       "name": "程欣儀 / Hsin-Yi Kathy Cheng",
       "department": "早期療育研究所",
+      "location": "",
       "email": "kcheng@gap.cgu.edu.tw",
       "phone": "03-2118800 #3667",
       "degree": "長庚大學醫學工程博士",
@@ -1382,6 +1551,7 @@
     {
       "name": "陳惠茹 / Hui-Ju Chen",
       "department": "早期療育研究所",
+      "location": "",
       "email": "denise@mail.cgu.edu.tw",
       "phone": "03-2118800 #3780",
       "degree": "國立台灣師範大學博士",
@@ -1391,6 +1561,7 @@
     {
       "name": "康琳茹 / Lin-Ju Kang",
       "department": "早期療育研究所",
+      "location": "",
       "email": "linjukang@mail.cgu.edu.tw",
       "phone": "03-2118800 #3779",
       "degree": "美國 Drexel大學復健科學暨物理治療所博士",
@@ -1400,6 +1571,7 @@
     {
       "name": "廖郁芳 / Yu-Fang Liao",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "yufang@cgmh.org.tw",
       "phone": "+886-3-211-8800 Ext 3522",
       "degree": "英國倫敦大學博士",
@@ -1409,6 +1581,7 @@
     {
       "name": "羅綸洲 / Lun-Jou Lo",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "lunjoulo@cgmh.org.tw",
       "phone": "+886-3-328-1200 Ext 2430",
       "degree": "台灣大學學士",
@@ -1418,6 +1591,7 @@
     {
       "name": "陳明岐 / Min-Chi Chen",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "mcc@mail.cgu.edu.tw",
       "phone": "+886-3-328-1200 Ext 5056",
       "degree": "美國約翰普金斯大學博士",
@@ -1427,6 +1601,7 @@
     {
       "name": "柯雯青 / Ellen Wen-Ching Ko",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "ellenko.wc@msa.hinet.net",
       "phone": "+886-3-211-8800 Ext 3523",
       "degree": "美國伊利諾大學碩士",
@@ -1436,6 +1611,7 @@
     {
       "name": "劉人文 / Eric JW Liou",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "lioueric@ms19.hinet.net",
       "phone": "+886-3-211-8800 Ext 3523",
       "degree": "美國伊利諾大學碩士",
@@ -1445,6 +1621,7 @@
     {
       "name": "黃意方 / Yi-Fang Huang",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "yifang0324@gmail.com",
       "phone": "+886-3-211-8800 Ext 3523",
       "degree": "台北醫學大學牙醫學系博士",
@@ -1454,6 +1631,7 @@
     {
       "name": "周邦昀 / Pang-Yun Chou",
       "department": "顱顏口腔醫學研究所",
+      "location": "",
       "email": "chou.asapulu@gmail.com",
       "phone": "+886-3-211-8800 Ext 3523",
       "degree": "長庚大學醫學系",
@@ -1463,6 +1641,7 @@
     {
       "name": "楊皇煜 教授 / Huang-Yu Yang M.D. Ph.D.",
       "department": "免疫轉譯醫學研究所",
+      "location": "",
       "email": "hyyang01@gmail.com",
       "phone": "03-3281200 #7740",
       "degree": "美國約翰霍普金斯大學 博士",
@@ -1472,6 +1651,7 @@
     {
       "name": "郭昶甫 教授 / Chang-Fu Kuo M.D. Ph.D.",
       "department": "免疫轉譯醫學研究所",
+      "location": "",
       "email": "zandis@adm.cgmh.org.tw",
       "phone": "03-3281200 #8812",
       "degree": "英國諾丁漢大學風濕、骨科、皮膚科醫學 博士",
@@ -1481,6 +1661,7 @@
     {
       "name": "施瀚博 助理教授 / Han-Po Shih Ph.D.",
       "department": "免疫轉譯醫學研究所",
+      "location": "",
       "email": "hpshih@cgu.edu.tw",
       "phone": "03-2118800 #5542",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -1490,6 +1671,7 @@
     {
       "name": "顧正崙 講座教授 / Cheng-Lung Ku Ph.D.",
       "department": "免疫轉譯醫學研究所",
+      "location": "",
       "email": "clku@cgu.edu.tw",
       "phone": "03-2118800 #3483 / 2611",
       "degree": "巴黎第五大學免疫學 博士",
@@ -1499,6 +1681,7 @@
     {
       "name": "方嘉佑 / Jia-You Fang, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "fajy@mail.cgu.edu.tw",
       "phone": "03-2118800 分機5521",
       "degree": "高雄醫學大學藥學所博士",
@@ -1508,6 +1691,7 @@
     {
       "name": "呂彥禮 / Yann-Lii Leu, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "ylleu@mail.cgu.edu.tw",
       "phone": "03-2118800 分機5524",
       "degree": "國立成功大學化學所博士",
@@ -1517,6 +1701,7 @@
     {
       "name": "廖庠睿 / Hsiang-Ruei Liao, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "liaoch@mail.cgu.edu.tw",
       "phone": "03-2118800 分機5522",
       "degree": "台灣大學藥理所博士",
@@ -1526,6 +1711,7 @@
     {
       "name": "謝珮文 / Pei-Wen Hsieh, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "pewehs@mail.cgu.edu.tw",
       "phone": "03-2118800 分機3105",
       "degree": "高雄醫學大學藥學所博士",
@@ -1535,6 +1721,7 @@
     {
       "name": "陳金銓 / Chin-Chuan Chen, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "chinchuan@mail.cgu.edu.tw",
       "phone": "03-2118800 分機3719",
       "degree": "美國科羅拉多大學醫學分校生化暨分子遺傳博士",
@@ -1544,6 +1731,7 @@
     {
       "name": "巴巴洛 / Roshan Satange, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "roshan.satange@mail.cgu.edu.tw",
       "phone": "03-2118800 分機3212、5523",
       "degree": "中興大學醫學生物科技博士",
@@ -1553,6 +1741,7 @@
     {
       "name": "黃聰龍 / Tsong-Long Hwang, Ph.D.",
       "department": "中醫學系天然藥物碩士班",
+      "location": "",
       "email": "htl@mail.cgust.edu.tw",
       "phone": "03-211-8999 ext.5510、5040(實驗室)",
       "degree": "台灣大學藥理所博士",
@@ -1562,6 +1751,7 @@
     {
       "name": "楊賢鴻 / Hsien-Hung Yang, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "dryang@mail.cgu.edu.tw",
       "phone": "03-2118800分機3398、5101",
       "degree": "國立陽明大學臨床醫學研究所博士",
@@ -1571,6 +1761,7 @@
     {
       "name": "李宗諺 / Tzung-Yan Lee, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "joyamen@mail.cgu.edu.tw",
       "phone": "03-2118800分機3389、3537",
       "degree": "陽明大學傳統醫藥研究所博士",
@@ -1580,6 +1771,7 @@
     {
       "name": "潘台龍 / Tai-Long Pan, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "pan@mail.cgu.edu.tw",
       "phone": "03-2118800分機5105",
       "degree": "瑞士巴塞爾大學動物所博士",
@@ -1589,6 +1781,7 @@
     {
       "name": "張瑛玲 / Ying-Ling Chang, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "c1220@mail.cgu.edu.tw",
       "phone": "03-2118800分機5103",
       "degree": "中國醫藥學院中國藥學博士",
@@ -1598,6 +1791,7 @@
     {
       "name": "劉耕豪 / Geng-Hao Liu, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "wisdomhao@gmail.com",
       "phone": "03-2118800 ext.3869",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -1607,6 +1801,7 @@
     {
       "name": "劉軒妙 / Hsuan-Miao Liu, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "hsuanmliu@mail.cgu.edu.tw",
       "phone": "03-2118800分機3537",
       "degree": "國立陽明交通大學醫學院藥理學研究所博士",
@@ -1616,6 +1811,7 @@
     {
       "name": "陳俊良 / Jiun-Liang Chen, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "a12015@cgmh.org.tw",
       "phone": "03-3196200 ext.2611",
       "degree": "陽明大學傳統醫藥研究所博士",
@@ -1625,6 +1821,7 @@
     {
       "name": "陳星諭 / Warren Hsing-Yu Chen, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "b8705016@gmail.com",
       "phone": "03-2118800分機5101",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -1634,6 +1831,7 @@
     {
       "name": "楊建中 / Chien-Chung Yang, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "R55161@cgmh.org.tw",
       "phone": "03-2118800分機5101",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -1643,6 +1841,7 @@
     {
       "name": "陳玉昇 / Yu-Sheng Chen, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "cusp01@cgmh.org.tw",
       "phone": "03-2118800分機5101",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -1652,6 +1851,7 @@
     {
       "name": "鄭為仁 / Wei-Jen Cheng, Ph.D.",
       "department": "中醫學系傳統中醫學碩士班",
+      "location": "",
       "email": "misterarren@gmail.com",
       "phone": "03-2118800分機5101",
       "degree": "長庚大學臨床醫學研究所博士",
@@ -1661,6 +1861,7 @@
     {
       "name": "郭瑞琳 / Rei-Lin Kuo",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "rlkuo@mail.cgu.edu.tw",
       "phone": "3775",
       "degree": "陽明大學微生物暨免疫學博士",
@@ -1670,6 +1871,7 @@
     {
       "name": "李國銘 / Kuo-Ming Lee",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "g39002007@mail.cgu.edu.tw",
       "phone": "3727",
       "degree": "台灣大學醫學院分子醫學研究所",
@@ -1679,6 +1881,7 @@
     {
       "name": "龔于農 / Yu-Nong Gong",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "yngong@mail.cgu.edu.tw",
       "phone": "3040",
       "degree": "長庚大學電機工程博士",
@@ -1688,6 +1891,7 @@
     {
       "name": "黃鵬年 / Peng-Nien Huang",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "mark1005@gmail.com/mark1005@mail.cgu.edu.tw",
       "phone": "3723",
       "degree": "長庚大學生物醫學研究所生物技術組博士",
@@ -1697,6 +1901,7 @@
     {
       "name": "施信如 / Shin-Ru Shih",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "srshih@mail.cgu.edu.tw",
       "phone": "5497",
       "degree": "美國紐澤西羅格斯大學分子生物及生物化學博士",
@@ -1706,6 +1911,7 @@
     {
       "name": "林錫賢 / Hsi-Hsien Lin",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "hhlin@mail.cgu.edu.tw",
       "phone": "3321",
       "degree": "University of Tennessee/U.S.A.",
@@ -1715,6 +1921,7 @@
     {
       "name": "洪錦堂 / Jim-Tong Horng",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "jimtong@mail.cgu.edu.tw",
       "phone": "5156",
       "degree": "英國劍橋大學",
@@ -1724,6 +1931,7 @@
     {
       "name": "陳光武 / Guang-Wu Chen",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "gwchen@mail.cgu.edu.tw",
       "phone": "3368",
       "degree": "佛羅里達大學航太力學暨工程科學博士",
@@ -1733,6 +1941,7 @@
     {
       "name": "譚賢明 / Bertrand Tan",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "btan@mail.cgu.edu.tw",
       "phone": "5067",
       "degree": "國立台灣大學分子醫學研究所",
@@ -1742,6 +1951,7 @@
     {
       "name": "吳治慶 / Chih-Ching Wu",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "luckywu@mail.cgu.edu.tw",
       "phone": "5093",
       "degree": "長庚大學生物醫學研究所博士",
@@ -1751,6 +1961,7 @@
     {
       "name": "黃幸宜 / HSING-I HUANG",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "hihuang@mail.cgu.edu.tw",
       "phone": "3721",
       "degree": "美國紐澤西羅格斯大學微生物與分子遺傳學博士",
@@ -1760,6 +1971,7 @@
     {
       "name": "邱亞芳 / Ya-Fang Chiu",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "yfchiu@mail.cgu.edu.tw ",
       "phone": "3876",
       "degree": "長庚大學",
@@ -1769,6 +1981,7 @@
     {
       "name": "沈家瑞 / Chia-Rui Shen",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "crshen@mail.cgu.edu.tw",
       "phone": "03-2118800 ext 5200",
       "degree": "英國布里斯托大學病理與微生物學系博士",
@@ -1778,6 +1991,7 @@
     {
       "name": "郭敏玲 / Ming-Ling Kuo",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "mingling@mail.cgu.edu.tw",
       "phone": "3319/3320",
       "degree": "美國羅格斯大學博士",
@@ -1787,6 +2001,7 @@
     {
       "name": "何鴻耀 / 何鴻耀",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "hoh01@mail.cgu.edu.tw",
       "phone": "3318",
       "degree": "國防大學生命科學博士",
@@ -1796,6 +2011,7 @@
     {
       "name": "蔡佩倩 / Pei-Chien Tsai",
       "department": "新興病毒分子醫學國際碩士學位學程",
+      "location": "",
       "email": "pctsai@mail.cgu.edu.tw",
       "phone": "03-2118800#3857",
       "degree": "英國倫敦國王學院表關遺傳學博士",
@@ -1805,6 +2021,7 @@
     {
       "name": "邱全芊 / Chiuan-Chian Chiou",
       "department": "生物科技產業碩/博士學位學程",
+      "location": "",
       "email": "ccchiou@mail.cgu.edu.tw",
       "phone": "5204",
       "degree": "清華大學生命科學博士",
@@ -1814,6 +2031,7 @@
     {
       "name": "王永樑 / Robert Yung-Liang Wang",
       "department": "生物科技產業碩/博士學位學程",
+      "location": "",
       "email": "yuwang@gap.cgu.edu.tw",
       "phone": "3691",
       "degree": "國立台灣大學微生物與生化學所博士",
@@ -1823,6 +2041,7 @@
     {
       "name": "許勝傑 / Sheng-Chieh Hsu",
       "department": "生物科技產業碩/博士學位學程",
+      "location": "",
       "email": "schsu@mail.cgu.edu.tw",
       "phone": "3690",
       "degree": "國立陽明大學微生物及免疫學研究所博士",
@@ -1832,6 +2051,7 @@
     {
       "name": "張中明 / Chung-Ming Chang",
       "department": "生物科技產業碩/博士學位學程",
+      "location": "",
       "email": "cmchang@mail.cgu.edu.tw ; chungming.chang@gmail.com",
       "phone": "3584",
       "degree": "法國國立農業Paris-Grignon研究院 動物遺傳學博士",
@@ -1841,6 +2061,7 @@
     {
       "name": "林佩欣",
       "department": "健康暨長期照護產業碩士學位學程",
+      "location": "",
       "email": "pslin@mail.cgu.edu.tw",
       "phone": "(03)211-8800#3393",
       "degree": "美國德州大學公共衛生醫務研究所博士",
@@ -1850,6 +2071,7 @@
     {
       "name": "廖珮茹",
       "department": "健康暨長期照護產業碩士學位學程",
+      "location": "",
       "email": "pjliao@mail.cgu.edu.tw",
       "phone": "(03)211-8800#3060",
       "degree": "臺灣大學商研所科技管理組博士、長庚大學企業管理研究所營運管理組博士",
@@ -1859,6 +2081,7 @@
     {
       "name": "葉婷婷",
       "department": "健康暨長期照護產業碩士學位學程",
+      "location": "",
       "email": "tingtingyeh@cgu.edu.tw",
       "phone": "(03)211-8800#3048",
       "degree": "加拿大麥克馬斯特大學肌動學博士 (McMaster University, Department of Kinesiology)",
@@ -1868,6 +2091,7 @@
     {
       "name": "張睿達 / 教授 / 系主任",
       "department": "電子工程學系",
+      "location": "",
       "email": "crd@mail.cgu.edu.tw",
       "phone": "03-2118800 #5782",
       "degree": "美國德州大學奧斯汀分校電機與電腦工程學博士",
@@ -1877,6 +2101,7 @@
     {
       "name": "王哲麒 / 特聘教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "jcwang@mail.cgu.edu.tw",
       "phone": "03-2118800 #5784",
       "degree": "國立陽明交通大學電子研究所博士",
@@ -1886,6 +2111,7 @@
     {
       "name": "金國生 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "kschin@mail.cgu.edu.tw",
       "phone": "03-2118800 #5789",
       "degree": "國立陽明交通大學電信工程研究所博士",
@@ -1895,6 +2121,7 @@
     {
       "name": "邱顯欽 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "hcchiu@mail.cgu.edu.tw",
       "phone": "03-2118800 #3350",
       "degree": "國立中央大學電機工程學博士",
@@ -1904,6 +2131,7 @@
     {
       "name": "高瑄苓 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "snoopy@mail.cgu.edu.tw",
       "phone": "03-2118800 #5951",
       "degree": "國立陽明交通大學電子研究所博士",
@@ -1913,6 +2141,7 @@
     {
       "name": "陳淑娟 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "scchen0319@cgu.edu.tw",
       "phone": "03-2118800 #2645",
       "degree": "國立中山大學電機工程學系博士",
@@ -1922,6 +2151,7 @@
     {
       "name": "陳始明 / 教授 / 可靠度科技研究中心主任",
       "department": "電子工程學系",
+      "location": "",
       "email": "cmtan@cgu.edu.tw",
       "phone": "03-2118800 #5952",
       "degree": "加拿大多倫多大學電機與電子學博士",
@@ -1931,6 +2161,7 @@
     {
       "name": "蔡家龍 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "cltsai@mail.cgu.edu.tw",
       "phone": "03-2118800 #3441",
       "degree": "國立清華大學電子工程研究所博士",
@@ -1940,6 +2171,7 @@
     {
       "name": "麥凱 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "sidhu@mail.cgu.edu.tw",
       "phone": "03-2118800 #5785",
       "degree": "印度理工學院克勒格布爾校區博士",
@@ -1949,6 +2181,7 @@
     {
       "name": "陳思文 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "chensw@mail.cgu.edu.tw",
       "phone": "03-2118800 #5792",
       "degree": "美國俄亥俄州立大學醫學工程博士",
@@ -1958,6 +2191,7 @@
     {
       "name": "郭守義 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "sykuo@mail.cgu.edu.tw",
       "phone": "03-2118800 #3351",
       "degree": "國立陽明交通大學光電工程研究所博士",
@@ -1967,6 +2201,7 @@
     {
       "name": "潘同明 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "tmpan@mail.cgu.edu.tw",
       "phone": "03-2118800 #3349",
       "degree": "國立陽明交通大學電子研究所博士",
@@ -1976,6 +2211,7 @@
     {
       "name": "楊家銘 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "cmyang@mail.cgu.edu.tw",
       "phone": "03-2118800 #5960",
       "degree": "長庚大學電子工程研究所博士",
@@ -1985,6 +2221,7 @@
     {
       "name": "倪澤恩 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "neete@mail.cgu.edu.tw",
       "phone": "03-2118800 #5791",
       "degree": "國立中央大學光電工程研究所博士",
@@ -1994,6 +2231,7 @@
     {
       "name": "陳乃權 / 教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "ncchen001@mail.cgu.edu.tw",
       "phone": "03-2118800 #5953",
       "degree": "國立陽明交通大學電子物理學博士",
@@ -2003,6 +2241,7 @@
     {
       "name": "李仲益 / 副教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "chungyili@mail.cgu.edu.tw",
       "phone": "03-2118800 #5593",
       "degree": "國立清華大學電機工程學博士",
@@ -2012,6 +2251,7 @@
     {
       "name": "張宗文 / 副教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "overcomer1984@gmail.com",
       "phone": "03-2118800 #3153",
       "degree": "國立陽明交通大學光電工程研究所博士",
@@ -2021,6 +2261,7 @@
     {
       "name": "游智仁 / 副教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "cjyu@mail.cgu.edu.tw",
       "phone": "03-2118800 #3678",
       "degree": "國立中央大學光電科學與工程學系博士",
@@ -2030,6 +2271,7 @@
     {
       "name": "吳志峰 / 助理教授",
       "department": "電子工程學系",
+      "location": "",
       "email": "tfengwu@mail.cgu.edu.tw",
       "phone": "03-2118800 #3790",
       "degree": "國立台灣大學電子工程研究所博士",
@@ -2039,6 +2281,7 @@
     {
       "name": "謝萬雲 教授/系主任",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "wyshieh@mail.cgu.edu.tw",
       "phone": "03-2118800#3336",
       "degree": "交通大學資訊工程博士",
@@ -2048,6 +2291,7 @@
     {
       "name": "郭斯彥 講座教授/工學院院長",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "kuosy@cgu.edu.tw",
       "phone": "03-2118800#5750",
       "degree": "美國伊利諾大學香檳校區計算機科學系博士",
@@ -2057,6 +2301,7 @@
     {
       "name": "陳仁暉 教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "jhchen@mail.cgu.edu.tw",
       "phone": "03-2118800#5990",
       "degree": "淡江大學資訊工程博士",
@@ -2066,6 +2311,7 @@
     {
       "name": "吳世琳 教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "slwu@mail.cgu.edu.tw",
       "phone": "03-2118800#5320",
       "degree": "中央大學資訊工程博士",
@@ -2075,6 +2321,7 @@
     {
       "name": "黃崇源 教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "gscott@mail.cgu.edu.tw",
       "phone": "03-2118800#3474",
       "degree": "交通大學資訊科學博士",
@@ -2084,6 +2331,7 @@
     {
       "name": "陳光武 教授/教務長",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "gwchen@mail.cgu.edu.tw",
       "phone": "03-2118800#3368",
       "degree": "佛羅里達大學航太力學暨工程科學博士",
@@ -2093,6 +2341,7 @@
     {
       "name": "沙庫瑪 教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "pksahoo@mail.cgu.edu.tw",
       "phone": "03-2118800#3804",
       "degree": "中央大學資訊工程博士",
@@ -2102,6 +2351,7 @@
     {
       "name": "李春良 副教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "cllee@mail.cgu.edu.tw",
       "phone": "03-2118800#5196",
       "degree": "交通大學資訊工程博士",
@@ -2111,6 +2361,7 @@
     {
       "name": "趙一平 副教授/研發處執行秘書",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "yiping@mail.cgu.edu.tw",
       "phone": "03-2118800#5469",
       "degree": "台灣大學電機工程博士",
@@ -2120,6 +2371,7 @@
     {
       "name": "李季青 副教授/資訊中心軟體組組長",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "chichinglee@cgu.edu.tw",
       "phone": "03-2118800#3887",
       "degree": "清華大學資訊工程博士",
@@ -2129,6 +2381,7 @@
     {
       "name": "魏志達 助理教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "jdwei@mail.cgu.edu.tw",
       "phone": "03-2118800#3580",
       "degree": "交通大學資訊科學博士",
@@ -2138,6 +2391,7 @@
     {
       "name": "張哲維 助理教授",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "chewei@mail.cgu.edu.tw",
       "phone": "03-2118800#5818",
       "degree": "台灣大學資訊工程博士",
@@ -2147,6 +2401,7 @@
     {
       "name": "吳齊人 助理教授/資訊中心網路組組長",
       "department": "資訊工程學系",
+      "location": "33302 桃園市龜山區文化一路259號 (管理大樓四樓)",
       "email": "cjwu@mail.cgu.edu.tw",
       "phone": "03-2118800#3787",
       "degree": "台灣大學電機工程博士",
@@ -2156,6 +2411,7 @@
     {
       "name": "邱方遒 / 教授兼系主任",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "maxson@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5297",
       "degree": "高分子科學博士 – 美國Akron大學 1995",
@@ -2165,6 +2421,7 @@
     {
       "name": "莊瑞鑫 / 講座教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": " rsjuang@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5702",
       "degree": "化工博士 – 國立成功大學 1986",
@@ -2174,6 +2431,7 @@
     {
       "name": "童俊智 / 特聘教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "vincent@g.ecc.u-tokyo.ac.jp",
       "phone": "03-2118800",
       "degree": "材料博士 – 美國加州大學洛杉磯分校 (UCLA)",
@@ -2183,6 +2441,7 @@
     {
       "name": "陳志平 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "jpchen@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5298",
       "degree": "化工博士 – 美國賓州州立大學 1988",
@@ -2192,6 +2451,7 @@
     {
       "name": "呂幸江 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "jessie@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5489",
       "degree": "農工博士 – 美國密蘇里大學 1990",
@@ -2201,6 +2461,7 @@
     {
       "name": "劉繼賢 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "CHL@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5491",
       "degree": "化工博士 – 清華大學 2001",
@@ -2210,6 +2471,7 @@
     {
       "name": "林佳璋 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "higee@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5760",
       "degree": "化工博士 – 國立台灣大學 1999",
@@ -2219,6 +2481,7 @@
     {
       "name": "鄭光煒 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "kwcheng@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 3353",
       "degree": "化工博士 – 國立台灣大學 2002",
@@ -2228,6 +2491,7 @@
     {
       "name": "吳明忠 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "mingchungwu@cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5771",
       "degree": "材料博士 – 國立台灣大學 2008",
@@ -2237,6 +2501,7 @@
     {
       "name": "李坤穆 / 教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "KMLee@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 3891",
       "degree": "高分子博士 – 國立台灣大學 2008",
@@ -2246,6 +2511,7 @@
     {
       "name": "盧信冲 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "hsinchun@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5292",
       "degree": "化工博士 – 美國愛荷華州立大學 1992",
@@ -2255,6 +2521,7 @@
     {
       "name": "王國彬 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "gbwang@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5757",
       "degree": "化工博士 – 國立台灣大學 1992",
@@ -2264,6 +2531,7 @@
     {
       "name": "劉裕國 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": " ykliu0919@yahoo.com.tw",
       "phone": "03-2118800 Ext 5328",
       "degree": "化學生命工學博士 – 日本國立東京大學 1998",
@@ -2273,6 +2541,7 @@
     {
       "name": "孫嘉良 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "clsun@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5379",
       "degree": "材料博士 – 國立交通大學 2002 (材料學士 - 國立清華大學 1998)",
@@ -2282,6 +2551,7 @@
     {
       "name": "蘇鎮芳 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "jennfangsu@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext5290",
       "degree": "環工博士–美國德拉瓦大學 2017",
@@ -2291,6 +2561,7 @@
     {
       "name": "官韋帆 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "weifankuan@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5287",
       "degree": "化工博士 – 美國德拉瓦大學 2015",
@@ -2300,6 +2571,7 @@
     {
       "name": "吳冠鼎 / 副教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "ktwu@cgu.edu.tw",
       "phone": "+886(0) 3-2118800 Ext 5291",
       "degree": "材料博士 – 英國倫敦帝國理工學院 (Imperial College London) 2014",
@@ -2309,6 +2581,7 @@
     {
       "name": "林楚紅 / 助理研究員",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "chuhonglin@cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5288",
       "degree": "物理化學與理論化學博士 – 英國牛津大學 2017",
@@ -2318,6 +2591,7 @@
     {
       "name": "錢義隆 / 客座教授",
       "department": "化工與材料工程學系",
+      "location": "",
       "email": "ilungchien@mail.cgu.edu.tw",
       "phone": "(03)-2118800 Ext 5488",
       "degree": "化工博士–美國加州大學聖塔芭芭拉校區1985 ; 化工學士–國立台灣大學 1997",
@@ -2327,6 +2601,7 @@
     {
       "name": "詹錦宏 教授 / 工商管理系主任、管理學院副院長",
       "department": "工商管理學系",
+      "location": "",
       "email": "chanch@mail.cgu.edu.tw",
       "phone": "03-2118800 # 5416",
       "degree": "日本九州大學 財務經濟博士 (Doctor's degree speciallizing in Business Economics)",
@@ -2336,6 +2611,7 @@
     {
       "name": "王泰昌教授兼所長 / Taychang Wang",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "tcwang@cgu.edu.tw",
       "phone": "(03) 211-8800 分機 2630（研究室） / 分機 2638（主管室）",
       "degree": "美國賓州大學華頓學院財務金融博士、 英國牛津大學Said School of Business Oxford Fintech Programme結業證書",
@@ -2345,6 +2621,7 @@
     {
       "name": "周賓凰教授兼系主任 / Pin-Huang Chou",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "choup@cgu.edu.tw",
       "phone": "(03)211-8800 分機 5810",
       "degree": "美國聖路易華盛頓大學經濟學系博士",
@@ -2354,6 +2631,7 @@
     {
       "name": "李書行教授 / Shu-Hsing Li",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "shli@cgu.edu.tw",
       "phone": "(03)211-8800 分機 5401",
       "degree": "美國紐約大學會計博士",
@@ -2363,6 +2641,7 @@
     {
       "name": "史綱教授 / Gang Shyy",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "gshyy@hotmail.com",
       "phone": "(03)211-8800 分機 3694",
       "degree": "美國紐約市立大學經濟學博士",
@@ -2372,6 +2651,7 @@
     {
       "name": "邱顯比教授 / Shean-Bii Chiu",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "csb@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 3063",
       "degree": "美國華盛頓大學（西雅圖）財務博士",
@@ -2381,6 +2661,7 @@
     {
       "name": "陳仁遶教授 / Ren-Raw Chen",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "rchen@cgu.edu.tw",
       "phone": "(03)211-8800 分機 2600",
       "degree": "伊利諾大學厄巴納-香檳分校 金融學博士",
@@ -2390,6 +2671,7 @@
     {
       "name": "林維昭教授 / Wei-Chao Lin",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "viclin@gap.cgu.edu.tw",
       "phone": "(03)211-8800 分機 3770",
       "degree": "英國桑德蘭大學資訊系統博士",
@@ -2399,6 +2681,7 @@
     {
       "name": "廖耕億教授 / Gen-Yih Liao",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "gyliao@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5852",
       "degree": "國立交通大學資訊管理博士",
@@ -2408,6 +2691,7 @@
     {
       "name": "吳震星副教授 / Zhen-Xing Wu",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "zxwu@cgu.edu.tw",
       "phone": "(03)211-8800 分機 2635",
       "degree": "國立中央大學財務金融學系博士",
@@ -2417,6 +2701,7 @@
     {
       "name": "張恆瑜副教授 / Heng-Yu Chang",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "hychang@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5408",
       "degree": "國立成功大學國際企業研究所博士（主修財務）、美國加州州立大學北嶺分校訪問學者、英國奧斯特大學公共關係研究所碩士、國立台灣大學會計學系學士",
@@ -2426,6 +2711,7 @@
     {
       "name": "陳宜惠副教授 / Yi-Hui Chen",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "cyh@gap.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5866",
       "degree": "中正大學資訊工程博士",
@@ -2435,6 +2721,7 @@
     {
       "name": "江彥逸助理教授 / Yen-I Chiang",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "yenichn@mail.cgu.edu.tw",
       "phone": "(03)2118800 分機 5822",
       "degree": "南非開普敦大學數學博士",
@@ -2444,6 +2731,7 @@
     {
       "name": "陳佰弦助理教授 / Bai-Sian Chen",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "bschen@cgu.edu.tw",
       "phone": "(03)211-8800 分機 3254",
       "degree": "國立政治大學財務管理博士",
@@ -2453,6 +2741,7 @@
     {
       "name": "陳良軒助理教授 / Liang-Shiuan Chen",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "lschen@cgu.edu.tw",
       "phone": "(03)211-8800 分機 3935",
       "degree": "國立臺灣大學會計學博士",
@@ -2462,6 +2751,7 @@
     {
       "name": "陳仁暉教授(資工系主聘教師) / Jen-Hui Chen",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "jhchen@gap.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5990",
       "degree": "淡江大學資訊工程博士",
@@ -2471,6 +2761,7 @@
     {
       "name": "棗厥庸副教授(工商系主聘教師) / Chueh-Yung Tsao",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "cytsao@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 3248",
       "degree": "國立中央大學財務金融博士",
@@ -2480,6 +2771,7 @@
     {
       "name": "徐憶文助理教授(工商系主聘教師) / Yih-Wen Shyu",
       "department": "數位金融科技學系",
+      "location": "",
       "email": "yishyu@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5415",
       "degree": "美國克里夫蘭州立大學企業管理博士",
@@ -2489,6 +2781,7 @@
     {
       "name": "于卓民 教授兼所長 / Chwo-Ming Yu",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "cmjyu@mail.cgu.edu.tw",
       "phone": "(03)-2118800轉5405",
       "degree": "美國密西根大學企業管理博士",
@@ -2498,6 +2791,7 @@
     {
       "name": "盧瑞芬 教授 / Rachel Jui-Fen Lu",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "rachel@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5483、5272",
       "degree": "美國哈佛大學公共衛生學院衛生政策與管理博士",
@@ -2507,6 +2801,7 @@
     {
       "name": "謝凱宇 教授 / Kai-Yu Hsieh",
       "department": "管理研究所博士班",
+      "location": "",
       "email": " hsieh@cgu.edu.tw",
       "phone": "03-2118800 # 2639",
       "degree": "倫敦商學院 (英國) 策略與創業學 博士",
@@ -2516,6 +2811,7 @@
     {
       "name": "許建隆 教授 / Chien-Lung Hsu",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "clhsu@mail.cgu.edu.tw",
       "phone": "(03)2118800 轉 5827",
       "degree": "國立台灣科技大學資訊管理博士",
@@ -2525,6 +2821,7 @@
     {
       "name": "陳亭羽 教授 / Ting-Yu Chen",
       "department": "管理研究所博士班",
+      "location": "",
       "email": " tychen@mail.cgu.edu.tw",
       "phone": "03-2118800 # 5678",
       "degree": "國立交通大學 交通運輸研究所博士",
@@ -2534,6 +2831,7 @@
     {
       "name": "鄧景宜 教授 / Ching-I Teng",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "chingit@mail.cgu.edu.tw",
       "phone": "(03)-2118800 轉5418",
       "degree": "國立臺灣大學",
@@ -2543,6 +2841,7 @@
     {
       "name": "萬書言 教授 / Shu-Yen Wan",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "sywan@gap.cgu.edu.tw",
       "phone": "(03)2118800 轉 5819",
       "degree": "賓州州立大學電腦科學暨工程博士",
@@ -2552,6 +2851,7 @@
     {
       "name": "林詩偉 教授(資管系主聘教師) / Shih-Wei Lin",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "swlin@mail.cgu.edu.tw",
       "phone": "(03)2118800 轉 5811",
       "degree": "國立台灣科技大學工業管理博士",
@@ -2561,6 +2861,7 @@
     {
       "name": "林維昭 教授 (數金系主聘教師) / Wei-Chao Lin",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "viclin@gap.cgu.edu.tw",
       "phone": "(03)211-8800 分機 3770",
       "degree": "英國桑德蘭大學資訊系統博士",
@@ -2570,6 +2871,7 @@
     {
       "name": "蔡采璇 教授 (工設系主聘教師) / Tsai-Hsuan Tsai",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "ttsai.cgu@gmail.com",
       "phone": "(03)-2118800 轉5243",
       "degree": "英國德蒙特福大學設計理論與創新博士",
@@ -2579,6 +2881,7 @@
     {
       "name": "蕭文龍 教授 (資管系主聘教師) / Wen-Lung Shiau",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "mac@cgu.edu.tw",
       "phone": "(03)2118800 轉 5815",
       "degree": "國立中央大學企管博士",
@@ -2588,6 +2891,7 @@
     {
       "name": "許光宏 教授(醫管系主聘教師) / Kuang-Hung Hsu",
       "department": "管理研究所博士班",
+      "location": "",
       "email": "khsu@mail.cgu.edu.tw",
       "phone": "(03)211-8800 分機 5473",
       "degree": "美國加州大學洛杉磯分校 (主修:環境毒物學與流行病學；副修:統計學)",
@@ -2597,6 +2901,7 @@
     {
       "name": "張賢宗 教授兼系主任",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "smallpig@cgu.edu.tw",
       "phone": "03-211-8800 #2540/3579",
       "degree": "國立中正大學資訊工程博士",
@@ -2606,6 +2911,7 @@
     {
       "name": "林桂傑 講座教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "klin@cgu.edu.tw",
       "phone": "03-211-8800 #2500",
       "degree": "美國馬里蘭大學計算機科學博士",
@@ -2615,6 +2921,7 @@
     {
       "name": "張啟仁 特聘教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "cjchang@mail.cgu.edu.tw",
       "phone": "03-211-8800 #3577",
       "degree": "美國愛荷華大學統計學系博士",
@@ -2624,6 +2931,7 @@
     {
       "name": "許永真 特聘教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "yjhsu@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2505",
       "degree": "美國史丹佛大學計算機科學博士",
@@ -2633,6 +2941,7 @@
     {
       "name": "王佑中 教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "wycca1@gmail.com",
       "phone": "+886 (0)3 211 8800 #2549",
       "degree": "美國加州大學爾灣校區電機與計算機科學博士",
@@ -2642,6 +2951,7 @@
     {
       "name": "鄭振牟 教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "cheng@cgu.edu.tw",
       "phone": "03-211-8800 #2545",
       "degree": "美國哈佛大學電腦科學博士",
@@ -2651,6 +2961,7 @@
     {
       "name": "蘇豐文 教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "soo@cgu.edu.tw",
       "phone": "03-211-8800 #2514",
       "degree": "美國羅格斯大學電腦系人工智慧博士",
@@ -2660,6 +2971,7 @@
     {
       "name": "林士睿 教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "raylin@cgu.edu.tw",
       "phone": "03-211-8800 #2542",
       "degree": "史丹佛大學生物與醫學資訊博士",
@@ -2669,6 +2981,7 @@
     {
       "name": "陳冠甫 臨床教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "kfchen@mail.cgu.edu.tw",
       "phone": "03-211-8800 #3809",
       "degree": "美國約翰霍普金斯大學臨床醫學博士",
@@ -2678,6 +2991,7 @@
     {
       "name": "趙一平 副教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "yiping@mail.cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #5469",
       "degree": "台灣大學電機工程博士",
@@ -2687,6 +3001,7 @@
     {
       "name": "張書瑋 副教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "shwchang@mail.cgu.edu.tw",
       "phone": "03-211-8800 #3572",
       "degree": "美國紐約州立大學石溪分校應用數學與統計博士",
@@ -2696,6 +3011,7 @@
     {
       "name": "許艾伶 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "alhsu@mail.cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2516",
       "degree": "國立台灣大學 生醫電子與資訊學研究所博士",
@@ -2705,6 +3021,7 @@
     {
       "name": "Renata Wong(黃淇) 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "renata.wong@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2541",
       "degree": "中國南京大學量子計算博士",
@@ -2714,6 +3031,7 @@
     {
       "name": "馬誠佑 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "cyma@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2544",
       "degree": "國立清華大學資訊工程學系博士",
@@ -2723,6 +3041,7 @@
     {
       "name": "楊智淵 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "cyyang@cgu.edu.tw",
       "phone": "+886 (0)3211 8800 #2548",
       "degree": "加州大學美熹德分校博士",
@@ -2732,6 +3051,7 @@
     {
       "name": "林英嘉 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "yjlin@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2547",
       "degree": "國立成功大學資訊工程學系博士",
@@ -2741,6 +3061,7 @@
     {
       "name": "賴旭昭 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "hsuchaolai@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2519",
       "degree": "國立陽明交通大學資訊工程博士",
@@ -2750,6 +3071,7 @@
     {
       "name": "陳建宏 助理教授",
       "department": "人工智慧學系",
+      "location": "管理大樓十樓 33302桃園市龜山區文化一路259號",
       "email": "  simon.chen@cgu.edu.tw",
       "phone": "03-211-8800 #2517",
       "degree": "國立台灣大學資訊網路與多媒體研究所博士",
@@ -2759,6 +3081,7 @@
     {
       "name": "許永真/特聘教授/院長",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "yjhsu@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2505",
       "degree": "美國史丹佛大學計算機科學博士",
@@ -2768,6 +3091,7 @@
     {
       "name": "張書瑋/副教授兼所長",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "shwchang@mail.cgu.edu.tw",
       "phone": "03-211-8800 #3572",
       "degree": "美國紐約州立大學石溪分校應用數學與統計博士",
@@ -2777,6 +3101,7 @@
     {
       "name": "林桂傑/講座教授/人工智慧研究中心主任",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "klin@cgu.edu.tw",
       "phone": "03-211-8800 #2500",
       "degree": "美國馬里蘭大學計算機科學博士",
@@ -2786,6 +3111,7 @@
     {
       "name": "張啟仁/特聘教授/健康資料研究服務中心主任",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "cjchang@mail.cgu.edu.tw",
       "phone": "03-211-8800 #3577",
       "degree": "美國愛荷華大學統計學系博士",
@@ -2795,6 +3121,7 @@
     {
       "name": "古倫維/教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "lwku@iis.sinica.edu.tw",
       "phone": "033281200",
       "degree": "國立台灣大學資訊工程學研究所博士",
@@ -2804,6 +3131,7 @@
     {
       "name": "王佑中/教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "wycca1@gmail.com",
       "phone": "+886 (0)3 211 8800 #2549",
       "degree": "美國加州大學爾灣校區電機與計算機科學博士",
@@ -2813,6 +3141,7 @@
     {
       "name": "蔡佩倩/副教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "pctsai@mail.cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #3857",
       "degree": "英國倫敦國王學院表觀遺傳學博士",
@@ -2822,6 +3151,7 @@
     {
       "name": "陳冠甫/臨床教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "kfchen@mail.cgu.edu.tw",
       "phone": "03-211-8800 #3809",
       "degree": "美國約翰霍普金斯大學臨床醫學博士",
@@ -2831,6 +3161,7 @@
     {
       "name": "馬誠佑/助理教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "cyma@cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2544",
       "degree": "國立清華大學資訊工程學系博士",
@@ -2840,6 +3171,7 @@
     {
       "name": "許艾伶/助理教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "alhsu@mail.cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #2516",
       "degree": "國立台灣大學 生醫電子與資訊學研究所博士",
@@ -2849,6 +3181,7 @@
     {
       "name": "葛明軒/助理教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "koalbert@mail.cgu.edu.tw",
       "phone": "+886 (0)3 211 8800 #3494",
       "degree": "德國萊比錫馬克斯普朗克進化人類學研究所博士",
@@ -2858,6 +3191,7 @@
     {
       "name": "楊智淵/助理教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "cyyang@cgu.edu.tw",
       "phone": "+886 (0)3211 8800 #2548",
       "degree": "加州大學美熹德分校博士",
@@ -2867,6 +3201,7 @@
     {
       "name": "魏怡嘉/臨床助理教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": "8905007@cgmh.org.tw",
       "phone": "033281200",
       "degree": "國立陽明交通大學神經科學研究所博士",
@@ -2876,6 +3211,7 @@
     {
       "name": "鄭啟桐/臨床助理教授",
       "department": "健康數據科學研究所",
+      "location": "",
       "email": " b001089030@cgmh.org.tw",
       "phone": "+886(0)3 281200 #2158",
       "degree": "國立陽明大學生物醫學資訊研究所博士",
