@@ -79,7 +79,7 @@ def main():
     faculty=[]; failures=[]
     for i,d in enumerate(departments, 1):
         try:
-            home=get(d["url"]); location_m=re.search(r'學系位置：\s*([^<]+)', home, re.S); d["location"]=clean(location_m.group(1)) if location_m else ""
+            home=get(d["url"]); location_m=re.search(r'(?:學系|系所)位置：\s*([^<]+)', home, re.S); d["location"]=clean(location_m.group(1)) if location_m else ""
             f_url=find_faculty_url(d["url"], home)
             d["facultyUrl"]=f_url or ""
             if f_url:
