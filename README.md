@@ -21,4 +21,6 @@ node server.mjs
 
 此專案已附上 GitHub Actions 工作流程。將專案推到 GitHub 的 `main` 分支後，GitHub Actions 會自動把 `app/` 發佈成網站。
 
+GitHub Pages 網址：`https://b1429011.github.io/app-for-cgu/`
+
 目前使用示範資料與瀏覽器 localStorage；正式版可再接校務系統、登入、資料庫、Email 與 Google Calendar。
