@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>學習導航｜師生協作平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">學</div><div><strong>學習導航</strong><span>師生協作平台</span></div></div>
+      <div class="role-switcher"><button class="role-btn active" data-role="student">學生端</button><button class="role-btn" data-role="professor">教授端</button></div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="home"><span>⌂</span>總覽</button>
+        <button class="nav-item" data-view="appointments"><span>◷</span>我的預約 <b class="nav-badge" id="appointmentBadge">1</b></button>
+        <button class="nav-item" data-view="professors"><span>◎</span>教授探索</button>
+        <button class="nav-item" data-view="courses"><span>▤</span>修課地圖</button>
+      </nav>
+      <div class="sidebar-note"><span class="note-icon">✦</span><div><strong>今天也向前一步</strong><p>把問題帶到對的老師面前。</p></div></div>
+      <div class="sidebar-footer">Codex 跨域創造黑客松<br><span>資工 × 電子｜Demo 版</span></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><div class="brand-mark">學</div><strong>學習導航</strong></div>
+        <div class="breadcrumb"><span id="breadcrumbRoot">總覽</span><span class="slash">/</span><strong id="breadcrumbCurrent">我的學習空間</strong></div>
+        <div class="top-actions"><button class="icon-btn" id="notificationBtn" aria-label="通知">♧<i></i></button><div class="avatar">林</div><div class="user-label"><strong id="topUserName">林同學</strong><span id="topUserRole">資工系｜大三</span></div></div>
+      </header>
+      <section id="app"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast"><span>✓</span><p></p></div>
+  <div class="modal-backdrop" id="modalBackdrop"></div><div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
