@@ -249,6 +249,48 @@
       "url": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
       "location": "",
       "facultyUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx"
+    },
+    {
+      "name": "解剖學科",
+      "url": "https://www.cgu.edu.tw/anatomy/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement?nodeId=3054"
+    },
+    {
+      "name": "病理學科",
+      "url": "https://www.cgu.edu.tw/pathology/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/pathology/FullTimeProfessorManagement?nodeId=17511"
+    },
+    {
+      "name": "生理暨藥理學科",
+      "url": "https://www.cgu.edu.tw/dop/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement?nodeId=3004"
+    },
+    {
+      "name": "微生物及免疫學科",
+      "url": "https://www.cgu.edu.tw/dmi/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement?nodeId=18063"
+    },
+    {
+      "name": "公衛暨寄生蟲學科",
+      "url": "https://www.cgu.edu.tw/parasitology/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/parasitology/Contents?nodeId=8734"
+    },
+    {
+      "name": "人文及社會醫學科",
+      "url": "https://www.cgu.edu.tw/hsm/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/hsm/Contents?nodeId=14569"
+    },
+    {
+      "name": "生化暨分子生物學科",
+      "url": "https://www.cgu.edu.tw/b-cb/",
+      "location": "",
+      "facultyUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement?nodeId=3329"
     }
   ],
   "faculty": [
@@ -3233,6 +3275,626 @@
       "profileUrl": "https://www.cgu.edu.tw/hds/FullTimeProfessorManagement/Detail/20b30254-2a3f-4458-8b44-b24d4b6fc1d9?nodeId=17174"
     },
     {
+      "name": "莊宏亨 (Horng-Heng Juang) 特聘教授/主任",
+      "department": "解剖學科",
+      "location": "",
+      "email": "hhj143@mail.cgu.edu.tw",
+      "phone": "(03)2118800 ext 5071",
+      "degree": "馬里蘭大學巴爾的摩分校 (University of Maryland at Baltimore) 生理學博士",
+      "specialty": "細胞代謝與分子內分泌學實驗室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/68bb15ec-991a-4cb1-83f3-c5f1d219eaae?nodeId=3054"
+    },
+    {
+      "name": "徐淑媛 (Shu-Yuan Hsu) 副教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "hsusy@mail.cgu.edu.tw",
+      "phone": "(03)2118800 ext 5088",
+      "degree": "長庚大學生物醫學研究所博士",
+      "specialty": "細胞生物學實驗室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/9b48d6d4-5c66-43d8-9215-1972acea055c?nodeId=3054"
+    },
+    {
+      "name": "宋欣錦 (Hsin-Ching Sung) 副教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "hcs@mail.cgu.edu.tw",
+      "phone": "(03)2118800 ext 5977",
+      "degree": "台灣大學解剖學暨細胞生物學研究所博士",
+      "specialty": "分子訊息傳遞實驗室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/b143bd6c-81e9-4477-963d-50c71c27c8b8?nodeId=3054"
+    },
+    {
+      "name": "江皓郁 (Hou-Yu Chiang) 副教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "hchiang@mail.cgu.edu.tw",
+      "phone": "(03)2118800 ext 5447",
+      "degree": "台灣大學解剖學暨細胞生物學研究所博士",
+      "specialty": "細胞間質實驗室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/e7b2ee85-ea78-489a-a42c-a36287401e26?nodeId=3054"
+    },
+    {
+      "name": "李亭輝 (Ting-Hein Lee) 副教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "tingheinlee@mail.cgu.edu.tw",
+      "phone": "(03)2118800 ext 3880",
+      "degree": "羅徹斯特大學博士",
+      "specialty": "心血管及肺生物實驗室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/8fd149aa-ac0b-4ad2-a252-b865c8782863?nodeId=3054"
+    },
+    {
+      "name": "陳學亭 (Syue-Ting Chen) 助理教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "stchen2021@cgu.edu.tw",
+      "phone": "(03)2118800 ext 3062",
+      "degree": "台灣大學解剖學暨細胞生物學研究所博士",
+      "specialty": "腫瘤細胞生物學實驗室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/35f4235b-2a64-4701-bf06-7c4a6dfe9ae7?nodeId=3054"
+    },
+    {
+      "name": "陳家嬅 (Chia-Hua Chen) 助理教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "chchen@cgu.edu.tw",
+      "phone": "(03)2118800 ext 5076",
+      "degree": "台灣大學解剖學暨細胞生物學研究所博士",
+      "specialty": "腦瘤與多體學研究室",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/8a520ca3-16d1-427f-996f-e72b8ac02a47?nodeId=3054"
+    },
+    {
+      "name": "劉心雲 (Shin-Yun Liu) 助理教授",
+      "department": "解剖學科",
+      "location": "",
+      "email": "ShinYunL@cgu.edu.tw",
+      "phone": "(03)2118800 ext 2649",
+      "degree": "台灣大學解剖學暨細胞生物學研究所博士",
+      "specialty": "大體解剖學.組織學",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/6b460a5c-1b91-431b-be11-c324b093982a?nodeId=3054"
+    },
+    {
+      "name": "葉訓豪 (Hsun-Hao Yeh) 助教",
+      "department": "解剖學科",
+      "location": "",
+      "email": "hhyeh@mail.cgu.edu.tw",
+      "phone": "03-2118800 ext 5072",
+      "degree": "成功大學細胞生物與解剖學研究所碩士",
+      "specialty": "大體解剖學.組織學",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/732016b2-212c-4c11-87dd-0f3fc5ab0fa3?nodeId=3054"
+    },
+    {
+      "name": "林怡廷 (Yi-Ting Lin) 助教",
+      "department": "解剖學科",
+      "location": "",
+      "email": "lyt1004@cgu.edu.tw",
+      "phone": "03-2118800 ext 5061",
+      "degree": "台灣大學解剖學暨細胞生物學研究所碩士",
+      "specialty": "大體解剖學.組織學",
+      "profileUrl": "https://www.cgu.edu.tw/anatomy/FullTimeProfessorManagement/Detail/0133cdc2-637d-46ee-817e-5e6d86d1dd16?nodeId=3054"
+    },
+    {
+      "name": "黃彥霖",
+      "department": "病理學科",
+      "location": "",
+      "email": "dochempath@cgmh.org.tw",
+      "phone": "03-328-1200",
+      "degree": "法國巴黎東大學醫學博士",
+      "specialty": "血液病理、分子病理、皮膚病理",
+      "profileUrl": "https://www.cgu.edu.tw/pathology/FullTimeProfessorManagement/Detail/d96f6625-261c-49de-8cff-42e95b8f3c01?nodeId=17511"
+    },
+    {
+      "name": "陳澤卿",
+      "department": "病理學科",
+      "location": "",
+      "email": "ctc323@cgmh.org.tw",
+      "phone": "03-328-1200",
+      "degree": "英國牛津大學Sir william Dunn School of Pathology博士",
+      "specialty": "胃腸肝膽病理、分子病理、細胞免疫學",
+      "profileUrl": "https://www.cgu.edu.tw/pathology/FullTimeProfessorManagement/Detail/3fe0ecfd-9d30-4ead-b5ac-339471a4ff45?nodeId=17511"
+    },
+    {
+      "name": "黃昭誠",
+      "department": "病理學科",
+      "location": "",
+      "email": "D000015101@cgu.edu.tw",
+      "phone": "07-731-7123",
+      "degree": "長庚大學臨床醫學研究所博士",
+      "specialty": "外科病理、婦科病理、分子病理、頭頸部腫瘤病理",
+      "profileUrl": "https://www.cgu.edu.tw/pathology/FullTimeProfessorManagement/Detail/061f9875-254a-43e3-b8a2-6edeb8be5333?nodeId=17511"
+    },
+    {
+      "name": "黃士強",
+      "department": "病理學科",
+      "location": "",
+      "email": "D000015101@cgu.edu.tw",
+      "phone": "03-328-1200",
+      "degree": "長庚大學臨床醫學研究所博士",
+      "specialty": "軟組織及骨骼病理、胃腸肝膽病理、分子病理",
+      "profileUrl": "https://www.cgu.edu.tw/pathology/FullTimeProfessorManagement/Detail/0bb8a8a6-c775-44e8-a5a3-983b17ecab3e?nodeId=17511"
+    },
+    {
+      "name": "黃成正",
+      "department": "病理學科",
+      "location": "",
+      "email": "D000015101@cgu.edu.tw",
+      "phone": "02-2431-3131",
+      "degree": "長庚大學醫學系",
+      "specialty": "肺癌病理、食道癌病理、血液學病理、微生物學",
+      "profileUrl": "https://www.cgu.edu.tw/pathology/FullTimeProfessorManagement/Detail/6cb8a4a6-cc37-48b0-a8f4-90d91b112a6d?nodeId=17511"
+    },
+    {
+      "name": "吳宗圃 / Chung-Pu Wu",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "wuchung@mail.cgu.edu.tw",
+      "phone": "3754 或 3751",
+      "degree": "英國劍橋大學藥理學 博士",
+      "specialty": "癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/0832842a-35c3-4398-93df-48c235eee65d?nodeId=3004"
+    },
+    {
+      "name": "王鴻利 / Hung-Li Wang",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "hlwns@mail.cgu.edu.tw",
+      "phone": "5060",
+      "degree": "美國賓州大學藥理學 博士",
+      "specialty": "遺傳性神經系統疾病的分子病理機轉",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/92c36112-04cd-4cfa-85bf-ebf2209727d8?nodeId=3004"
+    },
+    {
+      "name": "賴國筑 / Kuo-Chu Lai",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "kuochu@mail.cgu.edu.tw",
+      "phone": "03-2118800 #3035",
+      "degree": "國立陽明大學藥理學 博士",
+      "specialty": "細胞毒理學研究",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/8e05efba-9aa8-47f6-8f18-ad5ba8e9a9a6?nodeId=3004"
+    },
+    {
+      "name": "盧主欽 / Juu-Chin Lu",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "cyhsu@mail.cgu.edu.tw",
+      "phone": "03-2118800 #3687",
+      "degree": "美國威斯康辛大學麥迪遜分校內分泌與生殖生理學 博士",
+      "specialty": "內分泌與代謝生理",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/3a0deece-3ca7-4e7c-aaac-fb4b3ca27044?nodeId=3004"
+    },
+    {
+      "name": "梁淑鈴 / Shu-Ling Liang",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "cyhsu@mail.cgu.edu.tw",
+      "phone": "03-2118800 #3688",
+      "degree": "國立陽明大學生理學 博士",
+      "specialty": "星型膠細胞及神經突觸訊息生理研究",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/6d9a7d39-03da-446c-ac0b-30d4d893dd0d?nodeId=3004"
+    },
+    {
+      "name": "葉儀君 / Yi-Chun Yeh",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "yichunyeh0201@gmail.com",
+      "phone": "03-2118800 #5253",
+      "degree": "國立成功大學基礎醫學研究所 博士",
+      "specialty": "腎臟生理暨病理研究",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/7d6c0c5f-3f18-455f-b0e9-ec1b209cb154?nodeId=3004"
+    },
+    {
+      "name": "陳景宗 / Jin-Chung Chen (Visiting Professor)",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "Jinchen@mail.cgu.edu.tw",
+      "phone": "5282",
+      "degree": "美國伊利諾大學香檳校區生理及生物物理學 博士",
+      "specialty": "藥物成癮、帕金森氏症、焦慮與憂鬱、神經胜肽",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/1d090713-cd47-41dc-b608-0c0be07ca8ed?nodeId=3004"
+    },
+    {
+      "name": "馬蘊華 / Yunn-Hwa Ma (Adjunct Professor)",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "cyhsu@mail.cgu.edu.tw",
+      "phone": "03-2118800 #5266",
+      "degree": "美國明尼蘇達大學藥理學 博士",
+      "specialty": "藥理研究",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/21fadde0-de19-4929-9ba1-a1304946411f?nodeId=3004"
+    },
+    {
+      "name": "吳佩容 / Pei-Rung Wu",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "prwu@mail.cgu.edu.tw",
+      "phone": "5096",
+      "degree": "台灣大學分子醫學研究所 博士",
+      "specialty": "分子神經生物學、小腦發育與退化、細胞訊息傳遞",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/4be93681-7c40-4fd2-bc6c-31b12ece4695?nodeId=3004"
+    },
+    {
+      "name": "彭康詠 / Kang-Yung Peng",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "kangyung@mail.cgu.edu.tw",
+      "phone": "2637",
+      "degree": "陽明交通大學 生物藥學研究所 博士",
+      "specialty": "原發性高醛固酮症研究、急性及慢性腎損傷研究",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/d888e5b4-5aa7-4f97-8f39-81c1139d645f?nodeId=3004"
+    },
+    {
+      "name": "張詠傑 / Yung-Chieh Chang",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "ycchang1990@cgu.edu.tw",
+      "phone": "5282",
+      "degree": "成功大學博士",
+      "specialty": "癌症生物學、腫瘤免疫學、奈米醫學、藥物開發與藥效藥理評估",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/2a97887c-ad65-467e-b875-1d0440c889bd?nodeId=3004"
+    },
+    {
+      "name": "黃榮棋 / Rong-Chi Huang (已退休)",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "rongchi@mail.cgu.edu.tw",
+      "phone": "03-2118800 #5261",
+      "degree": "美國伊利諾大學香檳校區生理及生物物理學 博士",
+      "specialty": "Circadian rhythm, Ion channels/transporters, Molecular neuroscience",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/ab7eae5e-687c-4002-a5cb-55c4afc2facf?nodeId=3004"
+    },
+    {
+      "name": "周美智 / Mei-Jie Jou (已退休)",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "mjjou@mail.cgu.edu.tw",
+      "phone": "2118800#5974",
+      "degree": "美國羅徹斯特大學 博士",
+      "specialty": "粒線體研究",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/e55e55f4-66b1-4598-b237-23fea932f85c?nodeId=3004"
+    },
+    {
+      "name": "許嘉瑜 / Chia-Yu Hsu",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "cyhsu@mail.cgu.edu.tw",
+      "phone": "03-2118800 #5090",
+      "degree": "美國喬治亞州州立大學生物學 碩士",
+      "specialty": "生理學實驗",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/6e90cfb7-ce8a-4197-b81b-7d3a605c0365?nodeId=3004"
+    },
+    {
+      "name": "林佩蓉",
+      "department": "生理暨藥理學科",
+      "location": "",
+      "email": "pjl@mail.cgu.edu.tw",
+      "phone": "03-2118800 #5121",
+      "degree": "國防醫學大學 碩士",
+      "specialty": "藥理學實驗",
+      "profileUrl": "https://www.cgu.edu.tw/dop/FullTimeProfessorManagement/Detail/dc5313cc-1200-42ea-a3bf-1a3f43ca9b5b?nodeId=3004"
+    },
+    {
+      "name": "林錫賢 / Hsi-Hsien Lin (主任)",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "hhlin@mail.cgu.edu.tw",
+      "phone": "3321",
+      "degree": "美國田納西大學博士",
+      "specialty": "免疫學 ; 癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/25d0f01b-e604-437a-a4a6-abd890a3d65b?nodeId=18063"
+    },
+    {
+      "name": "郭敏玲 / Ming-Ling Kuo",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "mingling@mail.cgu.edu.tw",
+      "phone": "3319/3320",
+      "degree": "美國羅格斯大學博士",
+      "specialty": "過敏免疫、氣喘藥物開發、免疫調節",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/4811536f-c5d0-4d2d-a81b-796dbb8408fe?nodeId=18063"
+    },
+    {
+      "name": "楊佳郁 / Chia-Yu Yang",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "chiayu-yang@mail.cgu.edu.tw",
+      "phone": "3527/5370",
+      "degree": "國防醫學院博士",
+      "specialty": "免疫學 ; 癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/a2276224-0d9e-40cb-9a4c-30fc5afcf69d?nodeId=18063"
+    },
+    {
+      "name": "陳怡原 / Yi-Ywan M. Chen",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "mchen@mail.cgu.edu.tw",
+      "phone": "3352",
+      "degree": "美國德克薩斯大學博士",
+      "specialty": "細菌學",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/494600af-6c09-46d5-8c77-1b60e1ca4cd9?nodeId=18063"
+    },
+    {
+      "name": "賴志河 / Chih-Ho Lai",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "chlai@mail.cgu.edu.tw",
+      "phone": "5116",
+      "degree": "清華大學博士",
+      "specialty": "細菌學;感染免疫;新興病毒",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/1ca4aa78-14b1-4f88-bbdf-ab5a73864389?nodeId=18063"
+    },
+    {
+      "name": "江倪全 / Chuan Chiang-Ni",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "entchuan@gap.cgu.edu.tw",
+      "phone": "3712",
+      "degree": "成功大學博士",
+      "specialty": "細菌學；鏈球菌；細菌致病機制；新興病毒及病原菌",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/6f4fa01a-39a3-4364-9c34-986c0c77afc9?nodeId=18063"
+    },
+    {
+      "name": "趙玫 / Mei Chao",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "pa0728@mail.cgu.edu.tw",
+      "phone": "5134",
+      "degree": "美國賓州大學博士",
+      "specialty": "新興病毒及病原菌;分子病毒學;肝炎病毒",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/c08277b4-ff0e-429f-ae9f-f07eeb0e216e?nodeId=18063"
+    },
+    {
+      "name": "黎欣白 / Hsin-Pai Li",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "paili@mail.cgu.edu.tw",
+      "phone": "3593",
+      "degree": "美國南加州大學博士",
+      "specialty": "病毒學 ; 腫瘤病毒 ; 癌症研究",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/04dd5037-0a67-4293-9507-ce4bd76f320b?nodeId=18063"
+    },
+    {
+      "name": "邱亞芳 / Ya-Fang Chiu",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "yfchiu@mail.cgu.edu.tw",
+      "phone": "3876",
+      "degree": "長庚大學博士",
+      "specialty": "新興病毒及病原菌;癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/d7c521b3-a357-4ae7-82c4-3da081905457?nodeId=18063"
+    },
+    {
+      "name": "劉世東 / Shih-Tung Liu (兼任教師)",
+      "department": "微生物及免疫學科",
+      "location": "",
+      "email": "stliu@icloud.com",
+      "phone": "--",
+      "degree": "University of California, Berkeley",
+      "specialty": "細菌學",
+      "profileUrl": "https://www.cgu.edu.tw/dmi/FullTimeProfessorManagement/Detail/5e194eee-5ea9-48f2-8e8e-1f226d541471?nodeId=18063"
+    },
+    {
+      "name": "史麗珠",
+      "department": "公衛暨寄生蟲學科",
+      "location": "",
+      "email": "laichusee.taiwan.hk@gmail.com",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/gibms/FullTimeProfessorManagement/Detail/284cfc38-4620-419a-b7c6-7864934d46b8?nodeId=4333"
+    },
+    {
+      "name": "陳明岐",
+      "department": "公衛暨寄生蟲學科",
+      "location": "",
+      "email": "mcc@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/gibms/FullTimeProfessorManagement/Detail/4f598360-d98b-4a25-9ec0-b17d7269f12f?nodeId=4333"
+    },
+    {
+      "name": "蔡培癸",
+      "department": "公衛暨寄生蟲學科",
+      "location": "",
+      "email": "tsay@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/gibms/FullTimeProfessorManagement/Detail/7bcaca13-3da1-4953-b249-79e3fea9a84e?nodeId=4333"
+    },
+    {
+      "name": "王蓮成",
+      "department": "公衛暨寄生蟲學科",
+      "location": "",
+      "email": "wanglc@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/gibms/FullTimeProfessorManagement/Detail/c776c262-a6da-4a4b-b88d-34eeffcc5442?nodeId=4336"
+    },
+    {
+      "name": "陳光耀",
+      "department": "公衛暨寄生蟲學科",
+      "location": "",
+      "email": "d000018229@cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/gibms/FullTimeProfessorManagement/Detail/f0be1702-61ac-49bd-86b1-e7eb6ef85acc?nodeId=4336"
+    },
+    {
+      "name": "鄭昌錡",
+      "department": "人文及社會醫學科",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 3700",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/hsm/Subject/Detail/53706?nodeId=14560"
+    },
+    {
+      "name": "張淑卿",
+      "department": "人文及社會醫學科",
+      "location": "",
+      "email": "",
+      "phone": "：",
+      "degree": "：",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/hsm/Subject/Detail/53416?nodeId=14563"
+    },
+    {
+      "name": "李舒中",
+      "department": "人文及社會醫學科",
+      "location": "",
+      "email": "d879802@mail.cgu.edu.tw",
+      "phone": "(03)211\" />",
+      "degree": "國立清華大學人類學博士",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/hsm/Subject/Detail/53419?nodeId=14564"
+    },
+    {
+      "name": "葉筱凡",
+      "department": "人文及社會醫學科",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 3700",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/hsm/Subject/Detail/53713?nodeId=14673&isCms=true"
+    },
+    {
+      "name": "張嘉讌",
+      "department": "人文及社會醫學科",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 3700",
+      "degree": "國立台灣藝術大學 應用媒體藝術研究所 創作藝術碩士",
+      "specialty": "領域",
+      "profileUrl": "https://www.cgu.edu.tw/hsm/Subject/Detail/53423?nodeId=14568"
+    },
+    {
+      "name": "游佳融 / Chia-Jung Yu (主任)",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "yucj1124@mail.cgu.edu.tw",
+      "phone": "03-2118800#3424 (實驗室位置：第一醫學大樓 9 樓 B 區 分子醫學共同研究室)",
+      "degree": "臺灣大學博士",
+      "specialty": "功能性蛋白質體學，癌症生物學，生物標誌，囊泡運輸，多體學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/c81cdf27-0bd4-4faf-b59f-005f25a502ef?nodeId=3329"
+    },
+    {
+      "name": "洪錦堂 / Jim-Tong Horng",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "jimtong@mail.cgu.edu.tw",
+      "phone": "03-2118800#5156 ( 實驗室位置： 第一醫學大樓 8 樓 B 區 0866室 )",
+      "degree": "英國劍橋大學博士",
+      "specialty": "新興病毒及病原菌;藥物開發及藥效藥理評估",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/8b3c457c-c64a-4365-9844-738f93f3def9?nodeId=3329"
+    },
+    {
+      "name": "林光輝 / Kwang-Huei Lin",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "khlin@mail.cgu.edu.tw",
+      "phone": "03-2118800#5975 ( 實驗室位置： 第一醫學大樓 8 樓 B 區 0861室 )",
+      "degree": "美國阿拉巴馬大學博士",
+      "specialty": "癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/04c7d549-736a-472a-a745-4cea57d43948?nodeId=3329"
+    },
+    {
+      "name": "余兆松 / Jau-Song Yu",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "yusong@mail.cgu.edu.tw",
+      "phone": "03-2118800#5171 ( 實驗室位置：第一醫學大樓 6 樓 B 區 腫瘤共同實驗室 )",
+      "degree": "清華大學博士",
+      "specialty": "生物標誌;(多)體學或系統生物學;癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/faac4f0c-6681-4b16-996a-99122abf9484?nodeId=3329"
+    },
+    {
+      "name": "白麗美 / Li-Mei Pai",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "pai@mail.cgu.edu.tw",
+      "phone": "03-2118800#5520 ( 實驗室位置：第一醫學大樓 8 樓 A 區 生物醫學共同研究室 )",
+      "degree": "美國北卡羅來納州立大學博士",
+      "specialty": "遺傳學、發育生物學、癌症生物學、生物化學、代謝（或代謝學）",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/3fc5fef8-41c6-4fab-99f2-fd32345c195b?nodeId=3329"
+    },
+    {
+      "name": "鄭邑荃 / Yi-Chuan Cheng",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "yccheng@mail.cgu.edu.tw",
+      "phone": "03-2118800#3396 ( 實驗室位置：第一醫學大樓 9 樓 B 區 分子醫學共同研究室 )",
+      "degree": "英國諾丁漢大學博士",
+      "specialty": "癌症生物學;發育生物學;神經科學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/4880d581-3a69-4457-aa78-c1b02e0caa0f?nodeId=3329"
+    },
+    {
+      "name": "吳嘉霖 / Chia-Lin Wu",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "clwu@mail.cgu.edu.tw",
+      "phone": "03-2118800#5159 ( 實驗室位置： 第一醫學大樓 8 樓 B 區 0859室 )",
+      "degree": "清華大學博士",
+      "specialty": "神經科學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/b83619d1-8d9d-4cd9-a198-ab05e4a97b1b?nodeId=3329"
+    },
+    {
+      "name": "劉軒 / Hsuan Liu",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "liu-hsuan@mail.cgu.edu.tw",
+      "phone": "03-2118800#3526 ( 實驗室位置：第一醫學大樓 6 樓 B 區 腫瘤共同實驗室 )",
+      "degree": "台灣大學博士",
+      "specialty": "癌症生物學;生物標誌;(多)體學或系統生物學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/e70b445f-7353-4140-a197-59de67f2a103?nodeId=3329"
+    },
+    {
+      "name": "簡昆鎰 / Kun-Yi Chien",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "chiping@mail.cgu.edu.tw",
+      "phone": "03-2118800#5971 ( 實驗室位置： 第一醫學大樓 8 樓 B 區 0858室 )",
+      "degree": "清華大學博士",
+      "specialty": "生化學、蛋白質體學、蛋白化學、光譜學研究",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/6b2de9fc-f3d0-4fde-bbfe-66fa044d03bd?nodeId=3329"
+    },
+    {
+      "name": "柯博元 / Po-Yuan Ke",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "pyke0324@mail.cgu.edu.tw",
+      "phone": "03-2118800#5115 ( 實驗室位置: 第一醫學大樓 6 樓 B 區 腫瘤共同研究室 )",
+      "degree": "台灣大學博士",
+      "specialty": "細胞生物學、細胞自噬暨胞器品質管控、肝臟疾病、分子病毒學、高階細胞影像學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/9956c0e8-cee4-4bfb-b687-68003b7f31d0?nodeId=3329"
+    },
+    {
+      "name": "王齡玉 / Ling-Yu Wang",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "lywang@mail.cgu.edu.tw",
+      "phone": "03-2118800#3989 ( 實驗室位置： 第一醫學大樓 8 樓 B 區 0865室 )",
+      "degree": "美國加州大學戴維斯分校博士",
+      "specialty": "癌症生物學",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/16b98d52-1577-446c-849a-4cc2b444cc7f?nodeId=3329"
+    },
+    {
+      "name": "陳星甫 / Shin-Fu Chen",
+      "department": "生化暨分子生物學科",
+      "location": "",
+      "email": "sfchen@cgu.edu.tw",
+      "phone": "03-2118800#3199 ( 實驗室位置：第一醫學大樓 8 樓 B 區 0857室 )",
+      "degree": "臺灣大學博士",
+      "specialty": "生物化學、分子生物學、結構生物學、巨分子複合體",
+      "profileUrl": "https://www.cgu.edu.tw/b-cb/FullTimeProfessorManagement/Detail/a7e7aef6-7a69-4a65-9879-faa11bd46bd7?nodeId=3329"
+    },
+    {
       "name": "謝明儒 副教授兼系主任",
       "department": "醫學系",
       "location": "",
@@ -4337,7 +4999,7 @@
       "department": "智慧醫療創新碩士學位學程",
       "location": "",
       "email": "chenli.kuo@mail.cgu.edu.tw",
-      "phone": "5601",
+      "phone": "5601 \" />",
       "degree": "",
       "specialty": "郭珍利 助理教授",
       "profileUrl": "https://www.cgu.edu.tw/ism/Subject/Detail/7785?nodeId=4039"
@@ -4407,7 +5069,7 @@
       "department": "智慧醫療創新碩士學位學程",
       "location": "",
       "email": "chingit@mail.cgu.edu.tw",
-      "phone": "(03)-2118800 轉5418",
+      "phone": "(03)-2118800 \" />",
       "degree": "",
       "specialty": "鄧景宜教授(與管研所博士班合開)",
       "profileUrl": "https://www.cgu.edu.tw/cmphd/Subject/Detail/18126?nodeId=7165"
