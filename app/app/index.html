@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>學習導航｜師生協作平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="auth-screen" id="authScreen">
+    <div class="auth-glow auth-glow-one"></div><div class="auth-glow auth-glow-two"></div>
+    <div class="auth-card">
+      <div class="auth-brand"><div class="brand-mark">學</div><div><strong>學習導航</strong><span>長庚師生協作平台</span></div></div>
+      <div id="authEmailStage">
+        <p class="auth-eyebrow">CGU SECURE SIGN IN</p>
+        <h1>使用長庚帳號登入</h1>
+        <p class="auth-intro">登入後才能查看預約、專輔與個人學習內容。</p>
+        <div class="auth-role-picker"><button class="auth-role active" data-auth-role="student">我是學生</button><button class="auth-role" data-auth-role="faculty">我是師長</button></div>
+        <label class="auth-label" for="schoolEmail">長庚學校信箱</label>
+        <input class="auth-input" id="schoolEmail" type="email" placeholder="例如：學號@mail.cgu.edu.tw" autocomplete="email">
+        <p class="auth-hint">請使用長庚核發的學校信箱，不會要求輸入學校密碼。</p>
+        <button class="primary-btn auth-submit" id="sendCodeBtn">寄送 Outlook 驗證碼</button>
+        <button class="microsoft-btn" id="microsoftBtn"><span class="ms-grid"><i></i><i></i><i></i><i></i></span>使用 Microsoft／長庚 SSO 登入</button>
+        <p class="auth-demo-note">原型預覽模式：按下寄送後會在畫面顯示測試驗證碼。正式版需接長庚 Microsoft Entra ID 或校務 SSO。</p>
+      </div>
+      <div id="authCodeStage" hidden>
+        <p class="auth-eyebrow">VERIFY YOUR SCHOOL EMAIL</p>
+        <h1>輸入驗證碼</h1>
+        <p class="auth-intro">驗證碼已寄到 <strong id="authEmailTarget"></strong> 的 Outlook 信箱。</p><p class="auth-identity" id="authIdentity" hidden></p>
+        <div class="otp-box"><label class="auth-label" for="otpInput">6 位數驗證碼</label><input class="auth-input otp-input" id="otpInput" inputmode="numeric" maxlength="6" placeholder="000000"><div class="demo-code" id="demoCode"></div></div>
+        <button class="primary-btn auth-submit" id="verifyCodeBtn">驗證並登入</button>
+        <button class="text-btn" id="backToEmailBtn">← 返回修改信箱</button>
+        <p class="auth-hint">正式環境會由學校信箱服務寄出一次性驗證碼，並由後端檢查學生／師長身分。</p>
+      </div>
+      <div class="auth-security"><span>⌁</span> 學校身分驗證｜不儲存學校密碼</div>
+    </div>
+  </section>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">學</div><div><strong>學習導航</strong><span>師生協作平台</span></div></div>
+      <div class="role-switcher"><button class="role-btn active" data-role="student">學生端</button><button class="role-btn" data-role="professor">教授端</button></div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="home"><span>⌂</span>總覽</button>
+        <button class="nav-item" data-view="appointments"><span>◷</span>我的預約 <b class="nav-badge" id="appointmentBadge">1</b></button>
+        <button class="nav-item" data-view="professors"><span>◎</span>教授探索</button>
+        <button class="nav-item" data-view="courses"><span>▤</span>修課地圖</button>
+        <button class="nav-item" data-view="university"><span>⌘</span>全校公開資料</button>
+      </nav>
+      <div class="sidebar-note"><span class="note-icon">✦</span><div><strong>今天也向前一步</strong><p>把問題帶到對的老師面前。</p></div></div>
+      <div class="sidebar-footer">Codex 跨域創造黑客松<br><span>資工 × 電子｜Demo 版</span></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><div class="brand-mark">學</div><strong>學習導航</strong></div>
+        <div class="breadcrumb"><span id="breadcrumbRoot">總覽</span><span class="slash">/</span><strong id="breadcrumbCurrent">我的學習空間</strong></div>
+        <div class="top-actions"><button class="icon-btn" id="notificationBtn" aria-label="通知">♧<i></i></button><div class="avatar">林</div><div class="user-label"><strong id="topUserName">林同學</strong><span id="topUserRole">資工系｜大三</span></div><button class="logout-btn" id="logoutBtn" type="button">登出</button></div>
+      </header>
+      <section id="app"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast"><span>✓</span><p></p></div>
+  <div class="modal-backdrop" id="modalBackdrop"></div><div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>

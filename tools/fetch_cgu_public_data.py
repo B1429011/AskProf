@@ -50,10 +50,16 @@ def extract_departments(html):
 
 def find_faculty_url(home_url, html):
     p=LinkParser(); p.feed(html)
+    candidates=[]
     for attrs, _ in p.links:
         href=attrs.get("href", "")
+        title=clean(attrs.get("title", ""))
         if "FullTimeProfessorManagement" in href:
-            return urljoin(home_url, href)
+            candidates.append((0,urljoin(home_url, href)))
+        elif any(word in title for word in ("專任師資", "師資資訊", "專任教師", "教學師資")):
+            candidates.append((1,urljoin(home_url, href)))
+    if candidates:
+        candidates.sort(key=lambda item:item[0]); return candidates[0][1]
     return None
 
 def extract_faculty(html, department, location=""):
@@ -61,7 +67,7 @@ def extract_faculty(html, department, location=""):
     rows=[]
     for card in cards:
         if "card-title" not in card: continue
-        name_m=re.search(r'<p class="h4 card-title[^>]*>(.*?)</p>', card, re.S|re.I)
+        name_m=re.search(r'<(?:p|h[1-6])[^>]*class="[^"]*card-title[^>]*>(.*?)</(?:p|h[1-6])>', card, re.S|re.I)
         if not name_m: continue
         name=clean(name_m.group(1))
         if not name: continue
@@ -73,6 +79,38 @@ def extract_faculty(html, department, location=""):
         rows.append({"name":name,"department":department,"location":location,"email":email,"phone":clean(phone_m.group(1)) if phone_m else "","degree":clean(degree_m.group(1)) if degree_m else "","specialty":clean(specialty_m.group(1)) if specialty_m else "","profileUrl":urljoin(ROOT, detail_m.group(1)) if detail_m else ""})
     return rows
 
+def extract_subject_cards(html, department, location=""):
+    """Parse newer CGU Subject pages, whose faculty cards use h5.card-title."""
+    rows=[]; seen=set()
+    pattern=re.compile(r'<a[^>]+href="([^"]*(?:Subject/Detail|Contents\?nodeId=)[^"]*)"[^>]+title="([^"]*(?:教授|副教授|助理教授|講師)[^"]*)"[^>]*>(.*?)</a>', re.S|re.I)
+    for m in pattern.finditer(html):
+        href,title,body=m.groups(); name=clean(title)
+        if not name or name in seen: continue
+        seen.add(name); text=clean(body)
+        email_m=re.search(r'(?:mailto:|信箱[:：]?\s*)([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})', body, re.I)
+        phone_m=re.search(r'(?:電話|分機)[:：]?\s*([^<\n]+)', body, re.I)
+        specialty_m=re.search(r'(?:專長|研究方向|研究領域)[:：]?\s*([^<\n]+)', body, re.I)
+        rows.append({"name":name,"department":department,"location":location,"email":email_m.group(1) if email_m else "","phone":clean(phone_m.group(1)) if phone_m else "","degree":"","specialty":clean(specialty_m.group(1)) if specialty_m else text[:180],"profileUrl":urljoin(ROOT, href)})
+    return rows
+
+def extract_title_faculty(html, department, location=""):
+    """Parse older pages (notably medicine) that publish faculty as linked image titles."""
+    rows=[]; seen=set()
+    for href,title in re.findall(r'<a[^>]+href="([^"]+)"[^>]+title="([^"]+)"[^>]*>', html, re.I):
+        if not re.search(r'(教授|副教授|助理教授|講師)', title) or title in seen: continue
+        if any(x in title for x in ("辦法", "課程", "教師升等")): continue
+        seen.add(title)
+        rows.append({"name":clean(title),"department":department,"location":location,"email":"","phone":"","degree":"","specialty":"","profileUrl":urljoin(ROOT, href)})
+    return rows
+
+def faculty_pages(first_url):
+    """Yield a faculty page and any server-side pagination pages linked from it."""
+    current=first_url; visited=set(); count=0
+    while current and current not in visited and count < 30:
+        visited.add(current); html=get(current); yield html
+        next_urls=re.findall(r'href="([^"]*SwitchPage[^"]*page=(\d+)[^"]*)"', html, re.I)
+        current=urljoin(current, next_urls[0][0]) if next_urls else None; count+=1
+
 def main():
     directory_html=get(DIRECTORY)
     departments=extract_departments(directory_html)
@@ -83,7 +121,11 @@ def main():
             f_url=find_faculty_url(d["url"], home)
             d["facultyUrl"]=f_url or ""
             if f_url:
-                faculty.extend(extract_faculty(get(f_url), d["name"], d.get("location", "")))
+                for faculty_html in faculty_pages(f_url):
+                    rows=extract_faculty(faculty_html, d["name"], d.get("location", ""))
+                    if not rows: rows=extract_subject_cards(faculty_html, d["name"], d.get("location", ""))
+                    if not rows: rows=extract_title_faculty(faculty_html, d["name"], d.get("location", ""))
+                    faculty.extend(rows)
             else: failures.append({"department":d["name"],"reason":"官方系所頁未找到專任教師入口"})
         except Exception as e:
             failures.append({"department":d["name"],"reason":str(e)})
