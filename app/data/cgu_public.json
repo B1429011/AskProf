@@ -1,14 +1,14 @@
 {
   "source": "長庚大學官方網站",
   "directoryUrl": "https://www.cgu.edu.tw/ch/Contents?nodeId=269",
-  "fetchedAt": "2026-11-19",
+  "fetchedAt": "2026-11-22",
   "notice": "公開資料僅供查詢；學生個人課表與教授私人行事曆不在此檔案。",
   "departments": [
     {
       "name": "醫學系",
       "url": "https://www.cgu.edu.tw/med/",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/med/Contents?nodeId=3169"
     },
     {
       "name": "中醫學系",
@@ -26,7 +26,7 @@
       "name": "生物醫學系(含臨床試驗與評估碩士班)",
       "url": "https://www.cgu.edu.tw/ls",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/ls/Contents?nodeId=3228"
     },
     {
       "name": "呼吸治療學系",
@@ -50,13 +50,13 @@
       "name": "醫學影像暨放射科學系",
       "url": "https://www.cgu.edu.tw/mirs",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/mirs/Contents?nodeId=8871"
     },
     {
       "name": "醫學生物技術暨檢驗學系",
       "url": "https://www.cgu.edu.tw/mip/",
       "location": "",
-      "facultyUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/2d752816-734f-404c-8a20-9d6dbf9adb78?nodeId=11932"
+      "facultyUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement?nodeId=11932"
     },
     {
       "name": "生物醫學研究所",
@@ -122,13 +122,13 @@
       "name": "顯微手術國際碩士學位學程",
       "url": "https://www.cgu.edu.tw/rm",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
     },
     {
       "name": "電機工程學系",
       "url": "https://www.cgu.edu.tw/ee",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/ee/ContentSection?nodeId=17869"
     },
     {
       "name": "電子工程學系",
@@ -140,7 +140,7 @@
       "name": "機械工程學系",
       "url": "https://www.cgu.edu.tw/me",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/me/Contents?nodeId=11101"
     },
     {
       "name": "資訊工程學系",
@@ -158,19 +158,19 @@
       "name": "生物醫學工程學系",
       "url": "https://www.cgu.edu.tw/bme",
       "location": "",
-      "facultyUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/a9ed444b-19e6-4316-97c3-eebe7667a16f?nodeId=16002"
+      "facultyUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement?nodeId=16002"
     },
     {
       "name": "光電工程研究所",
       "url": "https://www.cgu.edu.tw/gioeoe/",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128"
     },
     {
       "name": "奈米工程及設計碩士學位學程",
       "url": "https://www.cgu.edu.tw/need",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/need/Contents?nodeId=7462"
     },
     {
       "name": "工商管理學系",
@@ -182,19 +182,19 @@
       "name": "工業設計學系",
       "url": "https://www.cgu.edu.tw/id/",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/id/Subject?nodeId=3992"
     },
     {
       "name": "資訊管理學系",
       "url": "https://www.cgu.edu.tw/im/",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/im/Subject?nodeId=12445"
     },
     {
       "name": "醫務管理學系",
       "url": "https://www.cgu.edu.tw/hcm/",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/hcm/Subject?nodeId=4518"
     },
     {
       "name": "數位金融科技學系",
@@ -212,7 +212,7 @@
       "name": "智慧醫療創新碩士學位學程",
       "url": "https://www.cgu.edu.tw/ism",
       "location": "",
-      "facultyUrl": ""
+      "facultyUrl": "https://www.cgu.edu.tw/ism/Subject?nodeId=4039"
     },
     {
       "name": "人工智慧學系",
@@ -3217,56 +3217,2097 @@
       "degree": "國立陽明大學生物醫學資訊研究所博士",
       "specialty": "深度學習和機器學習在臨床醫學中的應用、計算機輔助診斷、外傷與重症醫療、胃腸和肝膽腫瘤學",
       "profileUrl": "https://www.cgu.edu.tw/hds/FullTimeProfessorManagement/Detail/20b30254-2a3f-4458-8b44-b24d4b6fc1d9?nodeId=17174"
+    },
+    {
+      "name": "謝明儒 副教授兼系主任",
+      "department": "醫學系",
+      "location": "",
+      "email": "medicine@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5039",
+      "degree": "",
+      "specialty": "與研究領域\">專長與研究領域",
+      "profileUrl": "https://www.cgu.edu.tw/med/Contents?nodeId=3503"
+    },
+    {
+      "name": "張玉喆 副教授兼副系主任",
+      "department": "醫學系",
+      "location": "",
+      "email": "medicine@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5039",
+      "degree": "",
+      "specialty": "與研究領域\">專長與研究領域",
+      "profileUrl": "https://www.cgu.edu.tw/med/Contents?nodeId=14927"
+    },
+    {
+      "name": "方基存 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/1482"
+    },
+    {
+      "name": "王宏銘 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/1221"
+    },
+    {
+      "name": "徐正龍 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/2221"
+    },
+    {
+      "name": "姚宗杰 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3537"
+    },
+    {
+      "name": "張國軒 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/5128"
+    },
+    {
+      "name": "紀景琪 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3106"
+    },
+    {
+      "name": "葉勇信 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3436"
+    },
+    {
+      "name": "翁文能 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/0116"
+    },
+    {
+      "name": "刁茂盟 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/4067"
+    },
+    {
+      "name": "黃昭誠 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/4025"
+    },
+    {
+      "name": "趙從賢 臨床副教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/7088"
+    },
+    {
+      "name": "王兆弘 臨床教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/1998"
+    },
+    {
+      "name": "陳瓊珠 臨床副教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/2931"
+    },
+    {
+      "name": "陳正昌 臨床副教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/0718"
+    },
+    {
+      "name": "王朝永 臨床副教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3656"
+    },
+    {
+      "name": "鍾福財 臨床副教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/5247"
+    },
+    {
+      "name": "張㝢智 臨床副教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/1991"
+    },
+    {
+      "name": "傅仁煇 臨床助理教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/2712"
+    },
+    {
+      "name": "歐良修 臨床助理教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3115"
+    },
+    {
+      "name": "廖國臣 臨床助理教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/5236"
+    },
+    {
+      "name": "李光永 臨床助理教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3870"
+    },
+    {
+      "name": "高軒楷 臨床助理教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3700"
+    },
+    {
+      "name": "李莉文 臨床助理教授",
+      "department": "醫學系",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/4572"
+    },
+    {
+      "name": "譚賢明老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "btan@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/3c3790bc-edd0-4bc2-a8b8-bbcaf22dcb63?nodeId=15324"
+    },
+    {
+      "name": "羅時成老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "losj@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/1433f503-d69b-438b-b1aa-7edd63b5f399?nodeId=15324"
+    },
+    {
+      "name": "洪麗滿老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "lisahung@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/90ec8cae-8d8d-4b50-a7c2-f8c789da72ae?nodeId=15324"
+    },
+    {
+      "name": "傅崇安老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "sdfugmann@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/65d21c00-ac90-4bdf-b04d-b07499c60cb7?nodeId=15324"
+    },
+    {
+      "name": "郁兆蘭老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "clyu@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/735158a0-0263-427a-bf22-9d02759c3900?nodeId=15324"
+    },
+    {
+      "name": "鄭美玲老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "chengm@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/5419d240-00f1-4b5a-931e-aa174807d947?nodeId=15324"
+    },
+    {
+      "name": "楊雅晴老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "ycyang@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/7a7e6ef5-4d32-43fb-80ab-29f33f27c1d8?nodeId=15324"
+    },
+    {
+      "name": "許錦源老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "hsu@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/dc76ee5c-fb19-4858-ba66-3e483217c5a3?nodeId=15324"
+    },
+    {
+      "name": "黃國正老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "gjh30@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/15a210a1-4c40-4390-9219-281e7e5cc122?nodeId=15324"
+    },
+    {
+      "name": "陳怡婷老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "ytchen@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/35d4e757-0e34-46f3-b046-b0958c132929?nodeId=15324"
+    },
+    {
+      "name": "張煥宗老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "changht@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/aa2c9215-42b0-4140-8d6e-5969dff35575?nodeId=15324"
+    },
+    {
+      "name": "皮海薇老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "haiwei@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/240c6aa1-e9ad-4b0f-9ded-bd6fa1053cdc?nodeId=15324"
+    },
+    {
+      "name": "曲桐老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "schuyler@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/fe8957fe-c7c0-4269-8762-0bca119a8628?nodeId=15324"
+    },
+    {
+      "name": "蘇文慧老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "whsu@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/f94e026b-7294-4a4f-a562-fdf26e04c4df?nodeId=15324"
+    },
+    {
+      "name": "梅雅俊老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "jmeir@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/c6bbf931-d4ad-4998-bc92-ba08bee7be84?nodeId=15324"
+    },
+    {
+      "name": "楊淑元老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "yangsy@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/180a759f-a3fe-4e8e-8459-36cec8ef6e8a?nodeId=15324"
+    },
+    {
+      "name": "蔡佩倩老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "pctsai@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/3e2109bc-d27c-4eb9-8c78-3d936b0bbb3e?nodeId=15324"
+    },
+    {
+      "name": "黃柏榕老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "pjhuang@gap.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/86ad02de-9c61-4212-9171-7c7ae41e2bca?nodeId=15324"
+    },
+    {
+      "name": "賴銘志老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "mclai@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/f9fb036f-7313-4a7c-9615-be3a5c68b55b?nodeId=15324"
+    },
+    {
+      "name": "陳盈汝老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "yinjuchen@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/a0ba7ea7-995f-45e7-9dac-5067b651f9d5?nodeId=15324"
+    },
+    {
+      "name": "鄭竹珊老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "jscheng@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/ee7ef079-a20f-4b8f-af21-e0a96423c2c9?nodeId=15324"
+    },
+    {
+      "name": "溫有汶老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "ywwen@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/b472837a-52c0-4453-ae57-0f883d150458?nodeId=15324"
+    },
+    {
+      "name": "葛明軒老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "koalbert@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/2f8d787b-9946-40c8-9c81-82a17d056319?nodeId=15324"
+    },
+    {
+      "name": "楊光華老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "D000019047@cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/6b71b735-dce4-4722-92aa-de8e760ba559?nodeId=15324"
+    },
+    {
+      "name": "蕭慧怡老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "Ivyhsiao@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/1b9a1437-3cc3-4c39-b15f-1e0101e01226?nodeId=15324"
+    },
+    {
+      "name": "王永樑老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "yuwang@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/849d0904-1f95-40b7-9468-24f481d53d04?nodeId=15324"
+    },
+    {
+      "name": "許聖傑老師",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "schsu@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/a5809bbf-9028-4266-8dc5-2e9f4bd45d98?nodeId=15324"
+    },
+    {
+      "name": "張啟仁老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "cjchang@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/aeeadde7-42a3-4340-b1b8-23c96944a9ad?nodeId=15324"
+    },
+    {
+      "name": "譚賢明老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "btan@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/3c3790bc-edd0-4bc2-a8b8-bbcaf22dcb63?nodeId=15324"
+    },
+    {
+      "name": "蔡佩倩老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "pctsai@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/3e2109bc-d27c-4eb9-8c78-3d936b0bbb3e?nodeId=15324"
+    },
+    {
+      "name": "洪麗滿老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "lisahung@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/90ec8cae-8d8d-4b50-a7c2-f8c789da72ae?nodeId=15324"
+    },
+    {
+      "name": "蘇文慧老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "whsu@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/f94e026b-7294-4a4f-a562-fdf26e04c4df?nodeId=15324"
+    },
+    {
+      "name": "黃柏榕老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "pjhuang@gap.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/86ad02de-9c61-4212-9171-7c7ae41e2bca?nodeId=15324"
+    },
+    {
+      "name": "鄭竹珊老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "jscheng@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/ee7ef079-a20f-4b8f-af21-e0a96423c2c9?nodeId=15324"
+    },
+    {
+      "name": "溫有汶老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "ywwen@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/b472837a-52c0-4453-ae57-0f883d150458?nodeId=15324"
+    },
+    {
+      "name": "葛明軒老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "koalbert@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/2f8d787b-9946-40c8-9c81-82a17d056319?nodeId=15324"
+    },
+    {
+      "name": "張書瑋老師連結",
+      "department": "生物醫學系(含臨床試驗與評估碩士班)",
+      "location": "",
+      "email": "cjchang@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "：",
+      "profileUrl": "https://www.cgu.edu.tw/ls/FullTimeProfessorManagement/Detail/16da603a-c50b-40dc-b557-94942bc1d211?nodeId=15324"
+    },
+    {
+      "name": "黎明富 教授兼主任 / Ming-Fu Li",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "mfli@mail.cgu.edu.tw",
+      "phone": "03-2118800-5676",
+      "degree": "台灣大學電機所博士",
+      "specialty": "通訊領域/高速網路 , 寬頻多媒體傳輸系統 , 行動通訊 , 行動網路電視 ,智慧家庭網路",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66753?nodeId=17870"
+    },
+    {
+      "name": "邱錫彥 教授兼副主任 / Shin-Yan Chiou",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "ansel@mail.cgu.edu.tw",
+      "phone": "03-2118800-3733",
+      "degree": "成功大學電機所博士",
+      "specialty": "通訊領域/行動裝置程式開發、資訊安全、 密碼學、無線網路、網路安全",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66757?nodeId=17870"
+    },
+    {
+      "name": "張永華 教授兼工學院副院長 / Yeong-Hwa Chang",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "yhchang@mail.cgu.edu.tw",
+      "phone": "03-2118800-5697",
+      "degree": "美國德州大學奧斯汀分校電機所博士",
+      "specialty": "物聯網, 機器學習, 嵌入式系統, 智慧型系統",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66747?nodeId=17870"
+    },
+    {
+      "name": "高少谷 教授兼工學院國際事務副院長 / Shao-Ku Kao",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "kaosk@mail.cgu.edu.tw",
+      "phone": "03-2118800-3198",
+      "degree": "台灣大學電子所博士",
+      "specialty": "醫電與VLSI領域/類比及混合信號電路設計",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66748?nodeId=17870"
+    },
+    {
+      "name": "林炆標 教授 / Wen-Piao Lin",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "wplin@mail.cgu.edu.tw",
+      "phone": "03-2118800-5493",
+      "degree": "交通大學光電所博士",
+      "specialty": "通訊領域/6G行動通訊,智慧物聯網,高等電力電子",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66746?nodeId=17870"
+    },
+    {
+      "name": "李建德 教授 / Jiann-Der Lee",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "jdlee@mail.cgu.edu.tw",
+      "phone": "03-2118800-5316",
+      "degree": "成功大學電機所博士",
+      "specialty": "醫電領域/醫學影像處理,圖訊識別,電腦視覺, VLSI設計",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66749?nodeId=17870"
+    },
+    {
+      "name": "蔡孟燦 教授 / Meng-Tsan Tsai",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "mttsai@mail.cgu.edu.tw",
+      "phone": "03-2118800-5322",
+      "degree": "台灣大學光電工程所博士",
+      "specialty": "醫電領域/生醫光電、非破壞性光學檢測、 光學感測",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66750?nodeId=17870"
+    },
+    {
+      "name": "張偉能 教授 / Wei-Neng Chang",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "nchang@mail.cgu.edu.tw",
+      "phone": "03-2118800-5312",
+      "degree": "台灣科技大學電機所博士",
+      "specialty": "電控領域/電力品質,汽電共生,電力電子, 微算機控制",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66751?nodeId=17870"
+    },
+    {
+      "name": "詹曉龍 教授 / Hsiao-Lung Chan",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "chanhl@mail.cgu.edu.tw",
+      "phone": "03-2118800-5145",
+      "degree": "台灣大學電機所博士",
+      "specialty": "醫電領域/生醫感測電子電路, 嵌入式系統, 神經訊號處理",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66754?nodeId=17870"
+    },
+    {
+      "name": "王永宜 教授 / Yung-Yi Wang",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "yywang@mail.cgu.edu.tw",
+      "phone": "03-2118800-3493",
+      "degree": "台灣科技大電子所博士",
+      "specialty": "通訊領域/無線通訊,陣列訊號處理, RFID",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66755?nodeId=17870"
+    },
+    {
+      "name": "林韋丞 副教授 / Wei-Cheng Lin",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "weiclin@mail.cgu.edu.tw",
+      "phone": "03-2118800-3221",
+      "degree": "清華大學電子所博士",
+      "specialty": "多點觸控系統晶片設計、LTPS面板驅動系統晶片設計、防偽指紋驅動系統晶片設計、 通訊收發機關鍵晶片設計、代謝體感測系統晶片設計",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66770?nodeId=17871"
+    },
+    {
+      "name": "林文彥 副教授 / Wen-Yen Lin",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "wylin@mail.cgu.edu.tw",
+      "phone": "03-2118800-3675",
+      "degree": "美國南加州大學計算機工程所博士",
+      "specialty": "醫電與VLSI領域/慣性運動感測與醫療照護應用、 生醫應用晶片設計、嵌入式系統設 計、SoC積體電路設計、平行與分散式處理 最高學歷:美國南加州大學計算機工程所博士",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66769?nodeId=17871"
+    },
+    {
+      "name": "魏一勤 副教授 / I-Chyn Wey",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "icwey@mail.cgu.edu.tw",
+      "phone": "03-2118800-3643",
+      "degree": "台灣大學電子工程所博士",
+      "specialty": "醫電與VLSI領域/VLSI電路設計, 低功率電路設計,生醫積體電路設計, 物聯網感測訊號處理積體電路設計, 抗雜訊電路設計",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66768?nodeId=17871"
+    },
+    {
+      "name": "曾聖有 副教授 / Sheng-Yu Tseng",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "sytseng@mail.cgu.edu.tw",
+      "phone": "03-2118800-5323",
+      "degree": "中正大學電機所博士",
+      "specialty": "電控領域/電力電子,電能轉換器控制, 單晶片應用",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66767?nodeId=17871"
+    },
+    {
+      "name": "葉弼群 副教授 / Bih-Chyun Yeh",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "bih.chyun.yeh@mail.cgu.edu.tw",
+      "phone": "03-2118800-3753",
+      "degree": "台灣大學通訊工程所博士",
+      "specialty": "通訊領域/OCDMA編解碼與安全 有線與無線通信系統 神經與模糊網路",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66765?nodeId=17871"
+    },
+    {
+      "name": "黃至樂 副教授 / C. L. Wong, Dave",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "clwong@mail.cgu.edu.tw",
+      "phone": "03-2118800-5677",
+      "degree": "香港城市大學應用物理所博士",
+      "specialty": "生醫光電, 生醫光學傳感器, 等離子共振及超材料傳感器, 傳染病及癌症快速檢測",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66764?nodeId=17871"
+    },
+    {
+      "name": "高永安 助理教授 / Yung-An Kao",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "kya@mail.cgu.edu.tw",
+      "phone": "03-2118800-5314",
+      "degree": "交通大學電子所博士",
+      "specialty": "通訊領域/數位濾波器設計,適應性訊號處理 數位通訊,OFDM傳輸技術",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66775?nodeId=17872"
+    },
+    {
+      "name": "歐陽源 助理教授 / Yuan Ouyang",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "oyy@mail.cgu.edu.tw",
+      "phone": "03-2118800-5317",
+      "degree": "清華大學電機所博士",
+      "specialty": "B5G/6G通訊傳輸技術、AI訊號/影像處理技術、腦電波訊號處理技術",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66773?nodeId=17872"
+    },
+    {
+      "name": "李征衞 助理教授 / Cheng-Wei Li",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "cwlitw@gmail.com",
+      "phone": "03-2118800-5755 886-933846234",
+      "degree": "清華大學電機所博士",
+      "specialty": "機械人控制、四軸機飛行控制、 具敵意錯誤訊號下強健控制、 個人化疾病巨量資料分析與治療、 細胞微環境分析",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66772?nodeId=17872"
+    },
+    {
+      "name": "蕭煒翰 助理教授 / Ｗei-Han Hsiao",
+      "department": "電機工程學系",
+      "location": "",
+      "email": "whsiao@cgu.edu.tw",
+      "phone": "03-2118800-5378",
+      "degree": "陽明交通大學電信所博士",
+      "specialty": "新世代行動通訊系統5G/B5G/6G、 毫米波巨量天線通訊技術、蜂巢式通訊系統、應用人工智慧、開放式無線接取網路",
+      "profileUrl": "https://www.cgu.edu.tw/ee/Subject/Detail/66771?nodeId=17872"
+    },
+    {
+      "name": "萬書言 教授兼系主任/管理學院副院長",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "sywan@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5819",
+      "degree": "",
+      "specialty": "2024/05/24 萬書言 教授兼系主任/管理學院副院長",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42214?nodeId=12445"
+    },
+    {
+      "name": "林詩偉 教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "swlin@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5811",
+      "degree": "",
+      "specialty": "2024/05/24 林詩偉 教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42210?nodeId=12445"
+    },
+    {
+      "name": "張禾坤 教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "hkchang@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5813",
+      "degree": "",
+      "specialty": "2024/05/24 張禾坤 教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42212?nodeId=12445"
+    },
+    {
+      "name": "林張群 教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "ann@mail.cgu.edu.tw",
+      "phone": "(03)211-8800分機5812",
+      "degree": "",
+      "specialty": "2024/05/24 林張群 教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42211?nodeId=12445"
+    },
+    {
+      "name": "廖耕億 教授 (數金系主聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "gyliao@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5852",
+      "degree": "",
+      "specialty": "2024/05/24 廖耕億 教授 (數金系主聘教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42209?nodeId=12445"
+    },
+    {
+      "name": "蕭文龍 教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "mac@cgu.edu.tw",
+      "phone": "(03)2118800 轉 5815",
+      "degree": "",
+      "specialty": "2024/05/24 蕭文龍 教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42215?nodeId=12445"
+    },
+    {
+      "name": "許建隆 教授 (管研所主聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "clhsu@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5827",
+      "degree": "",
+      "specialty": "2024/05/24 許建隆 教授 (管研所主聘教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42216?nodeId=12445"
+    },
+    {
+      "name": "林維昭 教授 (數金系主聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "viclin@gap.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "2024/05/24 林維昭 教授 (數金系主聘教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42217?nodeId=12445"
+    },
+    {
+      "name": "吳 侃 教授 (Kan Wu) / 經營分析研究中心主任 (工商系合聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "kan@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5412",
+      "degree": "Ph.D. in Industri...",
+      "specialty": "2026/09/17 吳 侃 教授 (Kan Wu) / 經營分析研究中心主任 (工商系合聘教師) 職稱： 教授 現職： Director of Business Analytics Research Center 信箱： kan@mail.cgu.edu.tw 電話： 03-2118800 # 5412 學歷： Ph.D. in Industri...",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/84291?nodeId=12445"
+    },
+    {
+      "name": "黃莉婷 副教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "lthuang@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5826",
+      "degree": "",
+      "specialty": "2024/05/24 黃莉婷 副教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42218?nodeId=12445"
+    },
+    {
+      "name": "張文珍 副教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "wjchang@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "2024/05/24 張文珍 副教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42219?nodeId=12445"
+    },
+    {
+      "name": "陳宜惠 副教授 (數金系主聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "cyh@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "2024/05/24 陳宜惠 副教授 (數金系主聘教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42220?nodeId=12445"
+    },
+    {
+      "name": "林俊逸 助理教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "chunyi@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5828",
+      "degree": "",
+      "specialty": "2024/05/24 林俊逸 助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42221?nodeId=12445"
+    },
+    {
+      "name": "王日昌 助理教授 (工設系主聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "qpo@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5821",
+      "degree": "",
+      "specialty": "2024/05/24 王日昌 助理教授 (工設系主聘教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42222?nodeId=12445"
+    },
+    {
+      "name": "陳昱仁 助理教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "cyr@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5823",
+      "degree": "",
+      "specialty": "2024/05/24 陳昱仁 助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42224?nodeId=12445"
+    },
+    {
+      "name": "江彥逸 助理教授 (數金系主聘教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "yenichn@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5822",
+      "degree": "",
+      "specialty": "2024/05/24 江彥逸 助理教授 (數金系主聘教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42225?nodeId=12445"
+    },
+    {
+      "name": "盧能彬 助理教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "nplu@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5817",
+      "degree": "",
+      "specialty": "2024/05/24 盧能彬 助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42226?nodeId=12445"
+    },
+    {
+      "name": "吳文傑 助理教授",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "wjwu@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5851",
+      "degree": "",
+      "specialty": "2024/05/24 吳文傑 助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42227?nodeId=12445"
+    },
+    {
+      "name": "郭珍利 助理教授 (智慧醫創學程教師)",
+      "department": "資訊管理學系",
+      "location": "",
+      "email": "chenli.kuo@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "2024/05/24 郭珍利 助理教授 (智慧醫創學程教師)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42228?nodeId=12445"
+    },
+    {
+      "name": "周煌程",
+      "department": "奈米工程及設計碩士學位學程",
+      "location": "",
+      "email": "hcchow@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://elec.cgu.edu.tw/p/412-1084-236.php"
+    },
+    {
+      "name": "夏勤",
+      "department": "奈米工程及設計碩士學位學程",
+      "location": "",
+      "email": "chin85hsia@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35343?nodeId=11465"
+    },
+    {
+      "name": "盧信冲",
+      "department": "奈米工程及設計碩士學位學程",
+      "location": "",
+      "email": "hsinchun@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://ce.cgu.edu.tw/p/412-1087-2748.php?Lang=zh-tw"
+    },
+    {
+      "name": "王哲麒",
+      "department": "奈米工程及設計碩士學位學程",
+      "location": "",
+      "email": "jcwang@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://elec.cgu.edu.tw/p/412-1084-236.php"
+    },
+    {
+      "name": "楊家銘",
+      "department": "奈米工程及設計碩士學位學程",
+      "location": "",
+      "email": "cmyang@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://sites.google.com/site/cgucmgroup/home"
+    },
+    {
+      "name": "蔡采璇教授兼學程主任",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "ttsai@mail.cgu.edu.tw",
+      "phone": "5423",
+      "degree": "",
+      "specialty": "蔡采璇教授兼學程主任",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36151?nodeId=3992"
+    },
+    {
+      "name": "陳嶽鵬助理教授",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "D0000019160@cgu.edu.tw",
+      "phone": "032118800轉3711",
+      "degree": "",
+      "specialty": "陳嶽鵬助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/ism/Subject/Detail/7766?nodeId=4039"
+    },
+    {
+      "name": "曾俊儒兼任實務教授",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉3223",
+      "degree": "",
+      "specialty": "曾俊儒兼任實務教授",
+      "profileUrl": "https://www.cgu.edu.tw/ism/Subject/Detail/7784?nodeId=4039"
+    },
+    {
+      "name": "黃建嘉兼任助理教授",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉3223",
+      "degree": "",
+      "specialty": "黃建嘉兼任助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/ism/Subject/Detail/7783?nodeId=4039"
+    },
+    {
+      "name": "郭珍利 助理教授",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "chenli.kuo@mail.cgu.edu.tw",
+      "phone": "5601",
+      "degree": "",
+      "specialty": "郭珍利 助理教授",
+      "profileUrl": "https://www.cgu.edu.tw/ism/Subject/Detail/7785?nodeId=4039"
+    },
+    {
+      "name": "郭昶甫教授(與醫學系合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "郭昶甫教授(與醫學系合聘)",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/5520"
+    },
+    {
+      "name": "裴育晟教授(與醫學系合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "裴育晟教授(與醫學系合聘)",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/3790"
+    },
+    {
+      "name": "陳亭羽教授(與管研所博士班合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "tychen@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "陳亭羽教授(與管研所博士班合聘)",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/9f9ffc40-536a-44d0-bec2-777f8e9cf0e6?nodeId=3970"
+    },
+    {
+      "name": "張錦特教授(與管研所博士班合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "ann@mail.cgu.edu.tw",
+      "phone": "(03)211-8800分機5812",
+      "degree": "",
+      "specialty": "張錦特教授(與管研所博士班合聘)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42213?nodeId=12445"
+    },
+    {
+      "name": "盧瑞芬教授(與管研所博士班合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "rachel@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5483、5272",
+      "degree": "",
+      "specialty": "盧瑞芬教授(與管研所博士班合聘)",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11794?nodeId=4518"
+    },
+    {
+      "name": "許建隆教授(與管研所博士班合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "clhsu@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5827",
+      "degree": "",
+      "specialty": "許建隆教授(與管研所博士班合聘)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42216?nodeId=12445"
+    },
+    {
+      "name": "鄧景宜教授(與管研所博士班合開)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "chingit@mail.cgu.edu.tw",
+      "phone": "(03)-2118800 轉5418",
+      "degree": "",
+      "specialty": "鄧景宜教授(與管研所博士班合開)",
+      "profileUrl": "https://www.cgu.edu.tw/cmphd/Subject/Detail/18126?nodeId=7165"
+    },
+    {
+      "name": "方瑞仁教授(與醫學系合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "方瑞仁教授(與醫學系合聘)",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/6634"
+    },
+    {
+      "name": "黃美涓教授(與醫學系合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "",
+      "phone": "",
+      "degree": "",
+      "specialty": "黃美涓教授(與醫學系合聘)",
+      "profileUrl": "https://www.cgmh.org.tw/tw/Services/DoctorInfo/0133"
+    },
+    {
+      "name": "萬書言教授(管理學院國際事務副院長/與管研所合聘)",
+      "department": "智慧醫療創新碩士學位學程",
+      "location": "",
+      "email": "sywan@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5819",
+      "degree": "",
+      "specialty": "萬書言教授(管理學院國際事務副院長/與管研所合聘)",
+      "profileUrl": "https://www.cgu.edu.tw/im/Subject/Detail/42214?nodeId=12445"
+    },
+    {
+      "name": "黃耀祥",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "ycwong@adm.cgmh.org.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37368?nodeId=11666"
+    },
+    {
+      "name": "蕭穎聰",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "ihsiao@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37372?nodeId=11666"
+    },
+    {
+      "name": "王俊杰",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "/傳真(TEL/FAX)：",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37370?nodeId=11666"
+    },
+    {
+      "name": "王俊杰",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37371?nodeId=11666"
+    },
+    {
+      "name": "王俊杰",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "jwang@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/61436?nodeId=11666&isCms=true"
+    },
+    {
+      "name": "翁駿程",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "/傳真(TEL/FAX)：",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37370?nodeId=11666"
+    },
+    {
+      "name": "趙自強",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "chaot@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37373?nodeId=11666"
+    },
+    {
+      "name": "杜書儒",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "sjtu@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37377?nodeId=11666"
+    },
+    {
+      "name": "翁啓昌",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37379?nodeId=11666"
+    },
+    {
+      "name": "謝寶育",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37381?nodeId=11666"
+    },
+    {
+      "name": "林信宏",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37382?nodeId=11666"
+    },
+    {
+      "name": "葉俊宏",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/40336?nodeId=11666"
+    },
+    {
+      "name": "謝承恩",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "chsieh@cgmh.org.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "(Research Interest):",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37384?nodeId=11666"
+    },
+    {
+      "name": "游靜芳",
+      "department": "醫學影像暨放射科學系",
+      "location": "",
+      "email": "chingfang@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉 5246, 5387",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/57820?nodeId=11666"
+    },
+    {
+      "name": "廖",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "(03)2118800 轉5336",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/8071?nodeId=4111"
+    },
+    {
+      "name": "張",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35330?nodeId=11465"
+    },
+    {
+      "name": "劉",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35331?nodeId=11465"
+    },
+    {
+      "name": "蔡",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35334?nodeId=11465"
+    },
+    {
+      "name": "吳",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35336?nodeId=11465"
+    },
+    {
+      "name": "石",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35337?nodeId=11465"
+    },
+    {
+      "name": "李",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35340?nodeId=11465"
+    },
+    {
+      "name": "孫",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35341?nodeId=11465"
+    },
+    {
+      "name": "沈",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35342?nodeId=11465"
+    },
+    {
+      "name": "夏",
+      "department": "機械工程學系",
+      "location": "",
+      "email": "wen18@mail.cgu.edu.tw",
+      "phone": "：",
+      "degree": "",
+      "specialty": "\" class=\"last-child-a\" >",
+      "profileUrl": "https://www.cgu.edu.tw/me/Subject/Detail/35343?nodeId=11465"
+    },
+    {
+      "name": "陳文誌 副教授兼系主任",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "wenzhi@mail.cgu.edu.tw",
+      "phone": "5460",
+      "degree": "國立雲林科技大學設計博士",
+      "specialty": "2024/05/16 陳文誌 副教授兼系主任 陳文誌 Wenzhi Chen 兼任職務：副教授 兼 系主任 學歷：國立雲林科技大學設計博士 經歷：中華國設計學會第十五屆 監事 / 第十四屆 理事 / 第十三屆 理事/ 第十一屆 理事 領域：設計教育、產品設計、人因工程 分...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36149?nodeId=3992"
+    },
+    {
+      "name": "蔡采璇 教授",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "ttsai@mail.cgu.edu.tw",
+      "phone": "5423",
+      "degree": "英國德蒙特福大學設計理論與創新博士",
+      "specialty": "2024/03/21 蔡采璇 教授 蔡采璇 Tsai-Hsuan Tsai 現職：教授 Professor 學歷：英國德蒙特福大學設計理論與創新博士 領域：互動媒體設計與應用，數位內容與服務設計，人機介面與使用性測試，身心障礙及輔助科技研究 分機：5423 信箱：ttsai...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36151?nodeId=3992"
+    },
+    {
+      "name": "劉英傑 教授",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "ycl30@mail.cgu.edu.tw",
+      "phone": "3284",
+      "degree": "英國劍橋大學工程設計博士",
+      "specialty": "2024/03/21 劉英傑 教授 劉英傑 Ying-Chieh Liu 現任職務：教授 Professor 學歷：英國劍橋大學工程設計博士 領域：創新概念設計、視覺化醫療資訊系統、玩具設計工學、設計專案管理 分機：3284 信箱：ycl30@m...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36152?nodeId=3992"
+    },
+    {
+      "name": "江偉裕 教授",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "wchiang@cgu.edu.tw",
+      "phone": "5402",
+      "degree": "美國伊利諾大學香檳分校企業管理博士",
+      "specialty": "2026/11/04 江偉裕 教授 江偉裕 Shih-Ying(Angela) Chien 現職：教授 Professor / 教務處語文中心主任 學歷：美國伊利諾大學香檳分校企業管理博士 領域：行銷科學、供應鏈管理、服務運營管理，行為經濟，產品線設計及動態定價策略 分機：5402 ...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/85702?nodeId=3992"
+    },
+    {
+      "name": "簡詩穎 副教授",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "shihying@mail.cgu.edu.tw",
+      "phone": "5669",
+      "degree": "國立交通大學應用藝術研究所博士",
+      "specialty": "2024/03/21 簡詩穎 副教授 簡詩穎 Shih-Ying(Angela) Chien 現職：副教授 Associate Professor / 醫療設計學程召集人 學歷：國立交通大學應用藝術研究所博士 領域：醫療設計、服務設計、設計思考、跨領域設計 分機：5669 信...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36154?nodeId=3992"
+    },
+    {
+      "name": "張瑋真 副教授",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "weichen@mail.cgu.edu",
+      "phone": "5670",
+      "degree": "國立雲林科技大學設計博士",
+      "specialty": "2024/03/21 張瑋真 副教授 張瑋真 Weichen Chang 聯絡人職務： 副教授 學歷：國立雲林科技大學設計博士 領域：產品設計、流行工藝、設計美學、文創商品開發、生活型態研究、關注設計 分機：5670 信箱：weichen@mail.cgu.edu....",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36155?nodeId=3992"
+    },
+    {
+      "name": "林鎮山 助理教授專業及技術教師",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "sam_lin@mail.cgu.edu.tw",
+      "phone": "5239",
+      "degree": "英國伯明翰城市大學產品設計研究所碩士",
+      "specialty": "2024/03/21 林鎮山 助理教授專業及技術教師 林鎮山 Jenn-Shann Lin 現職：助理教授專業及技術教師 Assistant Professor 學歷：英國伯明翰城市大學產品設計研究所碩士 領域：量產設計, 策略性設計, 設計分析與流程 分機：5239 信箱：sam_lin@...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36157?nodeId=3992"
+    },
+    {
+      "name": "王日昌 助理教授",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "qpo@mail.cgu.edu.tw",
+      "phone": "5821",
+      "degree": "國立交通大學運輸管理學博士",
+      "specialty": "2025/03/13 王日昌 助理教授 王日昌 Jih-Chang Wang 現職：助理教授 Assistant Professor 學歷：國立交通大學運輸管理學博士 領域：多目標決策、電子商務、模糊邏輯 分機：5821 信箱：qpo@mail.cgu.edu.tw ...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/64761?nodeId=3992"
+    },
+    {
+      "name": "許閎富 資深講師",
+      "department": "工業設計學系",
+      "location": "",
+      "email": "hidrtommy@mail.cgu.edu.tw",
+      "phone": "5746",
+      "degree": "美國羅徹斯特理工學院工業設計碩士",
+      "specialty": "2024/03/21 許閎富 資深講師 許閎富 Hung-Fu Hsu 現職：資深講師 Lecturer 學歷：美國羅徹斯特理工學院工業設計碩士 領域：創意設計管理、電腦輔助設計、輔具設計、設計史 分機：5746 信箱：hidrtommy@mail.cgu.edu.tw ...",
+      "profileUrl": "https://www.cgu.edu.tw/id/Subject/Detail/36156?nodeId=3992"
+    },
+    {
+      "name": "邱月暇 教授/系主任",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "sherrychiu@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5250",
+      "degree": "",
+      "specialty": "2024/01/19 邱月暇 教授/系主任 職稱： 教授/系主任 電話：(03)211-8800 分機 5250 信箱：sherrychiu@mail.cgu.edu.tw 個人網頁：http://www.sedona.cloud/members/sherry_chiu 個人網頁：https://pure.lib.cgu.edu.t...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11798?nodeId=4518"
+    },
+    {
+      "name": "許光宏 特聘教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "khsu@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5473",
+      "degree": "",
+      "specialty": "2024/01/19 許光宏 特聘教授 職稱： 特聘教授 電話：(03)211-8800 分機 5473 信箱：khsu@mail.cgu.edu.tw 個人網頁：http://www.sedona.cloud/members/kh_hsu 個人網頁：https://pure.lib.cgu.edu.tw/en/persons/...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11793?nodeId=4518"
+    },
+    {
+      "name": "盧瑞芬 教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "rachel@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5483、5272",
+      "degree": "",
+      "specialty": "2024/01/19 盧瑞芬 教授 職稱： 教授 電話：(03)211-8800 分機 5483、5272 信箱：rachel@mail.cgu.edu.tw 個人網頁：http://www.sedona.cloud/members/rachel_lu 個人網頁：https://pure.lib.cgu.edu.tw/en/...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11794?nodeId=4518"
+    },
+    {
+      "name": "李佳琳 教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "clli@mail.cgu",
+      "phone": "5666",
+      "degree": "",
+      "specialty": "2024/01/19 李佳琳 教授 職稱： 教授 分機： 5666 信箱： clli@mail.cgu.e...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11795?nodeId=4518"
+    },
+    {
+      "name": "曾旭民 教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "tsenghm@mail.cgu.edu.tw",
+      "phone": "(03)2118800分機5434",
+      "degree": "",
+      "specialty": "2024/01/19 曾旭民 教授 職稱 教授 電話 (03)2118800分機5434 ...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11796?nodeId=4518"
+    },
+    {
+      "name": "林欣柔 教授 / 商管專業學院碩士在職專班醫管組主任 / 受試者保護辦公室執行秘書",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "shinrou@mail.cgu.edu.tw",
+      "phone": "5664",
+      "degree": "",
+      "specialty": "2025/03/31 林欣柔 教授 / 商管專業學院碩士在職專班醫管組主任 / 受試者保護辦公室執行秘書 職稱：教授 /商管專業學院碩士在職專班醫管組主任 / 受試者保護辦公室執行秘書 分機：5664 信箱：shinrou@mail.cgu.edu.tw 網頁：http://www.sedona.cloud/members/Shin-Rou Lin 網頁：h",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11799?nodeId=4518"
+    },
+    {
+      "name": "許績天 副教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "jtsheu@mail.cgu.edu.tw",
+      "phone": "5662",
+      "degree": "",
+      "specialty": "醫療市場競爭與費用及品質研究、中醫與透析關聯性研究、全民健康保險政策分析",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11797?nodeId=4518"
+    },
+    {
+      "name": "文羽苹 副教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "ypwen@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5665",
+      "degree": "",
+      "specialty": "2024/01/19 文羽苹 副教授 姓名/職稱 文羽苹 副教授 電話 (03)211-8800 分機 5665 ...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11800?nodeId=4518"
+    },
+    {
+      "name": "王惠玄 助理教授/圖書館館長",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "hiwang@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5663",
+      "degree": "1990-1997 美國加州大學柏克萊分校公共衛生學院 ...",
+      "specialty": "2024/01/19 王惠玄 助理教授/圖書館館長 職稱：助理教授/圖書館館長 電話：(03)211-8800 分機 5663 信箱：hiwang@mail.cgu.edu.tw 個人網頁：http://www.sedona.cloud/members/hiwang 學歷： 1990-1997 美國加州大學柏克萊分校公共衛生學院 ...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11801?nodeId=4518"
+    },
+    {
+      "name": "白裕彬 助理教授",
+      "department": "醫務管理學系",
+      "location": "",
+      "email": "rubin@mail.cgu.edu.tw",
+      "phone": "(03)211-8800 分機 5500",
+      "degree": "",
+      "specialty": "2024/01/19 白裕彬 助理教授 姓名/職稱 白裕彬 助理教授 電話 (03)211-8800 分機 5500 ...",
+      "profileUrl": "https://www.cgu.edu.tw/hcm/Subject/Detail/11802?nodeId=4518"
+    },
+    {
+      "name": "曾慶平 教授,系主任 / Ching-Ping Tseng",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "ctseng@mail.cgu.edu.tw",
+      "phone": "5202",
+      "degree": "美國威斯康辛麥迪遜分校人類腫瘤生物學博士",
+      "specialty": "血小板生物學、轉譯癌症醫學、分子檢驗技術學、血液學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/2d752816-734f-404c-8a20-9d6dbf9adb78?nodeId=11932"
+    },
+    {
+      "name": "施信如 講座教授 / Shin-Ru Shih",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "srshih@mail.cgu.edu.tw",
+      "phone": "5497",
+      "degree": "美國紐澤西羅格斯大學分子生物及生物化學博士",
+      "specialty": "Clinical Virology、Biotechnology、Molecular Biology、Biochemistry",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/56415220-4c51-49e5-ae71-026aa2b4a8b4?nodeId=11932"
+    },
+    {
+      "name": "沈家瑞 教授 / Chia-Rui Shen",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "crshen@mail.cgu.edu.tw",
+      "phone": "03-2118800 ext 5200",
+      "degree": "英國布里斯托大學病理與微生物學系博士",
+      "specialty": "免疫療法、分子影像、醫學檢驗",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/064e8574-da2a-4c94-8533-7c02aff45caf?nodeId=11932"
+    },
+    {
+      "name": "鄭恩加 教授 / Ann-Joy Cheng",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "annjoycheng@gap.cgu.edu.tw",
+      "phone": "5085",
+      "degree": "美國德州大學安德生癌症中心腫瘤生物學博士",
+      "specialty": "腫瘤生物學、細胞分子生物學、生物化學 、醫學生物技術",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/5185b043-03f5-4e83-9cd9-8d8cc5117ef5?nodeId=11932"
+    },
+    {
+      "name": "顏秀娟 教授 / Hsiu-Chuan Yen",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "yen@mail.cgu.edu.tw",
+      "phone": "5207",
+      "degree": "美國肯塔基大學毒理學博士",
+      "specialty": "自由基生物醫學、粒線體生物醫學、毒理學、臨床生化學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/35ec3c75-375f-44de-b2ae-c94a312dcdbc?nodeId=11932"
+    },
+    {
+      "name": "何鴻耀 教授 / Hung-Yao Ho",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "hoh01@mail.cgu.edu.tw",
+      "phone": "3318",
+      "degree": "國防大學生命科學博士",
+      "specialty": "生物化學、分子細胞生物學及組織工程相關技術",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/8d24b3d3-5aa6-4bd3-b828-494c71a4dc17?nodeId=11932"
+    },
+    {
+      "name": "吳治慶 教授 / Chih-Ching Wu",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "luckywu@mail.cgu.edu.tw",
+      "phone": "5093",
+      "degree": "長庚大學生物醫學研究所博士",
+      "specialty": "蛋白質體學、系統生物學、腫瘤生物學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/dfd657c5-54e6-496e-98bb-e45363a13ebb?nodeId=11932"
+    },
+    {
+      "name": "張國友 教授 / Kowit-Yu Chong",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "kchong@mail.cgu.edu.tw",
+      "phone": "3332",
+      "degree": "美國南伊利諾大學藥理學博士",
+      "specialty": "幹細胞治療、多重抗藥性癌細胞、再生醫學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/e152b69f-a1c8-4e0e-96ca-42e586cdbc94?nodeId=11932"
+    },
+    {
+      "name": "郭瑞琳 教授 / Rei-Lin Kuo",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "rlkuo@mail.cgu.edu.tw",
+      "phone": "3775",
+      "degree": "陽明大學微生物暨免疫學博士",
+      "specialty": "分子病毒學 病毒與細胞交互作用",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/a17f38a3-b1ac-4c60-b7ac-aac395b8f0f3?nodeId=11932"
+    },
+    {
+      "name": "黃幸宜 教授 / Hsing-I Huang",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "hihuang@mail.cgu.edu.tw",
+      "phone": "3721",
+      "degree": "美國紐澤西羅格斯大學微生物與分子遺傳學博士",
+      "specialty": "腫瘤免疫學、細胞生物學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/260e68e8-59d0-4f07-b27c-f1706e8f0dc4?nodeId=11932"
+    },
+    {
+      "name": "舒竹青 副教授 / Jwu-Ching Shu",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "shujc@mail.cgu.edu.tw",
+      "phone": "3418",
+      "degree": "英國牛津大學生物化學博士",
+      "specialty": "臨床細菌學、病原菌與宿主交互作用、分子流行病學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/60e7296a-3673-4a48-9483-4829cf3172bb?nodeId=11932"
+    },
+    {
+      "name": "林美惠 副教授 / Mei-Hui Lin",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "thea@mail.cgu.edu.tw",
+      "phone": "5206",
+      "degree": "長庚大學生物醫學研究所博士",
+      "specialty": "臨床細菌學、細菌遺傳學、分子生物學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/13c2bcdb-c151-4c0b-b7d3-ac3d044fe1d9?nodeId=11932"
+    },
+    {
+      "name": "張家禎 副教授 / Chia-Chen Chang",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "chang@mail.cgu.edu.tw",
+      "phone": "5086",
+      "degree": "台灣大學醫學工程學研究所博士",
+      "specialty": "生醫感測技術、生物分析化學",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/b68c5fbb-8bf2-4dd4-81d6-d3c0abacb4de?nodeId=11932"
+    },
+    {
+      "name": "邱清旗 副教授 / Ching-Chi Chiu",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "ccchei@mail.cgu.edu.tw",
+      "phone": "3708",
+      "degree": "長庚大學生物醫學研究所博士",
+      "specialty": "神經科學、神經退化疾病、細胞分子生物學、誘導性多功能幹細胞、突變帕金森病基因嵌入小鼠、生物化學 、醫學生物技術",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/c8c66773-2061-4e61-ba70-0620fb232c33?nodeId=11932"
+    },
+    {
+      "name": "蔡雨寰 助理教授 / Yu-Huan Tsai",
+      "department": "醫學生物技術暨檢驗學系",
+      "location": "",
+      "email": "yuhuan.tsai@cgu.edu.tw",
+      "phone": "3585",
+      "degree": "法國巴黎第七大學 (巴斯德-巴黎大學國際博士學位學程) 巴黎巴斯德研究院 感染症生物學實驗室",
+      "specialty": "感染性疾病、自體免疫疾病、黏膜免疫、屏障免疫、微生物演化與致病機轉",
+      "profileUrl": "https://www.cgu.edu.tw/mip/FullTimeProfessorManagement/Detail/abfd95ce-28fb-40c9-92bd-28b252dbb1a9?nodeId=11932"
+    },
+    {
+      "name": "賴瑞陽 / 講座教授兼系主任",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "jylai@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #3598",
+      "degree": "國立清華大學化工 博士",
+      "specialty": "生醫材料、表面工程、組織工程、細胞治療",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/a9ed444b-19e6-4316-97c3-eebe7667a16f?nodeId=16002"
+    },
+    {
+      "name": "吳旻憲 / 特聘教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "mhwu@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #3599",
+      "degree": "英國牛津大學工程 博士",
+      "specialty": "組織工程、微流體生物晶片技術、循環腫瘤細胞、創意醫材開發",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/803301bb-e6e1-449e-9eaf-caebb9a82222?nodeId=16002"
+    },
+    {
+      "name": "李健峰 / 特聘教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "kflei@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #5345",
+      "degree": "香港中文大學 自動化與電腦輔助工程 博士",
+      "specialty": "類器官晶片、腫瘤微環境、癌細胞基因大數據分析",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/4e7fbca8-d184-42f6-b1dc-2f6845a67255?nodeId=16002"
+    },
+    {
+      "name": "蔡曉雯 / 教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "swtsai@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #5984",
+      "degree": "國立陽明大學醫學工程 博士",
+      "specialty": "生醫材料、組織工程、奈米材料生醫應用",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/e32cdfcb-3207-446f-9038-c744333844e0?nodeId=16002"
+    },
+    {
+      "name": "戴金龍 / 教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "taicl@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #5342",
+      "degree": "中原大學醫學工程博士",
+      "specialty": "生物力學、骨科實驗力學、骨科植入物設計、醫學工程",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/2c6db587-0f4e-468b-a9d4-e28a482c345e?nodeId=16002"
+    },
+    {
+      "name": "陳祥和 / 教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "hchen@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #5985",
+      "degree": "國立陽明大學醫學工程博士",
+      "specialty": "生物力學、人因工程、醫材設計與測試",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/0aaa398a-6ea9-41f8-aa32-142aaf396bce?nodeId=16002"
+    },
+    {
+      "name": "林彥亨 / 教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "yenheng@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #3789",
+      "degree": "國立成功大學 工程科學 博士",
+      "specialty": "生醫晶片設計及製作、光介電泳操控平台、微機電製程技術、奈米感測器製作",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/7869ef93-8edc-44ff-8fbe-21ab6a793f4e?nodeId=16002"
+    },
+    {
+      "name": "余仁方 / 副教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "jfyu@mail.cgu.edu.tw",
+      "phone": "03-211-8800 #5721",
+      "degree": "美國德州大學機械工程 博士",
+      "specialty": "聽覺科學、聽力預防、耳科學、聽覺輔具、聲音生態學",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/5c908e91-1549-4e51-a26d-096a1d130b3c?nodeId=16002"
+    },
+    {
+      "name": "蔡協孚 / 助理教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "hftsai@cgu.edu.tw",
+      "phone": "03-211-8800 #3079",
+      "degree": "沖繩科學技術大學科學技術研究科 博士",
+      "specialty": "生醫檢驗、異質微流體工程、人工智慧生醫影像處理",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/2cb7f452-4d08-40cb-b0e4-248a6f40e9ef?nodeId=16002"
+    },
+    {
+      "name": "章韶軒 / 助理教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "D000019876@cgu.edu.tw",
+      "phone": "03-211-8800 #3080",
+      "degree": "英國利物浦大學工程 博士",
+      "specialty": "人因工程、生醫影像處理、眼科醫材",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/39922bb8-9121-4f4c-b96e-5616a488a9ea?nodeId=16002"
+    },
+    {
+      "name": "邱彥榕 / 助理教授",
+      "department": "生物醫學工程學系",
+      "location": "",
+      "email": "D000020163@cgu.edu.tw",
+      "phone": "03-211-8800 #2626",
+      "degree": "國立陽明交通大學生物醫學資訊 博士",
+      "specialty": "生物資訊、生醫影像、人工智慧演算法設計、醫學資訊",
+      "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/207e5eaa-53fa-4517-aff8-fb28da8ca2e1?nodeId=16002"
+    },
+    {
+      "name": "吳國梅",
+      "department": "光電工程研究所",
+      "location": "",
+      "email": "wu@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128"
+    },
+    {
+      "name": "楊家銘",
+      "department": "光電工程研究所",
+      "location": "",
+      "email": "cmyang@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128"
+    },
+    {
+      "name": "陳乃權",
+      "department": "光電工程研究所",
+      "location": "",
+      "email": "ncchen001@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128"
+    },
+    {
+      "name": "張宗文",
+      "department": "光電工程研究所",
+      "location": "",
+      "email": "overcomer1984@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128"
+    },
+    {
+      "name": "游智仁",
+      "department": "光電工程研究所",
+      "location": "",
+      "email": "cjyu@mail.cgu.edu.tw",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128"
+    },
+    {
+      "name": "顯微手術國際碩士學位學程",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "魏福全",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "莊垂慶",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "林志鴻",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "鄭明輝",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "林有德",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "林承弘",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "黃嫆茹",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "高煌凱",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "曹中侃",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "許聰政",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "張乃仁",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "陳思恆",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "呂炯毅",
+      "department": "顯微手術國際碩士學位學程",
+      "location": "",
+      "email": "tina730207@gmail.com",
+      "phone": "",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
     }
   ],
-  "failures": [
-    {
-      "department": "醫學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "生物醫學系(含臨床試驗與評估碩士班)",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "醫學影像暨放射科學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "顯微手術國際碩士學位學程",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "電機工程學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "機械工程學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "光電工程研究所",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "奈米工程及設計碩士學位學程",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "工業設計學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "資訊管理學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "醫務管理學系",
-      "reason": "官方系所頁未找到專任教師入口"
-    },
-    {
-      "department": "智慧醫療創新碩士學位學程",
-      "reason": "官方系所頁未找到專任教師入口"
-    }
-  ]
+  "failures": []
 }
