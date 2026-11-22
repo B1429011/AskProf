@@ -176,7 +176,7 @@
       "name": "工商管理學系",
       "url": "https://www.cgu.edu.tw/ibm/",
       "location": "",
-      "facultyUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement?nodeId=3971"
+      "facultyUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement?nodeId=3970"
     },
     {
       "name": "工業設計學系",
@@ -225,6 +225,30 @@
       "url": "https://www.cgu.edu.tw/hds/",
       "location": "",
       "facultyUrl": "https://www.cgu.edu.tw/hds/FullTimeProfessorManagement?nodeId=17174"
+    },
+    {
+      "name": "通識中心自然學科",
+      "url": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "location": "",
+      "facultyUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx"
+    },
+    {
+      "name": "通識中心人文藝術學科",
+      "url": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "location": "",
+      "facultyUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx"
+    },
+    {
+      "name": "通識中心英文學科",
+      "url": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "location": "",
+      "facultyUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx"
+    },
+    {
+      "name": "通識中心社會學科",
+      "url": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "location": "",
+      "facultyUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx"
     }
   ],
   "faculty": [
@@ -2599,16 +2623,6 @@
       "profileUrl": "https://www.cgu.edu.tw/ce/FullTimeProfessorManagement/Detail/4191eb83-032a-4c4a-ae49-3f7da432bfed?nodeId=12456"
     },
     {
-      "name": "詹錦宏 教授 / 工商管理系主任、管理學院副院長",
-      "department": "工商管理學系",
-      "location": "",
-      "email": "chanch@mail.cgu.edu.tw",
-      "phone": "03-2118800 # 5416",
-      "degree": "日本九州大學 財務經濟博士 (Doctor's degree speciallizing in Business Economics)",
-      "specialty": "財務管理、衍生性金融商品",
-      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/48440e6e-2a22-46ba-9986-52bd6d0e9acf?nodeId=3971"
-    },
-    {
       "name": "王泰昌教授兼所長 / Taychang Wang",
       "department": "數位金融科技學系",
       "location": "",
@@ -4452,26 +4466,6 @@
       "name": "王俊杰",
       "department": "醫學影像暨放射科學系",
       "location": "",
-      "email": "",
-      "phone": "/傳真(TEL/FAX)：",
-      "degree": "",
-      "specialty": "(Research Interest):",
-      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37370?nodeId=11666"
-    },
-    {
-      "name": "王俊杰",
-      "department": "醫學影像暨放射科學系",
-      "location": "",
-      "email": "",
-      "phone": "(03)2118800 轉 5246, 5387",
-      "degree": "",
-      "specialty": "",
-      "profileUrl": "https://www.cgu.edu.tw/mirs/Subject/Detail/37371?nodeId=11666"
-    },
-    {
-      "name": "王俊杰",
-      "department": "醫學影像暨放射科學系",
-      "location": "",
       "email": "jwang@mail.cgu.edu.tw",
       "phone": "(03)2118800 轉 5246, 5387",
       "degree": "",
@@ -5119,6 +5113,236 @@
       "profileUrl": "https://www.cgu.edu.tw/bme/FullTimeProfessorManagement/Detail/207e5eaa-53fa-4517-aff8-fb28da8ca2e1?nodeId=16002"
     },
     {
+      "name": "湯明哲 教授 / 校長",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "mjtang@cgu.edu.tw",
+      "phone": "03-2118800 # 5051",
+      "degree": "美國麻省理工學院 史隆管理學院策略管理組博士",
+      "specialty": "策略規劃、產業分析、技術策略、國際化進入策略",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/eea3b012-40aa-49ee-8ecd-80099e13ea79?nodeId=3970"
+    },
+    {
+      "name": "詹錦宏 教授 / 工商管理系主任、管理學院副院長",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "chanch@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5416",
+      "degree": "日本九州大學 財務經濟博士",
+      "specialty": "財務管理、衍生性金融商品",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/55a5adca-09f2-4d4d-bfe4-11ac549cd10a?nodeId=3970"
+    },
+    {
+      "name": "王勝本 教授",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "wangsp@gap.cgu.edu.tw",
+      "phone": "03-2118800 # 5413",
+      "degree": "美國史丹佛大學 作業研究博士",
+      "specialty": "最佳化與模擬、管理科學模式",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/4a90c99d-7efe-4eb3-9558-9c7fb3d8a087?nodeId=3970"
+    },
+    {
+      "name": "吳 侃 教授 (Kan Wu) / 經營分析研究中心主任",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "kan@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5412",
+      "degree": "Ph.D. in Industrial and Systems Engineering with a Minor in Management from Georgia Institute of Technology",
+      "specialty": "Industry 4.0、Manufacturing system、Queueing theory、Supply chain management",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/ad7f496c-e2f8-4193-b040-a8e693e83347?nodeId=3970"
+    },
+    {
+      "name": "劉順仁 教授 / 商管專業學院執行長",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "szliu@cgu.edu.tw",
+      "phone": "03-2118800 # 3250",
+      "degree": "美國匹茲堡大學會計學博士",
+      "specialty": "管理會計、策略性財報分析",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/4e88d285-0552-41b1-94f8-39e79500827f?nodeId=3970"
+    },
+    {
+      "name": "江偉裕 教授 / 教務處語文中心主任",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "wchiang@cgu.edu.tw",
+      "phone": "03-2118800 # 5402",
+      "degree": "美國伊利諾大學香檳分校企業管理博士",
+      "specialty": "行銷科學、供應鏈管理、服務運營管理，行為經濟，產品線設計及動態定價策略",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/c3b64d37-fd7c-4610-8765-82dd8bc90200?nodeId=3970"
+    },
+    {
+      "name": "棗厥庸 副教授",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "cytsao@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3248",
+      "degree": "國立中央大學 財務金融博士",
+      "specialty": "財務工程、應用統計",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/02de1037-84ee-465c-b2ee-6220f8aa1b69?nodeId=3970"
+    },
+    {
+      "name": "李怡禛 副教授/台塑企業文物館教育推廣組組長/深耕發展中心主任",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "ichen@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3225",
+      "degree": "國立政治大學 企業管理博士",
+      "specialty": "人力資源管理、組織行為、教育訓練、管理學",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/c36ba2c7-3e67-4807-ba8f-4413b908b3dc?nodeId=3970"
+    },
+    {
+      "name": "范慧宜 副教授",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "Huiyifan@cgu.edu.tw",
+      "phone": "03-2118800 # 5407",
+      "degree": "國立政治大學企業管理學系博士",
+      "specialty": "策略規劃、統計分析、預測模型建立、市場定位、投資評估",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/3174bc37-7659-40cc-a1c1-0c211fc3a64c?nodeId=3970"
+    },
+    {
+      "name": "徐憶文 助理教授",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "yishyu@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5415",
+      "degree": "美國克里夫蘭州立大學 企業管理博士",
+      "specialty": "國際財務管理、投資學",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/66521c4e-b0bf-4ea6-8da3-02ab9dab4ffc?nodeId=3970"
+    },
+    {
+      "name": "陳威志 助理教授",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "chenwc@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3685",
+      "degree": "美國威斯康辛大學麥迪遜校區工業系統工程博士",
+      "specialty": "生產管理、品質工程, 決策科學",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/dc1b446e-8e42-4faa-889e-6816444b8bd0?nodeId=3970"
+    },
+    {
+      "name": "翁如音 助理教授",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "cokeweng@cgu.edu.tw",
+      "phone": "03-2118800 # 5853",
+      "degree": "國立台灣大學 國際企業學系 博士 (行銷組)",
+      "specialty": "社群行銷、人機互動、社群資料探勘、商業智慧、顧客參與",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/e1d95b78-a70e-43b3-91bc-2f366405fd81?nodeId=3970"
+    },
+    {
+      "name": "陳亭羽 教授 (與管理研究所合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "tychen@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5678",
+      "degree": "國立交通大學 交通運輸研究所博士",
+      "specialty": "模糊決策理論與方法、管理決策支援分析、多評準決策信息分析",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/9f9ffc40-536a-44d0-bec2-777f8e9cf0e6?nodeId=3970"
+    },
+    {
+      "name": "于卓民 教授 (與管理研究所合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "cmjyu@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5405",
+      "degree": "美國密西根大學 企業管理博士",
+      "specialty": "國際企業管理、創業管理",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/e833de42-86c8-4df0-820c-72160ee7220b?nodeId=3970"
+    },
+    {
+      "name": "謝凱宇 教授 (與管理研究所合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "hsieh@cgu.edu.tw",
+      "phone": "03-2118800 # 2639",
+      "degree": "倫敦商學院 (英國) 策略與創業學 博士",
+      "specialty": "企業總體策略、科技與創新管理、組織設計與變革、計量分析",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/b01446fb-775d-493f-ac8d-dc5a3053c38a?nodeId=3970"
+    },
+    {
+      "name": "黃崇興 教授 (與商管專業學院合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "huang4625@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3684",
+      "degree": "台灣大學電機工程學系學士、美國奧斯汀德州大學企業管理博士",
+      "specialty": "服務業管理、經營管理、企業決策",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/e11a5b12-1f25-4cc6-a94e-3810e80329f6?nodeId=3970"
+    },
+    {
+      "name": "高銘鴻 助理教授 (與商管專業學院合聘) / 行銷長",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "mhkao@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3246",
+      "degree": "一橋大學 商學博士",
+      "specialty": "行銷管理、服務業管理、消費者行為",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/7d722fe6-8d91-4e8b-b647-990073311a94?nodeId=3970"
+    },
+    {
+      "name": "李書行 教授 (與數位金融科技學系合聘) / 副校長 / 管理學院院長",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "shli@cgu.edu.tw",
+      "phone": "03-2118800 # 5401",
+      "degree": "美國紐約大學會計博士",
+      "specialty": "資訊經濟學在會計之應用、多國籍企業轉撥計價之研究、資本市場研究、人工智慧與商情分析",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/2779f3ea-4d38-4608-ba83-a59cd92b239b?nodeId=3970"
+    },
+    {
+      "name": "張恆瑜 副教授 (與數位金融科技學系合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "hychang@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 5408",
+      "degree": "國立成功大學國際企業研究所博士（主修財務）",
+      "specialty": "公司理財，公司治理，永續金融，企業社會責任",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/e6d8330e-cbc0-48cb-a684-9a65a473dfc0?nodeId=3970"
+    },
+    {
+      "name": "史綱 教授 (與數位金融科技學系合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "gshyy@hotmail.com",
+      "phone": "03-2118800 # 3694",
+      "degree": "美國紐約市立大學經濟學博士",
+      "specialty": "金融商品與市場、投資銀行業務、綠色金融、公司治理",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/16311307-8b43-44fb-ada8-db1a2bc53b3b?nodeId=3970"
+    },
+    {
+      "name": "王泰昌 教授 (與數位金融科技學系合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "tcwang@cgu.edu.tw",
+      "phone": "03-2118800 # 2638",
+      "degree": "美國賓州大學華頓學院財務金融博士",
+      "specialty": "財務經濟、ESG及AI導向之企業評價、財務數學",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/62793742-793e-4aad-80c3-2f0d09d401bc?nodeId=3970"
+    },
+    {
+      "name": "邱顯比 教授 (與數位金融科技學系合聘)",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "csb@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3063",
+      "degree": "美國華盛頓大學（西雅圖）財務博士",
+      "specialty": "公司理財、企業購併、資產管理、投資人行為",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/08a4aaad-88b2-48d4-81cf-fd5d2db3d529?nodeId=3970"
+    },
+    {
+      "name": "王光正 教授 (與通識中心社會學科合聘) / 企業文物館館長、通識社會科召集人",
+      "department": "工商管理學系",
+      "location": "",
+      "email": "andywang@mail.cgu.edu.tw",
+      "phone": "03-2118800 # 3298",
+      "degree": "國立台灣大學 經濟學博士",
+      "specialty": "產業經濟、國際貿易",
+      "profileUrl": "https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement/Detail/f77e77cc-7a1c-4da2-b258-3309af9725a9?nodeId=3970"
+    },
+    {
       "name": "吳國梅",
       "department": "光電工程研究所",
       "location": "",
@@ -5307,6 +5531,435 @@
       "degree": "",
       "specialty": "",
       "profileUrl": "https://www.cgu.edu.tw/rm/Contents?nodeId=10313"
+    },
+    {
+      "name": "劉德玲 / 召集人、教授",
+      "department": "通識中心人文藝術學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3317",
+      "degree": "",
+      "specialty": "人文藝術學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "陳肇萱 / 助理教授",
+      "department": "通識中心人文藝術學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 2608",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "洪于淳 / 講師",
+      "department": "通識中心人文藝術學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5277",
+      "degree": "",
+      "specialty": "人文藝術學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "韓學宏 / 副教授",
+      "department": "通識中心人文藝術學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5681",
+      "degree": "",
+      "specialty": "人文藝術學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "陳鳳儀 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3316",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "黃尹瑩 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5511",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "田康人 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5047",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "高佩倫 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5363",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "高柏祺 / 教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5127",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "高大衛 / 講師",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3692",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "葉玉慧 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5365",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "賴素珍 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3160",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "鄭惠芳 / 教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5049",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "葛瑞格 / 助理教授",
+      "department": "通識中心英文學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3590",
+      "degree": "",
+      "specialty": "英文學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "蘇詔勤 / 助理教授",
+      "department": "通識中心社會學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5686",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "胡正申 / 教授",
+      "department": "通識中心社會學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3715",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "蔡孟樺 / 助理教授",
+      "department": "通識中心社會學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5043",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "王賀白 / 副教授",
+      "department": "通識中心社會學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5474",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "陳英淙 / 教授",
+      "department": "通識中心社會學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5143",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "王光正 / 召集人(教授)",
+      "department": "通識中心社會學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3298",
+      "degree": "",
+      "specialty": "社會學科",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "蘇家豪 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5054",
+      "degree": "",
+      "specialty": "自然學科-化學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "張淑滿 / 助理教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5128",
+      "degree": "",
+      "specialty": "自然學科-資訊",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "賴光昶 / 副教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3793",
+      "degree": "",
+      "specialty": "自然學科-物理",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "何金龍 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3794",
+      "degree": "",
+      "specialty": "自然學科-物理",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "邱紹玄 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3367",
+      "degree": "",
+      "specialty": "自然學科-物理",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "林惠莉 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5042",
+      "degree": "",
+      "specialty": "自然學科-數學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "陳敬勳 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5685",
+      "degree": "",
+      "specialty": "自然學科-化學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "吳璧如 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 3174",
+      "degree": "",
+      "specialty": "自然學科-物理",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "蔡福源 / 副教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5255",
+      "degree": "",
+      "specialty": "自然學科-化學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "董人銓 / 助理教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5113",
+      "degree": "",
+      "specialty": "自然學科-物理",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "許清山 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5112",
+      "degree": "",
+      "specialty": "自然學科-數學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "周淑娥 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5687",
+      "degree": "",
+      "specialty": "自然科學-生物",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "駱碧秀 / 召集人、教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5018",
+      "degree": "",
+      "specialty": "自然學科-化學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "王埄彬 / 教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5684",
+      "degree": "",
+      "specialty": "自然學科-數學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "吳宜真 / 助理教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5834",
+      "degree": "",
+      "specialty": "自然學科-資訊",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "何秉澔 / 專輔教師",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5475",
+      "degree": "",
+      "specialty": "自然學科-化學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "賴冠宇 / 助理教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5682",
+      "degree": "",
+      "specialty": "",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "邢正蓉 / 助理教授",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5683",
+      "degree": "",
+      "specialty": "自然學科-物理",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
+    },
+    {
+      "name": "梁弘志 / 專輔教師",
+      "department": "通識中心自然學科",
+      "location": "",
+      "email": "",
+      "phone": "分機 5164",
+      "degree": "",
+      "specialty": "自然學科-數學",
+      "profileUrl": "https://www4.is.cgu.edu.tw/extphone/general/phone.aspx",
+      "verifiedBy": "CGU public extension directory"
     }
   ],
   "failures": []

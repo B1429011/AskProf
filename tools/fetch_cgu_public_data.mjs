@@ -42,6 +42,9 @@ const data=JSON.parse(await fs.readFile(out,'utf8')); const faculty=[]; const fa
 for (let i=0;i<data.departments.length;i++) {
   const d=data.departments[i]; try {
     const home=await get(d.url); const loc=field(home,'(?:學系|系所)位置')||d.location||''; d.location=loc; d.facultyUrl=facultyUrl(d.url,home);
+    // The first FullTimeProfessorManagement link on IBM's site is a single-person page.
+    // Use the official full roster page instead.
+    if(d.name==='工商管理學系')d.facultyUrl='https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement?nodeId=3970';
     if (!d.facultyUrl) { failures.push({department:d.name,reason:'官方系所頁未找到專任教師入口'}); continue; }
     for (const page of await allFacultyPages(d.facultyUrl)) faculty.push(...parseFacultyPage(page.html,d.name,loc,page.url));
   } catch (e) { failures.push({department:d.name,reason:String(e.message||e)}); }

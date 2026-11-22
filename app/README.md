@@ -17,4 +17,4 @@ node server.mjs
 
 再開啟 `http://127.0.0.1:4173/`。
 
-公開師資資料位於 `data/cgu_public.json`，來源為長庚大學官方系所網站。登入畫面目前是黑客松展示用的 OTP 原型：輸入長庚信箱後，測試碼會直接顯示在畫面上，不會真的寄送 Outlook 信件。正式版本必須由後端接 Microsoft Entra ID／校務 SSO，驗證學生或師長角色後再建立安全 session；GitHub Pages 前端不收集學校密碼，也不保存學生個資。
+公開師資資料位於 `data/cgu_public.json`，來源為長庚大學官方系所網站與校方公開分機目錄，包含 37 個學術系所／學程、通識中心 4 個學科與 567 筆公開教學師資。登入畫面目前是黑客松展示用的 OTP 原型：輸入長庚信箱後，測試碼會直接顯示在畫面上，不會真的寄送 Outlook 信件。正式版本必須由後端接 Microsoft Entra ID／校務 SSO，驗證學生或師長角色後再建立安全 session；GitHub Pages 前端不收集學校密碼，也不保存學生個資。

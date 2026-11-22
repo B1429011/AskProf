@@ -28,6 +28,7 @@ const targets=[
   ['醫務管理學系',['https://www.cgu.edu.tw/hcm/Subject?nodeId=4518']],
   ['醫學生物技術暨檢驗學系',['https://www.cgu.edu.tw/mip/FullTimeProfessorManagement?nodeId=11932']],
   ['生物醫學工程學系',['https://www.cgu.edu.tw/bme/FullTimeProfessorManagement?nodeId=16002']],
+  ['工商管理學系',['https://www.cgu.edu.tw/ibm/FullTimeProfessorManagement?nodeId=3970']],
   ['光電工程研究所',['https://www.cgu.edu.tw/gioeoe/Subject/Detail/30461?nodeId=10128']],
   ['顯微手術國際碩士學位學程',['https://www.cgu.edu.tw/rm/Contents?nodeId=10313']],
 ];
@@ -40,6 +41,34 @@ for(const [department,urls] of targets){
   const d=data.departments.find(x=>x.name===department); if(d)d.facultyUrl=urls[0];
   console.log(department,rows.length);
 }
+// The official academic-unit directory omits university-wide teaching centers.
+// Read CGU's public extension directory and add its teaching staff as searchable records.
+const extensionDirectory='https://www4.is.cgu.edu.tw/extphone/general/phone.aspx';
+try{
+  const page=await get(extensionDirectory);
+  const hidden=[...page.matchAll(/<input[^>]+type="hidden"[^>]*>/gi)].map(m=>m[0]);
+  const values={};
+  for(const input of hidden){const name=(input.match(/\bname="([^"]+)"/i)||[])[1],value=(input.match(/\bvalue="([^"]*)"/i)||[])[1]||'';if(name)values[name]=value;}
+  const body=new URLSearchParams({...values,txtcondition:'通識中心',btnsel:'查詢'});
+  const response=await fetch(extensionDirectory,{method:'POST',headers:{'User-Agent':'LearningNavigation/0.2 public-data-import','Content-Type':'application/x-www-form-urlencoded'},body});
+  if(!response.ok)throw new Error(`${response.status} ${extensionDirectory}`);
+  const html=await response.text();
+  const decode=s=>clean(s).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&#x([\da-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;/gi,"'");
+  const rows=[];
+  for(const tr of html.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)){
+    const text=[...tr[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map(m=>decode(m[1]));
+    if(text.length<4)continue;
+    const [unit,title,name,extension,...other]=text;
+    if(!/教授|副教授|助理教授|講師|專輔教師/.test(title)||!name)continue;
+    const department=unit.replace(/^通識中心/,'通識中心');
+    if(!data.departments.some(d=>d.name===department))data.departments.push({name:department,url:extensionDirectory,location:'',facultyUrl:extensionDirectory});
+    rows.push({name:`${name} / ${title}`,department,location:'',email:'',phone:extension?`分機 ${extension}`:'',degree:'',specialty:other.filter(Boolean).join('、'),profileUrl:extensionDirectory});
+  }
+  const imported=rows.map(x=>({...x,verifiedBy:'CGU public extension directory'}));
+  const others=data.faculty.filter(x=>!/^通識中心/.test(x.department));
+  data.faculty=[...new Map([...others,...imported].map(x=>[`${x.department}|${x.name}`,x])).values()];
+  console.log(`通識中心公開教學師資 ${imported.length}`);
+}catch(e){console.log('通識中心公開分機目錄匯入失敗',e.message);}
 data.failures=(data.failures||[]).filter(f=>!targets.some(t=>t[0]===f.department));
 data.fetchedAt=new Date().toISOString().slice(0,10);
 await fs.writeFile(out,JSON.stringify(data,null,2),'utf8');
