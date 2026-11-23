@@ -117,6 +117,15 @@
     openModal(`<button class="modal-close" data-action="close-modal">×</button><div class="feedback-modal-icon">✦</div><h2>簽退成功，留下今天的學習回饋</h2><p class="modal-sub">回饋會保存到你的個人學習檔案，幫助 AskProf 整理學習歷程。</p><div class="feedback-session-note"><strong>${session.appointment ? esc(session.appointment.topic) : '自由學習紀錄'}</strong><span>簽到 ${profileDate(session.checkInAt)}　·　簽退 ${profileDate(session.checkOutAt)}</span></div><div class="field"><label for="feedbackSubject">科目</label><select id="feedbackSubject">${options}</select></div><div class="field"><label for="feedbackTopic">本次討論／學習主題</label><input id="feedbackTopic" placeholder="例如：Ripple 電壓判讀、資料結構樹狀圖"></div><div class="field"><label for="feedbackConfidence">理解程度（1 最不熟悉，5 已能說明）</label><select id="feedbackConfidence"><option value="1">1｜還不理解</option><option value="2">2｜有明顯卡點</option><option value="3" selected>3｜基本理解</option><option value="4">4｜大致掌握</option><option value="5">5｜可以說明</option></select></div><div class="field"><label for="feedbackDifficulty">哪裡最困難？</label><textarea id="feedbackDifficulty" placeholder="記下卡住的概念、題型或需要再問的地方"></textarea></div><div class="field"><label for="feedbackNextStep">下一步</label><textarea id="feedbackNextStep" placeholder="例如：完成兩題波形判讀，再預約專輔確認"></textarea></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">稍後再寫</button><button class="primary-btn" data-action="submit-feedback">保存回饋</button></div>`);
   }
 
+  function syncRoleNavigation() {
+    const facultyOnlyHidden = new Set(['courses', 'profile']);
+    document.querySelectorAll('.nav-item[data-view]').forEach(item => {
+      const hidden = state.role === 'professor' && facultyOnlyHidden.has(item.dataset.view);
+      item.style.display = hidden ? 'none' : '';
+      item.setAttribute('aria-hidden', hidden ? 'true' : 'false');
+    });
+  }
+
   async function requestAiAnalysis() {
     state.aiAnalysisStatus = 'loading';
     render();
@@ -147,6 +156,8 @@
   }
 
   updateHeader = function () {
+    if (state.role === 'professor' && state.view === 'profile') state.view = 'home';
+    syncRoleNavigation();
     originalUpdateHeader();
     if (state.view === 'profile') {
       document.getElementById('breadcrumbRoot').textContent = '個人學習檔案';
@@ -154,7 +165,7 @@
     }
   };
   render = function () {
-    if (state.view === 'profile') { updateHeader(); renderProfile(); return; }
+    if (state.role === 'student' && state.view === 'profile') { updateHeader(); renderProfile(); return; }
     originalRender();
   };
   handleAction = function (action, element) {
@@ -189,4 +200,6 @@
     }
     return originalHandleAction(action, element);
   };
+
+  syncRoleNavigation();
 })();
