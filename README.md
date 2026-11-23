@@ -47,3 +47,5 @@ GitHub Pages 是靜態網站，不能安全地寄送 Outlook 信件、保存密�
 
 GitHub Pages 本身不能執行後端，因此正式環境要把 `backend/` 部署到可保存 secrets 的 Node 雲端服務，設定 `CGU_API_KEY`、`CGU_MODEL` 與 `ASKPROF_ALLOWED_ORIGIN`，再把網站的 `ASKPROF_AI_ENDPOINT` 指向該服務。沒有後端時，網站會顯示「AI 分析連線失敗」，不會假裝已完成真正分析。啟動方式與部署變數請看 [`backend/README.md`](backend/README.md)。
 
+學生端與教授端使用不同工作區：個人學習檔案與修課地圖只在學生端顯示；教授端聚焦公開資料、可預約時段與學生預約管理。
+
