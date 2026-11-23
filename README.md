@@ -41,3 +41,9 @@ GitHub Pages 是靜態網站，不能安全地寄送 Outlook 信件、保存密�
 
 「專輔專區」依長庚大學 2024/06/21 公開的「預約專業科目輔導員」公告整理，共 7 位輔導員，顯示公告中的輔導科目、信箱、分機與諮詢地點。可預約時段則由輔導員登入後自行維護。
 
+## 正式 AI 學習分析
+
+個人學習檔案的分析流程已改為呼叫 `backend/server.mjs` 的安全 API 代理，再由後端連線長庚 CGU LLM Gateway；目前預設模型為 `gpt-5.6-luna`。瀏覽器只送出學生主動填寫的回饋、預約主題與修課狀態，不會接觸 LLM API Key。後端會回傳結構化的摘要、各科目狀態與下一步建議，並在瀏覽器依登入帳號分開保存。
+
+GitHub Pages 本身不能執行後端，因此正式環境要把 `backend/` 部署到可保存 secrets 的 Node 雲端服務，設定 `CGU_API_KEY`、`CGU_MODEL` 與 `ASKPROF_ALLOWED_ORIGIN`，再把網站的 `ASKPROF_AI_ENDPOINT` 指向該服務。沒有後端時，網站會顯示「AI 分析連線失敗」，不會假裝已完成真正分析。啟動方式與部署變數請看 [`backend/README.md`](backend/README.md)。
+
