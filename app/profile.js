@@ -119,10 +119,12 @@
 
   function syncRoleNavigation() {
     const facultyOnlyHidden = new Set(['courses', 'profile']);
+    document.querySelector('.app-shell')?.classList.toggle('faculty-mode', state.role === 'professor');
     document.querySelectorAll('.nav-item[data-view]').forEach(item => {
       const hidden = state.role === 'professor' && facultyOnlyHidden.has(item.dataset.view);
       item.style.display = hidden ? 'none' : '';
       item.setAttribute('aria-hidden', hidden ? 'true' : 'false');
+      item.disabled = hidden;
     });
   }
 
@@ -165,8 +167,14 @@
     }
   };
   render = function () {
+    if (state.role === 'professor' && (state.view === 'profile' || state.view === 'courses')) state.view = 'home';
     if (state.role === 'student' && state.view === 'profile') { updateHeader(); renderProfile(); return; }
     originalRender();
+  };
+  const originalSetView = setView;
+  setView = function (view) {
+    if (state.role === 'professor' && (view === 'profile' || view === 'courses')) view = 'home';
+    return originalSetView(view);
   };
   handleAction = function (action, element) {
     if (action === 'refresh-ai') { if (!state.feedbackEntries.length) return toast('請先完成一次簽退回饋。'); requestAiAnalysis(); return; }

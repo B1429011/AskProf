@@ -28,7 +28,9 @@
     if (index >= 0) return { ...publicFaculty()[index], key: `f:${index}` };
     const tutor = (state.publicData.specialTutors || []).find(item => email && String(item.email || '').toLowerCase() === email);
     if (tutor) return { ...tutor, key: tutor.availabilityKey, isTutor: true, name: tutor.name, dept: tutor.department || '專業科目輔導員', research: tutor.specialty || `輔導科目：${(tutor.subjects || []).join('、')}` };
-    return null;
+    // 模擬教師工作台：讓展示帳號或角色切換仍可完整驗證時段與預約流程。
+    // 不會覆蓋或修改官方公開師資資料。
+    return { id: 'sim:faculty', key: 'sim:faculty', name: 'AskProf 模擬教師', initials: 'A', dept: '模擬教師工作台｜電子工程學系', department: '模擬教師工作台｜電子工程學系', degree: '展示用身分', tags: ['預約管理', 'RFID 簽到', '學習諮詢'], research: '此模擬教師供驗證教授端的時段管理、學生預約與 RFID 流程，不代表校方認證身分。', specialty: '預約管理、RFID 簽到、學習諮詢', email: 'faculty.demo@askprof.test', phone: 'Demo-0000', location: 'AskProf 模擬諮詢室', profileUrl: '', isDemo: true };
   }
   findFacultyByEmail = function (email) {
     const normalized = String(email || '').trim().toLowerCase();

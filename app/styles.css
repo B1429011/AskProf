@@ -22,3 +22,4 @@
 @media(max-width:720px){.profile-stats-grid{grid-template-columns:1fr 1fr}.reader-panel{display:block}.reader-visual{display:none}.reader-panel h2{font-size:19px}.reader-actions{display:grid;grid-template-columns:1fr}.profile-demo-badge{margin-top:14px}.profile-subject-meta{display:grid;gap:3px}}
 
 .ai-panel-actions{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-top:16px}.ai-panel-actions .ai-disclaimer{margin-top:0;flex:1}.ai-panel-actions .link-btn{font-size:10px;white-space:nowrap}
+.app-shell.faculty-mode .nav-item[data-view="profile"],.app-shell.faculty-mode .nav-item[data-view="courses"]{display:none!important}
