@@ -3,6 +3,7 @@
   const originalSave = save;
   const originalHandleAction = handleAction;
   const originalOpenProfessorModal = openProfessorModal;
+  const originalFindFacultyByEmail = findFacultyByEmail;
 
   let storedCourses = null;
   try { storedCourses = JSON.parse(localStorage.getItem('learningNavCourses') || 'null'); } catch { storedCourses = null; }
@@ -19,8 +20,13 @@
     const email = String(state.auth?.email || '').toLowerCase();
     const index = publicFaculty().findIndex(p => email && String(p.email || '').toLowerCase() === email);
     if (index >= 0) return { ...publicFaculty()[index], key: `f:${index}` };
+    const tutor = (state.publicData.specialTutors || []).find(item => email && String(item.email || '').toLowerCase() === email);
+    if (tutor) return { ...tutor, key: tutor.availabilityKey, isTutor: true, name: tutor.name, dept: tutor.department || '專業科目輔導員', research: tutor.specialty || `輔導科目：${(tutor.subjects || []).join('、')}` };
     return null;
   }
+  findFacultyByEmail = function (email) {
+    return originalFindFacultyByEmail(email) || (state.publicData.specialTutors || []).find(item => String(item.email || '').toLowerCase() === String(email || '').trim().toLowerCase()) || null;
+  };
   function facultySlots(key) {
     const raw = state.facultyAvailability[key] || [];
     const normalized = raw.map(slot => typeof slot === 'string' ? { label: slot, status: 'open' } : { status: 'open', ...slot });
@@ -72,9 +78,20 @@
     openModal(`<button class="modal-close" data-action="close-modal">×</button><h2>新增可預約時段</h2><p class="modal-sub">${esc(faculty.name)}｜新增後學生會在教師卡片看到這個時段。</p><div class="field"><label>日期</label><input id="facultySlotDate" type="date" value="2026-11-26"></div><div class="field"><label>時間</label><select id="facultySlotTime"><option>09:00 - 09:30</option><option>10:00 - 10:30</option><option>14:00 - 14:30</option><option>15:00 - 15:30</option><option>16:00 - 16:30</option></select></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">取消</button><button class="primary-btn" data-action="save-faculty-slot">公開時段</button></div>`);
   }
 
+  function renderTutorWorkspace(tutor) {
+    const slots = state.tutorAvailability[tutor.key] || [];
+    const appointments = state.appointments.filter(item => item.tutorKey === tutor.key);
+    app.innerHTML = `<div class="page-heading"><div><p class="eyebrow">SUPPORT TUTOR WORKSPACE</p><h1>${esc(tutor.name)}｜專輔工作台</h1><p>管理輔導科目、公開聯絡資料與可預約時段。</p></div><button class="primary-btn" data-action="add-tutor-slot" data-tutor-id="${esc(tutor.id)}">＋ 新增可預約時段</button></div>
+      <div class="grid stats-grid">${statCard('◷', '目前開放時段', slots.length, '學生可直接預約', '#2d5bdb')}${statCard('▤', '輔導科目', (tutor.subjects || []).join('、'), '來自官方公告', '#ffd529')}${statCard('✉', '公開信箱', tutor.email || '未公開', '官方聯絡資料', '#11a77e')}${statCard('⌕', '公開分機', tutor.phone || '未公開', '學生可直接聯絡', '#bd31d8')}</div>
+      <div class="grid two-col"><section class="panel"><div class="panel-head"><div><h2>專輔可預約時段</h2><p>新增後會立即顯示在學生端專輔專區。</p></div></div><div class="slot-list">${slots.length ? slots.map(slot => `<div class="slot-row"><div class="slot-time">${esc(slot)}<br><span style="font-size:10px;color:var(--blue)">30 分鐘</span></div><div class="slot-info"><strong>學生可直接預約</strong><span>由你登入後自行維護</span></div><span class="slot-state">開放中</span></div>`).join('') : '<div class="empty-state">尚未建立時段，先新增一個可預約時間吧。</div>'}</div></section><section class="panel"><div class="panel-head"><div><h2>公開專輔資料</h2><p>學生在專輔專區會看到這些欄位。</p></div></div><div class="public-detail-list"><div><span>姓名／身分</span><strong>${esc(tutor.name)}｜${esc(tutor.dept)}</strong></div><div><span>輔導科目</span><strong>${esc((tutor.subjects || []).join('、'))}</strong></div><div><span>信箱</span><strong>${esc(tutor.email || '官方未公開')}</strong></div><div><span>電話／分機</span><strong>${esc(tutor.phone || '官方未公開')}</strong></div><div><span>諮詢地點</span><strong>${esc(tutor.location || '官方未提供')}</strong></div></div></section></div>
+      <section class="panel"><div class="panel-head"><div><h2>學生預約</h2><p>學生取消後，時段會回到可預約清單。</p></div><span class="sub">${appointments.length} 筆</span></div>${appointments.length ? `<div class="appointment-list">${appointments.map(item => `<div class="appointment-row">${initialsAvatar(item.initials || '學')}<div class="info"><strong>${esc(item.topic)}</strong><span>${esc(item.studentEmail || '長庚學生')}　·　${esc(item.slot)}</span></div><span class="status-confirmed">已確認</span></div>`).join('')}</div>` : '<div class="empty-state">目前還沒有學生預約。</div>'}</section>`;
+    bind();
+  }
+
   function renderFacultyWorkspace() {
     const faculty = currentFaculty();
     if (!faculty) return app.innerHTML = `<div class="empty-state panel"><h2>尚未對應師長資料</h2><p>請用官方公開師資信箱登入，才能管理自己的可預約時段。</p></div>`;
+    if (faculty.isTutor) return renderTutorWorkspace(faculty);
     const slots = facultySlots(faculty.key);
     const open = slots.filter(slot => slot.status === 'open').length;
     const booked = slots.filter(slot => slot.status === 'booked').length;
