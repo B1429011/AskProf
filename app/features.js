@@ -4,6 +4,11 @@
   const originalHandleAction = handleAction;
   const originalOpenProfessorModal = openProfessorModal;
   const originalFindFacultyByEmail = findFacultyByEmail;
+  const demoVerificationCode = '246810';
+  const demoStudent = { email: 'student.demo@askprof.test', role: 'student' };
+  const demoFaculty = { id: 'demo:faculty', key: 'demo:faculty', name: 'AskProf 展示教師', initials: 'A', dept: '展示教師帳號｜電子工程學系', department: '展示教師帳號｜電子工程學系', degree: '展示用帳號', tags: ['展示預約', '系統測試', 'RFID'], research: '這是專門用來驗證搜尋、預約、取消與教師時段管理的展示教師資料，不代表真實師資。', specialty: '展示預約、系統測試、RFID', email: 'faculty.demo@askprof.test', phone: 'Demo-0000', location: 'AskProf 展示空間', profileUrl: '', isDemo: true };
+  const originalIsCguEmail = isCguEmail;
+  isCguEmail = value => originalIsCguEmail(value) || [demoStudent.email, demoFaculty.email].includes(String(value || '').trim().toLowerCase());
 
   let storedCourses = null;
   try { storedCourses = JSON.parse(localStorage.getItem('learningNavCourses') || 'null'); } catch { storedCourses = null; }
@@ -18,6 +23,7 @@
 
   function currentFaculty() {
     const email = String(state.auth?.email || '').toLowerCase();
+    if (email === demoFaculty.email) return demoFaculty;
     const index = publicFaculty().findIndex(p => email && String(p.email || '').toLowerCase() === email);
     if (index >= 0) return { ...publicFaculty()[index], key: `f:${index}` };
     const tutor = (state.publicData.specialTutors || []).find(item => email && String(item.email || '').toLowerCase() === email);
@@ -25,7 +31,9 @@
     return null;
   }
   findFacultyByEmail = function (email) {
-    return originalFindFacultyByEmail(email) || (state.publicData.specialTutors || []).find(item => String(item.email || '').toLowerCase() === String(email || '').trim().toLowerCase()) || null;
+    const normalized = String(email || '').trim().toLowerCase();
+    if (normalized === demoFaculty.email) return demoFaculty;
+    return originalFindFacultyByEmail(email) || (state.publicData.specialTutors || []).find(item => String(item.email || '').toLowerCase() === normalized) || null;
   };
   function facultySlots(key) {
     const raw = state.facultyAvailability[key] || [];
@@ -57,6 +65,11 @@
   };
 
   openProfessorModal = function (id) {
+    if (id === demoFaculty.id) {
+      const slots = selectedFacultySlot(demoFaculty.key);
+      openModal(`<button class="modal-close" data-action="close-modal">×</button><h2>${esc(demoFaculty.name)}</h2><p class="modal-sub">${esc(demoFaculty.dept)}｜${esc(demoFaculty.degree)}</p><div class="appointment-highlight" style="margin-bottom:14px"><span class="label">展示帳號說明</span><div class="date" style="font-size:17px">${esc(demoFaculty.tags.join(' × '))}</div><div class="desc">${esc(demoFaculty.research)}</div></div><div class="public-detail-list"><div><span>展示信箱</span><strong>${esc(demoFaculty.email)}</strong></div><div><span>展示分機</span><strong>${esc(demoFaculty.phone)}</strong></div><div><span>展示地點</span><strong>${esc(demoFaculty.location)}</strong></div></div><h3 style="font-size:13px;margin:18px 0 7px">可預約時段</h3><div class="slot-options">${slots.length ? slots.map((slot, i) => `<button class="slot-option ${i === 0 ? 'selected' : ''}" data-slot-choice="${esc(slot.label)}"><strong>${esc(slot.label)}</strong><span>30 分鐘</span></button>`).join('') : '<div class="empty-state">請先用教師展示帳號新增時段</div>'}</div><div class="field"><label>想討論的主題</label><textarea id="topicInput" placeholder="例如：測試預約與取消流程"></textarea></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">關閉</button><button class="primary-btn" data-action="confirm-faculty-book" data-faculty-id="${demoFaculty.id}" ${slots.length ? '' : 'disabled'}>確認預約</button></div>`);
+      return;
+    }
     if (!String(id).startsWith('f:')) return originalOpenProfessorModal(id);
     const p = publicFaculty()[Number(String(id).split(':')[1])];
     if (!p) return;
@@ -70,6 +83,27 @@
       <div class="field"><label>想討論的主題</label><textarea id="topicInput" placeholder="例如：專題方向、選課規劃、研究興趣..."></textarea></div>
       <div class="data-source-banner compact"><span class="source-check">⌕</span><div><strong>${slots.length ? '可直接提出預約' : '預約時間由教授本人維護'}</strong><small>${slots.length ? '選擇時段後送出預約。' : '教授登入後即可設定可預約時間。'}</small></div></div>
       <div class="modal-actions"><a class="secondary-btn" href="${esc(p.profileUrl || '#')}" target="_blank" rel="noopener">查看官方聯絡資料 ↗</a><button class="ghost-btn" data-action="close-modal">關閉</button><button class="primary-btn" data-action="confirm-faculty-book" data-faculty-id="${esc(id)}" ${slots.length ? '' : 'disabled'}>確認預約</button></div>`);
+  };
+
+  const officialRenderProfessors = renderProfessors;
+  renderProfessors = function () {
+    officialRenderProfessors();
+    const grid = document.getElementById('profGrid');
+    if (!grid || state.role !== 'student') return;
+    grid.insertAdjacentHTML('afterbegin', `<div class="data-source-banner compact" style="grid-column:1/-1"><span class="source-check">A</span><div><strong>展示帳號教師</strong><small>用於驗證新增時段、學生預約與取消流程，不會改動官方師資資料。</small></div></div>${realFacultyCard(demoFaculty)}`);
+    bind();
+  };
+  const officialFilterPublicFaculty = filterPublicFaculty;
+  filterPublicFaculty = function () {
+    officialFilterPublicFaculty();
+    const query = document.getElementById('profSearch')?.value || '';
+    const department = document.getElementById('deptFilter')?.value || 'all';
+    const course = document.getElementById('courseFilter')?.value || 'all';
+    const specialty = document.getElementById('specialtyFilter')?.value || 'all';
+    if (state.role === 'student' && (department === 'all' || department === demoFaculty.dept) && courseMatches(demoFaculty, course) && (specialty === 'all' || demoFaculty.tags.includes(specialty)) && matchesSearch(`${demoFaculty.name} ${demoFaculty.dept} ${demoFaculty.research} ${demoFaculty.tags.join(' ')}`, query)) {
+      document.getElementById('profGrid')?.insertAdjacentHTML('afterbegin', realFacultyCard(demoFaculty));
+      bind();
+    }
   };
 
   function openFacultySlotModal() {
@@ -166,7 +200,7 @@
     }
     if (action === 'confirm-faculty-book') {
       const key = element.dataset.facultyId;
-      const p = publicFaculty()[Number(String(key).split(':')[1])];
+      const p = key === demoFaculty.id ? demoFaculty : publicFaculty()[Number(String(key).split(':')[1])];
       const choice = modal.querySelector('.slot-option.selected')?.dataset.slotChoice;
       if (!p || !choice) return toast('請先選擇可預約時段。');
       const slot = facultySlots(key).find(item => item.label === choice && item.status === 'open');
@@ -196,4 +230,25 @@
     }
     return originalHandleAction(action, element);
   };
+
+  document.querySelectorAll('[data-demo-account]').forEach(button => button.addEventListener('click', () => {
+    const role = button.dataset.demoAccount;
+    const account = role === 'faculty' ? demoFaculty : demoStudent;
+    document.querySelector(`.auth-role[data-auth-role="${role}"]`)?.click();
+    const emailInput = document.getElementById('schoolEmail');
+    if (emailInput) emailInput.value = account.email;
+    state.pendingAuth = { email: account.email, role, code: demoVerificationCode, createdAt: Date.now(), facultyName: role === 'faculty' ? demoFaculty.name : '', facultyDepartment: role === 'faculty' ? demoFaculty.department : '' };
+    document.getElementById('authEmailTarget').textContent = account.email;
+    document.getElementById('authIdentity').hidden = role !== 'faculty';
+    document.getElementById('authIdentity').textContent = role === 'faculty' ? `已對應展示教師：${demoFaculty.name}` : '';
+    document.getElementById('demoCode').textContent = `展示驗證碼：${demoVerificationCode}`;
+    showAuthStage('code');
+    document.getElementById('otpInput')?.focus();
+  }));
+  document.getElementById('sendCodeBtn')?.addEventListener('click', () => {
+    window.setTimeout(() => { if ([demoStudent.email, demoFaculty.email].includes(state.pendingAuth?.email)) { state.pendingAuth.code = demoVerificationCode; document.getElementById('demoCode').textContent = `展示驗證碼：${demoVerificationCode}`; } }, 350);
+  });
+  document.getElementById('verifyCodeBtn')?.addEventListener('click', event => {
+    if ([demoStudent.email, demoFaculty.email].includes(state.pendingAuth?.email)) state.pendingAuth.code = demoVerificationCode;
+  }, true);
 })();
