@@ -22,9 +22,16 @@ create table if not exists public.appointments (
   student_email text not null,
   topic text not null default '',
   status text not null default 'confirmed' check (status in ('confirmed', 'cancelled')),
+  cancel_reason text not null default '',
+  cancelled_by text not null default '',
+  cancelled_at timestamptz,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+
+alter table public.appointments add column if not exists cancel_reason text not null default '';
+alter table public.appointments add column if not exists cancelled_by text not null default '';
+alter table public.appointments add column if not exists cancelled_at timestamptz;
 
 create index if not exists faculty_availability_lookup
   on public.faculty_availability (faculty_key, status, slot_label);

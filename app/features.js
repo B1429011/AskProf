@@ -113,15 +113,15 @@
     } catch { return null; }
   }
 
-  async function cancelSharedAppointment(appointment, actor = 'student') {
+  async function cancelSharedAppointment(appointment, actor = 'student', reason = '') {
     if (!sharedApiBase || appointment?.availabilityKey !== demoFaculty.key || !appointment.id || !String(appointment.id).includes('-')) return true;
     try {
       const response = await fetch(`${sharedApiBase}/api/faculty-appointments`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: actor === 'faculty'
-          ? JSON.stringify({ facultyKey: demoFaculty.key, facultyEmail: demoFaculty.email, id: appointment.id })
-          : JSON.stringify({ action: 'student-cancel', id: appointment.id, studentEmail: state.auth?.email || '' })
+          ? JSON.stringify({ facultyKey: demoFaculty.key, facultyEmail: demoFaculty.email, id: appointment.id, reason })
+          : JSON.stringify({ action: 'student-cancel', id: appointment.id, studentEmail: state.auth?.email || '', reason })
       });
       return response.ok;
     } catch { return false; }
@@ -251,6 +251,12 @@
     openModal(`<button class="modal-close" data-action="close-modal">×</button><h2>新增可預約時段</h2><p class="modal-sub">${esc(faculty.name)}｜新增後學生會在教師卡片看到這個時段。</p><div class="field"><label>日期</label><input id="facultySlotDate" type="date" value="2026-11-26"></div><div class="field"><label>時間</label><select id="facultySlotTime"><option>09:00 - 09:30</option><option>10:00 - 10:30</option><option>14:00 - 14:30</option><option>15:00 - 15:30</option><option>16:00 - 16:30</option></select></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">取消</button><button class="primary-btn" data-action="save-faculty-slot">公開時段</button></div>`);
   }
 
+  function openCancellationModal(actor, appointment) {
+    const title = actor === 'faculty' ? '取消學生預約' : '取消我的預約';
+    const target = actor === 'faculty' ? `${appointment.studentEmail || '學生'}｜${appointment.slot}` : `${appointment.professor}｜${appointment.slot}`;
+    openModal(`<button class="modal-close" data-action="close-modal">×</button><h2>${title}</h2><p class="modal-sub">${esc(target)}</p><div class="field"><label>取消原因（必填）</label><textarea id="cancelReasonInput" maxlength="500" placeholder="例如：臨時有會議、身體不適或行程異動"></textarea></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">返回</button><button class="danger-btn" data-action="${actor === 'faculty' ? 'confirm-faculty-cancel' : 'confirm-student-cancel'}" data-appointment-id="${esc(appointment.id)}">確認取消</button></div>`);
+  }
+
   function renderTutorWorkspace(tutor) {
     const slots = state.tutorAvailability[tutor.key] || [];
     const appointments = state.appointments.filter(item => item.tutorKey === tutor.key);
@@ -276,11 +282,12 @@
     const open = slots.filter(slot => slot.status === 'open').length;
     const booked = slots.filter(slot => slot.status === 'booked').length;
     const appointments = state.appointments.filter(item => item.availabilityKey === faculty.key);
+    const orphaned = slots.filter(slot => slot.status === 'booked' && !appointments.some(item => item.slot === slot.label));
     app.innerHTML = `<div class="page-heading"><div><p class="eyebrow">FACULTY WORKSPACE</p><h1>${esc(faculty.name)}｜教師工作台</h1><p>管理公開聯絡資料、可預約時段與學生預約。</p></div><button class="primary-btn" data-action="add-faculty-slot">＋ 新增可預約時段</button></div>
       <div class="grid stats-grid">${statCard('◷', '目前開放時段', open, '學生可直接預約', '#2d5bdb')}${statCard('◎', '已被預約時段', booked, '可在下方查看', '#ffd529')}${statCard('✉', '公開信箱', faculty.email || '未公開', '來自官方師資資料', '#11a77e')}${statCard('⌕', '公開分機', faculty.phone || '未公開', '學生可直接聯絡', '#bd31d8')}</div>
       <div class="grid two-col"><section class="panel"><div class="panel-head"><div><h2>可預約時段</h2><p>開放、暫停與已預約狀態會同步到學生端。</p></div></div><div class="slot-list">${slots.length ? slots.map((slot, i) => `<div class="slot-row"><div class="slot-time">${esc(slot.label)}<br><span style="font-size:10px;color:var(--blue)">30 分鐘</span></div><div class="slot-info"><strong>${slot.status === 'booked' ? '已預約' : slot.status === 'paused' ? '暫停預約' : '學生可直接預約'}</strong><span>${slot.status === 'booked' ? '請至預約管理查看學生資料' : '可隨時更新狀態'}</span></div><span class="slot-state ${slot.status === 'paused' ? 'off' : ''}">${slot.status === 'open' ? '開放中' : slot.status === 'booked' ? '已預約' : '已暫停'}</span>${slot.status !== 'booked' ? `<button class="slot-toggle" data-action="toggle-faculty-slot" data-slot-index="${i}">${slot.status === 'open' ? '暫停' : '開放'}</button>` : ''}</div>`).join('') : '<div class="empty-state">尚未建立時段，先新增一個可預約時間吧。</div>'}</div></section>
       <section class="panel"><div class="panel-head"><div><h2>公開教師資料</h2><p>學生在教師探索頁會看到這些欄位。</p></div></div><div class="public-detail-list"><div><span>姓名／系所</span><strong>${esc(faculty.name)}｜${esc(faculty.dept)}</strong></div><div><span>研究專長</span><strong>${esc(faculty.research || '官方頁面未提供')}</strong></div><div><span>信箱</span><strong>${esc(faculty.email || '官方頁面未公開')}</strong></div><div><span>電話／分機</span><strong>${esc(faculty.phone || '官方頁面未公開')}</strong></div></div></section></div>
-      <section class="panel"><div class="panel-head"><div><h2>學生預約</h2><p>預約成功後會從可用時段轉為已預約；取消後時段會重新開放。</p></div><span class="sub">${appointments.length} 筆</span></div>${appointments.length ? `<div class="appointment-list">${appointments.map(item => `<div class="appointment-row">${initialsAvatar(item.initials || '學')}<div class="info"><strong>${esc(item.topic)}</strong><span>${esc(item.studentEmail || '長庚學生')}　·　${esc(item.slot)}</span></div><span class="status-confirmed">已確認</span><button class="danger-btn" data-action="faculty-cancel-appointment" data-id="${esc(item.id)}">取消預約</button></div>`).join('')}</div>` : '<div class="empty-state">目前還沒有這些時段的學生預約。</div>'}</section>`;
+      <section class="panel"><div class="panel-head"><div><h2>學生預約</h2><p>預約成功後會從可用時段轉為已預約；取消後時段會重新開放。</p></div><span class="sub">${appointments.length} 筆</span></div>${appointments.length ? `<div class="appointment-list">${appointments.map(item => `<div class="appointment-row">${initialsAvatar(item.initials || '學')}<div class="info"><strong>${esc(item.topic)}</strong><span>${esc(item.studentEmail || '長庚學生')}　·　${esc(item.slot)}</span></div><span class="status-confirmed">已確認</span><button class="danger-btn" data-action="faculty-cancel-appointment" data-id="${esc(item.id)}">取消預約</button></div>`).join('')}</div>` : orphaned.length ? `<div class="empty-state" style="color:#a35b00;background:#fff8e8">有 ${orphaned.length} 個時段顯示為已預約，但目前找不到對應紀錄。請重新整理或聯絡系統管理員處理。</div>` : '<div class="empty-state">目前還沒有這些時段的學生預約。</div>'}</section>`;
     bind();
   }
   renderProfessor = renderFacultyWorkspace;
@@ -367,12 +374,12 @@
       const topic = modal.querySelector('#topicInput')?.value.trim() || '專輔預約';
       const localAppointment = { id: `a${Date.now()}`, professor: p.name, initials: p.initials, topic, date: dateFromLabel(choice), time: choice, status: 'confirmed', availabilityKey: key, slot: choice, studentEmail: state.auth?.email || '' };
       if (key === demoFaculty.key && sharedApiBase) {
-        const sharedAppointment = await saveSharedAppointment(localAppointment);
+      const sharedAppointment = await saveSharedAppointment(localAppointment);
         if (!sharedAppointment) { slot.status = 'open'; return toast('預約尚未寫入共用資料庫，請稍後再試。'); }
         Object.assign(localAppointment, sharedAppointment);
       }
       state.appointments = [localAppointment, ...state.appointments];
-      persist(); saveSharedAvailability(key); closeModal(); render(); toast('預約成功！教師端已收到你的預約。'); return;
+      persist(); saveSharedAvailability(key); await loadSharedAppointments(key, state.auth?.email || ''); closeModal(); render(); toast('預約成功！教師端已收到通知。'); return;
     }
     if (action === 'confirm-tutor-book') {
       const key = element.dataset.tutorId;
@@ -387,27 +394,44 @@
     if (action === 'cancel-appointment') {
       const id = element.dataset.id || state.appointments[0]?.id;
       const appointment = state.appointments.find(item => item.id === id);
+      if (!appointment) return toast('找不到這筆預約，請重新整理。');
+      openCancellationModal('student', appointment); return;
+    }
+    if (action === 'confirm-student-cancel') {
+      const id = element.dataset.appointmentId;
+      const appointment = state.appointments.find(item => String(item.id) === String(id));
+      const reason = modal.querySelector('#cancelReasonInput')?.value.trim() || '';
+      if (!appointment) return toast('找不到這筆預約，請重新整理。');
+      if (!reason) return toast('請填寫取消原因。');
       if (appointment?.availabilityKey === demoFaculty.key && sharedApiBase) {
-        const cancelled = await cancelSharedAppointment(appointment);
+        const cancelled = await cancelSharedAppointment(appointment, 'student', reason);
         if (!cancelled) return toast('取消尚未同步到共用資料庫，請稍後再試。');
       }
       state.appointments = state.appointments.filter(item => item.id !== id);
       if (appointment?.availabilityKey && appointment.slot) { const slot = facultySlots(appointment.availabilityKey).find(item => item.label === appointment.slot); if (slot) slot.status = 'open'; }
       if (appointment?.tutorKey && appointment.slot && !state.tutorAvailability[appointment.tutorKey]?.includes(appointment.slot)) state.tutorAvailability[appointment.tutorKey] = [...(state.tutorAvailability[appointment.tutorKey] || []), appointment.slot];
-      persist(); if (appointment?.availabilityKey) saveSharedAvailability(appointment.availabilityKey); render(); toast('預約已取消，教師端已收到通知，時段已重新開放。'); return;
+      persist(); if (appointment?.availabilityKey) saveSharedAvailability(appointment.availabilityKey); closeModal(); render(); toast('預約已取消，教師端已收到通知，時段已重新開放。'); return;
     }
     if (action === 'faculty-cancel-appointment') {
       const appointment = state.appointments.find(item => String(item.id) === String(element.dataset.id));
       if (!appointment) return toast('找不到這筆預約，請重新整理。');
-      const cancelled = await cancelSharedAppointment(appointment, 'faculty');
+      openCancellationModal('faculty', appointment); return;
+    }
+    if (action === 'confirm-faculty-cancel') {
+      const appointment = state.appointments.find(item => String(item.id) === String(element.dataset.appointmentId));
+      const reason = modal.querySelector('#cancelReasonInput')?.value.trim() || '';
+      if (!appointment) return toast('找不到這筆預約，請重新整理。');
+      if (!reason) return toast('請填寫取消原因。');
+      const cancelled = await cancelSharedAppointment(appointment, 'faculty', reason);
       if (!cancelled) return toast('取消預約未能同步，請稍後再試。');
       state.appointments = state.appointments.filter(item => item.id !== appointment.id);
       const slot = facultySlots(demoFaculty.key).find(item => item.label === appointment.slot);
       if (slot) slot.status = 'open';
       persist(); saveSharedAvailability(demoFaculty.key);
       await Promise.all([loadSharedAvailability(demoFaculty.key), loadSharedAppointments(demoFaculty.key)]);
+      closeModal();
       renderFacultyWorkspace(true);
-      toast(`已取消 ${appointment.studentEmail} 的預約，學生端已收到更新。`);
+      toast(`已取消 ${appointment.studentEmail} 的預約，學生端已收到通知。`);
       return;
     }
     return originalHandleAction(action, element);

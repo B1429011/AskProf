@@ -302,6 +302,7 @@ async function cancelFacultyAppointment(req, res) {
   const isDemoStudent = payload.action === 'student-cancel' && studentEmail === 'student.demo@askprof.test';
   if (!isFaculty && !isDemoStudent) return sendJson(res, 403, { error: 'verified_user_login_required' });
   const id = String(payload.id || '').trim();
+  const reason = String(payload.reason || '').trim().slice(0, 500);
   if (!id) return sendJson(res, 400, { error: 'missing_appointment_id' });
   try {
     const lookup = new URLSearchParams({ select: 'id,slot_label,status,student_email', id: `eq.${id}`, faculty_key: 'eq.demo:faculty', status: 'eq.confirmed' });
@@ -314,7 +315,7 @@ async function cancelFacultyAppointment(req, res) {
     const appointmentFilter = new URLSearchParams({ id: `eq.${id}`, faculty_key: 'eq.demo:faculty', status: 'eq.confirmed' });
     if (isDemoStudent) appointmentFilter.set('student_email', `eq.${studentEmail}`);
     const cancelled = await fetch(`${supabaseUrl}/rest/v1/appointments?${appointmentFilter}`, {
-      method: 'PATCH', headers: supabaseHeaders({ Prefer: 'return=minimal' }), body: JSON.stringify({ status: 'cancelled', updated_at: new Date().toISOString() })
+      method: 'PATCH', headers: supabaseHeaders({ Prefer: 'return=minimal' }), body: JSON.stringify({ status: 'cancelled', cancel_reason: reason, cancelled_by: isFaculty ? 'faculty' : 'student', cancelled_at: new Date().toISOString(), updated_at: new Date().toISOString() })
     });
     if (!cancelled.ok) return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: cancelled.status });
     const slotFilter = new URLSearchParams({ faculty_key: 'eq.demo:faculty', slot_label: `eq.${appointment.slot_label}`, status: 'eq.booked' });
