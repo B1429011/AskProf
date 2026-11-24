@@ -149,12 +149,15 @@ async function analyzeLearning(req, res) {
 }
 
 function supabaseHeaders(extra = {}) {
-  return {
+  const headers = {
     apikey: supabaseServiceKey,
-    Authorization: `Bearer ${supabaseServiceKey}`,
     'Content-Type': 'application/json',
     ...extra
   };
+  // New Supabase secret keys (sb_secret_...) are API keys, not JWTs. Sending
+  // them as an Authorization bearer token makes PostgREST reject the request.
+  if (!supabaseServiceKey.startsWith('sb_')) headers.Authorization = `Bearer ${supabaseServiceKey}`;
+  return headers;
 }
 
 async function getFacultyAvailability(req, res) {
