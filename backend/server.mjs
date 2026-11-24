@@ -34,7 +34,7 @@ function sendJson(res, status, payload) {
     'Content-Type': 'application/json; charset=utf-8',
     'Access-Control-Allow-Origin': allowedOrigin,
     'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods': 'GET, PUT, POST, OPTIONS'
+    'Access-Control-Allow-Methods': 'GET, PUT, POST, PATCH, OPTIONS'
   });
   res.end(JSON.stringify(payload));
 }
@@ -219,6 +219,116 @@ async function saveDemoFacultyAvailability(req, res) {
   }
 }
 
+function demoFacultyRequest(payload) {
+  return payload?.facultyKey === 'demo:faculty' && payload?.facultyEmail === 'faculty.demo@askprof.test';
+}
+
+function demoFacultyFilter(key) {
+  return key === 'demo:faculty';
+}
+
+async function getFacultyAppointments(req, res) {
+  if (!supabaseUrl || !supabaseServiceKey) return sendJson(res, 503, { error: 'database_not_configured' });
+  const requestUrl = new URL(req.url, 'http://localhost');
+  const key = requestUrl.searchParams.get('key') || '';
+  const student = requestUrl.searchParams.get('student') || '';
+  if (!demoFacultyFilter(key)) return sendJson(res, 403, { error: 'verified_faculty_login_required' });
+  try {
+    const params = new URLSearchParams({ select: 'id,faculty_key,faculty_email,slot_label,student_email,topic,status,created_at', faculty_key: `eq.${key}`, status: 'eq.confirmed', order: 'created_at.desc' });
+    if (student) params.set('student_email', `eq.${student}`);
+    const upstream = await fetch(`${supabaseUrl}/rest/v1/appointments?${params}`, { headers: supabaseHeaders() });
+    if (!upstream.ok) {
+      const detail = await upstream.text();
+      console.error(`Supabase appointments read returned ${upstream.status}: ${detail.slice(0, 500)}`);
+      return sendJson(res, 502, { error: 'database_read_failed', upstreamStatus: upstream.status, detail: detail.slice(0, 240) });
+    }
+    return sendJson(res, 200, { appointments: await upstream.json() });
+  } catch (error) {
+    console.error('AskProf appointments read failed:', error.message);
+    return sendJson(res, 502, { error: 'database_unavailable' });
+  }
+}
+
+async function createFacultyAppointment(req, res) {
+  if (!supabaseUrl || !supabaseServiceKey) return sendJson(res, 503, { error: 'database_not_configured' });
+  if (!withinRateLimit(req)) return sendJson(res, 429, { error: 'rate_limited' });
+  let payload;
+  try { payload = await readBody(req); } catch { return sendJson(res, 400, { error: 'invalid_request' }); }
+  if (!demoFacultyRequest(payload)) return sendJson(res, 403, { error: 'verified_faculty_login_required' });
+  const studentEmail = String(payload.studentEmail || '').trim().toLowerCase();
+  const slotLabel = String(payload.slotLabel || '').trim().slice(0, 120);
+  const topic = String(payload.topic || '').trim().slice(0, 240);
+  if (!studentEmail || !slotLabel) return sendJson(res, 400, { error: 'missing_booking_fields' });
+  try {
+    const availabilityParams = new URLSearchParams({ select: 'slot_label,status', faculty_key: 'eq.demo:faculty', slot_label: `eq.${slotLabel}`, status: 'eq.open' });
+    const available = await fetch(`${supabaseUrl}/rest/v1/faculty_availability?${availabilityParams}`, { headers: supabaseHeaders() });
+    if (!available.ok) return sendJson(res, 502, { error: 'database_read_failed', upstreamStatus: available.status });
+    const rows = await available.json();
+    if (!rows.length) return sendJson(res, 409, { error: 'slot_unavailable' });
+
+    const availabilityUpdate = new URLSearchParams({ faculty_key: 'eq.demo:faculty', slot_label: `eq.${slotLabel}`, status: 'eq.open' });
+    const booked = await fetch(`${supabaseUrl}/rest/v1/faculty_availability?${availabilityUpdate}`, {
+      method: 'PATCH',
+      headers: supabaseHeaders({ Prefer: 'return=minimal' }),
+      body: JSON.stringify({ status: 'booked', updated_at: new Date().toISOString() })
+    });
+    if (!booked.ok) return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: booked.status });
+
+    const insert = await fetch(`${supabaseUrl}/rest/v1/appointments`, {
+      method: 'POST',
+      headers: supabaseHeaders({ Prefer: 'return=representation' }),
+      body: JSON.stringify({ faculty_key: 'demo:faculty', faculty_email: 'faculty.demo@askprof.test', slot_label: slotLabel, student_email: studentEmail, topic, status: 'confirmed' })
+    });
+    if (!insert.ok) {
+      const detail = await insert.text();
+      console.error(`Supabase appointment write returned ${insert.status}: ${detail.slice(0, 500)}`);
+      return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: insert.status, detail: detail.slice(0, 240) });
+    }
+    const created = await insert.json();
+    return sendJson(res, 201, { appointment: created[0] || null });
+  } catch (error) {
+    console.error('AskProf appointment write failed:', error.message);
+    return sendJson(res, 502, { error: 'database_unavailable' });
+  }
+}
+
+async function cancelFacultyAppointment(req, res) {
+  if (!supabaseUrl || !supabaseServiceKey) return sendJson(res, 503, { error: 'database_not_configured' });
+  if (!withinRateLimit(req)) return sendJson(res, 429, { error: 'rate_limited' });
+  let payload;
+  try { payload = await readBody(req); } catch { return sendJson(res, 400, { error: 'invalid_request' }); }
+  const isFaculty = demoFacultyRequest(payload);
+  const studentEmail = String(payload.studentEmail || '').trim().toLowerCase();
+  const isDemoStudent = payload.action === 'student-cancel' && studentEmail === 'student.demo@askprof.test';
+  if (!isFaculty && !isDemoStudent) return sendJson(res, 403, { error: 'verified_user_login_required' });
+  const id = String(payload.id || '').trim();
+  if (!id) return sendJson(res, 400, { error: 'missing_appointment_id' });
+  try {
+    const lookup = new URLSearchParams({ select: 'id,slot_label,status,student_email', id: `eq.${id}`, faculty_key: 'eq.demo:faculty', status: 'eq.confirmed' });
+    if (isDemoStudent) lookup.set('student_email', `eq.${studentEmail}`);
+    const existingResponse = await fetch(`${supabaseUrl}/rest/v1/appointments?${lookup}`, { headers: supabaseHeaders() });
+    if (!existingResponse.ok) return sendJson(res, 502, { error: 'database_read_failed', upstreamStatus: existingResponse.status });
+    const existing = await existingResponse.json();
+    if (!existing.length) return sendJson(res, 404, { error: 'appointment_not_found' });
+    const appointment = existing[0];
+    const appointmentFilter = new URLSearchParams({ id: `eq.${id}`, faculty_key: 'eq.demo:faculty', status: 'eq.confirmed' });
+    if (isDemoStudent) appointmentFilter.set('student_email', `eq.${studentEmail}`);
+    const cancelled = await fetch(`${supabaseUrl}/rest/v1/appointments?${appointmentFilter}`, {
+      method: 'PATCH', headers: supabaseHeaders({ Prefer: 'return=minimal' }), body: JSON.stringify({ status: 'cancelled', updated_at: new Date().toISOString() })
+    });
+    if (!cancelled.ok) return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: cancelled.status });
+    const slotFilter = new URLSearchParams({ faculty_key: 'eq.demo:faculty', slot_label: `eq.${appointment.slot_label}`, status: 'eq.booked' });
+    const reopened = await fetch(`${supabaseUrl}/rest/v1/faculty_availability?${slotFilter}`, {
+      method: 'PATCH', headers: supabaseHeaders({ Prefer: 'return=minimal' }), body: JSON.stringify({ status: 'open', updated_at: new Date().toISOString() })
+    });
+    if (!reopened.ok) return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: reopened.status });
+    return sendJson(res, 200, { cancelled: true, slotLabel: appointment.slot_label });
+  } catch (error) {
+    console.error('AskProf appointment cancellation failed:', error.message);
+    return sendJson(res, 502, { error: 'database_unavailable' });
+  }
+}
+
 async function serveStatic(req, res) {
   let pathname;
   try { pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); } catch { res.writeHead(400); return res.end('Bad request'); }
@@ -238,6 +348,9 @@ const server = http.createServer((req, res) => {
   if (req.method === 'POST' && new URL(req.url, 'http://localhost').pathname === '/api/analyze-learning') return analyzeLearning(req, res);
   if (req.method === 'GET' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-availability') return getFacultyAvailability(req, res);
   if (req.method === 'PUT' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-availability') return saveDemoFacultyAvailability(req, res);
+  if (req.method === 'GET' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-appointments') return getFacultyAppointments(req, res);
+  if (req.method === 'POST' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-appointments') return createFacultyAppointment(req, res);
+  if (req.method === 'PATCH' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-appointments') return cancelFacultyAppointment(req, res);
   if (req.method === 'GET') return serveStatic(req, res);
   return sendJson(res, 405, { error: 'method_not_allowed' });
 });
