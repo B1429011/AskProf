@@ -36,6 +36,10 @@ create index if not exists appointments_student_lookup
 alter table public.faculty_availability enable row level security;
 alter table public.appointments enable row level security;
 
+grant usage on schema public to service_role;
+grant select, insert, update, delete on public.faculty_availability to service_role;
+grant select, insert, update, delete on public.appointments to service_role;
+
 -- The AskProf backend uses the Supabase service role and is the only writer.
 -- No anonymous policies are created here, so the public API cannot read these
 -- tables directly if the backend is misconfigured.
