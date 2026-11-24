@@ -171,7 +171,7 @@ async function getFacultyAvailability(req, res) {
     if (!upstream.ok) {
       const detail = await upstream.text();
       console.error(`Supabase availability read returned ${upstream.status}: ${detail.slice(0, 500)}`);
-      return sendJson(res, 502, { error: 'database_read_failed', upstreamStatus: upstream.status });
+      return sendJson(res, 502, { error: 'database_read_failed', upstreamStatus: upstream.status, detail: detail.slice(0, 240) });
     }
     return sendJson(res, 200, { slots: await upstream.json() });
   } catch (error) {
@@ -209,7 +209,7 @@ async function saveDemoFacultyAvailability(req, res) {
       if (!upstream.ok) {
         const detail = await upstream.text();
         console.error(`Supabase availability write returned ${upstream.status}: ${detail.slice(0, 500)}`);
-        return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: upstream.status });
+        return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: upstream.status, detail: detail.slice(0, 240) });
       }
     }
     return sendJson(res, 200, { saved: rows.length });
