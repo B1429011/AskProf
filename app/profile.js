@@ -26,7 +26,7 @@
     state.cardSessions = readJson(profileKey('cardSessions'), []);
     state.activeCardSession = readJson(profileKey('activeCardSession'), null);
     state.aiAnalysis = readJson(profileKey('aiAnalysis'), null);
-    state.aiAnalysisStatus = state.aiAnalysis ? 'ready' : 'idle';
+    state.aiAnalysisStatus = state.aiAnalysis ? (state.aiAnalysis.model === 'AskProf 離線備援分析' ? 'fallback' : 'ready') : 'idle';
   }
   loadOwnerData();
   state.pendingFeedbackSession = null;
@@ -102,7 +102,7 @@
     const suggested = focus?.subject || state.courses.find(item => item.status !== 'done')?.name || '下一個想突破的科目';
     const subjectCards = insights.topics.length ? insights.topics.slice(0, 4).map(item => `<div class="profile-subject-card"><div class="profile-subject-title"><strong>${esc(item.subject)}</strong><span class="profile-status ${item.analysis.tone}">${item.analysis.label}</span></div><p>${esc(item.topic || '學習回饋')}</p><div class="profile-subject-meta"><span>理解程度 ${item.confidence}/5</span><span>${esc(item.nextStep || '持續練習')}</span></div>${progressBar(Number(item.confidence || 0) * 20, item.analysis.tone === 'attention' ? '#ee7b53' : 'var(--blue)')}</div>`).join('') : `<div class="empty-state">完成一次讀卡簽退並留下回饋後，這裡會形成你的學習歷程。</div>`;
     const aiText = state.aiAnalysis?.summary || (insights.attention.length ? `目前在「${focus.subject}」仍有需要釐清的地方。AI 建議把「${focus.topic || '本次討論內容'}」拆成一個小練習，再安排一次專輔或教授預約。` : insights.topics.length ? `你最近的回饋顯示理解度平均 ${insights.avg.toFixed(1)}/5，學習節奏${insights.stability}。送出新的回饋後，正式 AI 服務會重新整理你的學習軌跡。` : '完成第一次簽退回饋後，AskProf 會將資料送至正式 AI 服務，產生個人化分析。');
-    const aiLabel = state.aiAnalysisStatus === 'ready' ? '正式 AI 分析' : state.aiAnalysisStatus === 'loading' ? 'AI 分析處理中' : state.aiAnalysisStatus === 'error' ? 'AI 分析連線失敗' : '等待正式 AI 分析';
+    const aiLabel = state.aiAnalysisStatus === 'ready' ? '正式 AI 分析' : state.aiAnalysisStatus === 'fallback' ? '離線備援分析' : state.aiAnalysisStatus === 'loading' ? 'AI 分析處理中' : state.aiAnalysisStatus === 'error' ? 'AI 分析連線失敗' : '等待正式 AI 分析';
     const readerState = session ? '已簽到，等待簽退' : '讀卡機已連線（測試感應）';
     app.innerHTML = `<div class="page-heading"><div><p class="eyebrow">PERSONAL LEARNING PROFILE</p><h1>個人學習檔案</h1><p>把每次諮詢、讀卡簽到與自我回饋，整理成看得懂的學習歷程。</p></div><span class="profile-demo-badge">${aiLabel}</span></div>
       <div class="grid profile-stats-grid">${statCard('◉', '學習穩定度', insights.stability, insights.topics.length ? `平均理解 ${insights.avg.toFixed(1)} / 5` : '完成回饋後開始分析', '#2d5bdb')}${statCard('↗', '學習紀錄', state.feedbackEntries.length, '次回饋已保存於本機', '#11a77e')}${statCard('◷', '連續學習天數', streak, streak ? '持續累積中' : '從今天開始', '#ffd529')}${statCard('!', '需要關注科目', insights.attention.length, insights.attention.length ? '建議安排下一步' : '目前沒有標記', '#bd31d8')}</div>
@@ -150,9 +150,13 @@
       render();
       toast(`正式 AI 分析完成（${result.model || '已設定模型'}）。`);
     } catch (error) {
-      state.aiAnalysisStatus = 'error';
+      const topics = latestBySubject().map(item => ({ ...item, analysis: analyzeEntry(item) }));
+      const attention = topics.find(item => item.analysis.tone === 'attention');
+      state.aiAnalysis = { model: 'AskProf 離線備援分析', generatedAt: new Date().toISOString(), summary: attention ? `目前「${attention.subject}」的回饋顯示仍有卡點，建議把「${attention.topic || '本次討論'}」拆成小練習，再安排一次諮詢。` : '正式 AI 後端尚未回應；已先依回饋理解程度整理學習狀態，連線恢復後可重新分析。', subjects: topics.map(item => ({ subject: item.subject, status: item.analysis.label, reason: item.analysis.reason, nextStep: item.nextStep || '持續練習並再次留下回饋' })), recommendations: ['確認後端 AI 服務連線後按「重新分析」', '將本次困難拆成一個可完成的小題目'] };
+      state.aiAnalysisStatus = 'fallback';
+      persistProfile();
       render();
-      toast('正式 AI 分析暫時無法連線，請確認後端 API 已部署。');
+      toast('AI 後端目前未連線，已啟用可操作的離線備援分析。');
       console.warn('AskProf AI analysis failed:', error);
     }
   }

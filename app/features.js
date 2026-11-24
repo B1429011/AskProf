@@ -5,8 +5,8 @@
   const originalOpenProfessorModal = openProfessorModal;
   const originalFindFacultyByEmail = findFacultyByEmail;
   const demoVerificationCode = '246810';
-  const demoStudent = { email: 'student.demo@askprof.test', role: 'student' };
-  const demoFaculty = { id: 'demo:faculty', key: 'demo:faculty', name: 'AskProf 展示教師', initials: 'A', dept: '展示教師帳號｜電子工程學系', department: '展示教師帳號｜電子工程學系', degree: '展示用帳號', tags: ['展示預約', '系統測試', 'RFID'], research: '這是專門用來驗證搜尋、預約、取消與教師時段管理的展示教師資料，不代表真實師資。', specialty: '展示預約、系統測試、RFID', email: 'faculty.demo@askprof.test', phone: 'Demo-0000', location: 'AskProf 展示空間', profileUrl: '', isDemo: true };
+  const demoStudent = { email: 'student.demo@askprof.test', password: 'AskProfStudent2026!', role: 'student' };
+  const demoFaculty = { id: 'demo:faculty', key: 'demo:faculty', name: 'AskProf 展示教師', initials: 'A', dept: '展示教師帳號｜電子工程學系', department: '展示教師帳號｜電子工程學系', degree: '展示用帳號', tags: ['展示預約', '系統測試', 'RFID'], research: '這是專門用來驗證搜尋、預約、取消、師生時段同步與 AI 流程的展示教師資料，不代表真實師資。', specialty: '展示預約、系統測試、RFID', email: 'faculty.demo@askprof.test', password: 'AskProfFaculty2026!', phone: 'Demo-0000', location: 'AskProf 展示空間', profileUrl: '', isDemo: true };
   const originalIsCguEmail = isCguEmail;
   isCguEmail = value => originalIsCguEmail(value) || [demoStudent.email, demoFaculty.email].includes(String(value || '').trim().toLowerCase());
 
@@ -57,7 +57,7 @@
   }
 
   realFacultyCard = function (p) {
-    const slots = p.id?.startsWith('f:') ? selectedFacultySlot(p.id).length : 0;
+    const slots = p.id === demoFaculty.id ? selectedFacultySlot(demoFaculty.key).length : (p.id?.startsWith('f:') ? selectedFacultySlot(p.id).length : 0);
     return `<article class="prof-card card-clickable" data-prof="${esc(p.id)}">
       <div class="prof-top">${initialsAvatar(p.initials)}<div><h3>${esc(p.name)}</h3><div class="dept">${esc(p.dept)}</div></div></div>
       <div class="tag-row">${p.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
@@ -239,14 +239,37 @@
     document.querySelector(`.auth-role[data-auth-role="${role}"]`)?.click();
     const emailInput = document.getElementById('schoolEmail');
     if (emailInput) emailInput.value = account.email;
-    state.pendingAuth = { email: account.email, role, code: demoVerificationCode, createdAt: Date.now(), facultyName: role === 'faculty' ? demoFaculty.name : '', facultyDepartment: role === 'faculty' ? demoFaculty.department : '' };
-    document.getElementById('authEmailTarget').textContent = account.email;
-    document.getElementById('authIdentity').hidden = role !== 'faculty';
-    document.getElementById('authIdentity').textContent = role === 'faculty' ? `已對應展示教師：${demoFaculty.name}` : '';
-    document.getElementById('demoCode').textContent = `展示驗證碼：${demoVerificationCode}`;
-    showAuthStage('code');
-    document.getElementById('otpInput')?.focus();
+    const passwordInput = document.getElementById('schoolPassword');
+    if (passwordInput) passwordInput.value = account.password;
+    toast(`已填入${role === 'faculty' ? '教師' : '學生'}Demo 帳密，按「寄送驗證碼」繼續。`);
   }));
+  document.getElementById('sendCodeBtn')?.addEventListener('click', event => {
+    const email = String(document.getElementById('schoolEmail')?.value || '').trim().toLowerCase();
+    const password = String(document.getElementById('schoolPassword')?.value || '');
+    const account = [demoStudent, demoFaculty].find(item => item.email === email);
+    if (account && password !== account.password) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      toast('Demo 帳號密碼不正確，請使用登入頁提供的展示密碼。');
+    }
+  }, true);
+  document.getElementById('sendCodeBtn')?.addEventListener('click', event => {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    const email = String(document.getElementById('schoolEmail')?.value || '').trim().toLowerCase();
+    const password = String(document.getElementById('schoolPassword')?.value || '');
+    const selectedRole = document.querySelector('.auth-role.active')?.dataset.authRole || 'student';
+    const account = [demoStudent, demoFaculty].find(item => item.email === email);
+    if (!account) return toast('目前僅開放 Demo 帳號登入；長庚 SSO 尚待校方設定完成。');
+    if (account.role !== selectedRole) return toast('請選擇與此帳號相符的登入身分。');
+    if (password !== account.password) return toast('帳號或密碼錯誤，請確認登入頁列出的 Demo 密碼。');
+    state.auth = { email: account.email, role: account.role, verifiedAt: Date.now(), provider: 'askprof-demo-password', facultyName: account.role === 'faculty' ? demoFaculty.name : '', facultyDepartment: account.role === 'faculty' ? demoFaculty.department : '', isDemo: true };
+    state.role = account.role === 'faculty' ? 'professor' : 'student';
+    state.view = 'home';
+    save();
+    finishAuth();
+    toast(`已以${account.role === 'faculty' ? '教師' : '學生'}Demo 帳號登入。`);
+  }, true);
   document.getElementById('sendCodeBtn')?.addEventListener('click', () => {
     window.setTimeout(() => { if ([demoStudent.email, demoFaculty.email].includes(state.pendingAuth?.email)) { state.pendingAuth.code = demoVerificationCode; document.getElementById('demoCode').textContent = `展示驗證碼：${demoVerificationCode}`; } }, 350);
   });

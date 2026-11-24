@@ -19,13 +19,15 @@
         <h1>使用長庚帳號登入</h1>
         <p class="auth-intro">登入後才能查看預約、專輔與個人學習內容。</p>
         <div class="auth-role-picker"><button class="auth-role active" data-auth-role="student">我是學生</button><button class="auth-role" data-auth-role="faculty">我是師長</button></div>
-        <label class="auth-label" for="schoolEmail">長庚學校信箱</label>
+        <label class="auth-label" for="schoolEmail">登入帳號／長庚學校信箱</label>
         <input class="auth-input" id="schoolEmail" type="email" placeholder="例如：學號@mail.cgu.edu.tw" autocomplete="email">
+        <label class="auth-label" for="schoolPassword" style="margin-top:12px">密碼</label>
+        <input class="auth-input" id="schoolPassword" type="password" placeholder="正式版由校方 SSO 驗證；Demo 請使用展示密碼" autocomplete="current-password">
         <p class="auth-hint">請使用長庚核發的學校信箱，不會要求輸入學校密碼。</p>
-        <button class="primary-btn auth-submit" id="sendCodeBtn">寄送 Outlook 驗證碼</button>
+        <button class="primary-btn auth-submit" id="sendCodeBtn">登入 AskProf</button>
         <button class="microsoft-btn" id="microsoftBtn"><span class="ms-grid"><i></i><i></i><i></i><i></i></span>使用 Microsoft／長庚 SSO 登入</button>
-        <p class="auth-demo-note">原型預覽模式：按下寄送後會在畫面顯示測試驗證碼。正式版需接長庚 Microsoft Entra ID 或校務 SSO。</p>
-        <div class="demo-account-panel"><strong>展示帳號</strong><span>只用於驗證操作，不代表真實校園帳號。</span><div><button type="button" data-demo-account="student">學生展示帳號</button><button type="button" data-demo-account="faculty">教師展示帳號</button></div></div>
+        <p class="auth-demo-note">目前提供學生／教師 Demo 帳號進行操作驗證。長庚正式帳號需待校方 SSO 設定完成後啟用。</p>
+        <div class="demo-account-panel"><strong>Demo 測試帳號</strong><span>僅用於驗證師生端連結、預約與 AI 流程。</span><div><button type="button" data-demo-account="student">填入學生帳號</button><button type="button" data-demo-account="faculty">填入教師帳號</button></div><small>學生密碼：AskProfStudent2026!　教師密碼：AskProfFaculty2026!</small></div>
       </div>
       <div id="authCodeStage" hidden>
         <p class="auth-eyebrow">VERIFY YOUR SCHOOL EMAIL</p>
@@ -42,7 +44,6 @@
   <div class="app-shell">
     <aside class="sidebar">
       <div class="brand"><div class="brand-mark">A</div><div><strong>AskProf</strong><span>師生協作平台</span></div></div>
-      <div class="role-switcher"><button class="role-btn active" data-role="student">學生端</button><button class="role-btn" data-role="professor">教授端</button></div>
       <nav class="nav-list">
         <button class="nav-item active" data-view="home"><span>⌂</span>總覽</button>
         <button class="nav-item" data-view="appointments"><span>◷</span>我的預約 <b class="nav-badge" id="appointmentBadge">1</b></button>
@@ -66,8 +67,8 @@
   </div>
   <div class="toast" id="toast"><span>✓</span><p></p></div>
   <div class="modal-backdrop" id="modalBackdrop"></div><div class="modal" id="modal" role="dialog" aria-modal="true"></div>
-  <script src="app.js?v=20261123-2"></script>
-  <script src="features.js?v=20261123-2"></script>
-  <script src="profile.js?v=20261123-4"></script>
+  <script src="app.js?v=20261124-2"></script>
+  <script src="features.js?v=20261124-2"></script>
+  <script src="profile.js?v=20261124-2"></script>
 </body>
 </html>
