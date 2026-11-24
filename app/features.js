@@ -6,7 +6,7 @@
   const originalFindFacultyByEmail = findFacultyByEmail;
   const demoVerificationCode = '246810';
   const demoStudent = { email: 'student.demo@askprof.test', password: 'AskProfStudent2026!', role: 'student' };
-  const demoFaculty = { id: 'demo:faculty', key: 'demo:faculty', name: 'AskProf 展示教師', initials: 'A', dept: '展示教師帳號｜電子工程學系', department: '展示教師帳號｜電子工程學系', degree: '展示用帳號', tags: ['展示預約', '系統測試', 'RFID'], research: '這是專門用來驗證搜尋、預約、取消、師生時段同步與 AI 流程的展示教師資料，不代表真實師資。', specialty: '展示預約、系統測試、RFID', email: 'faculty.demo@askprof.test', password: 'AskProfFaculty2026!', phone: 'Demo-0000', location: 'AskProf 展示空間', profileUrl: '', isDemo: true };
+  const demoFaculty = { id: 'demo:faculty', key: 'demo:faculty', name: 'AskProf 展示教師', initials: 'A', role: 'faculty', dept: '展示教師帳號｜電子工程學系', department: '展示教師帳號｜電子工程學系', degree: '展示用帳號', tags: ['展示預約', '系統測試', 'RFID'], research: '這是專門用來驗證搜尋、預約、取消、師生時段同步與 AI 流程的展示教師資料，不代表真實師資。', specialty: '展示預約、系統測試、RFID', email: 'faculty.demo@askprof.test', password: 'AskProfFaculty2026!', phone: 'Demo-0000', location: 'AskProf 展示空間', profileUrl: '', isDemo: true };
   const originalIsCguEmail = isCguEmail;
   isCguEmail = value => originalIsCguEmail(value) || [demoStudent.email, demoFaculty.email].includes(String(value || '').trim().toLowerCase());
 
