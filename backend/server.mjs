@@ -34,7 +34,7 @@ function sendJson(res, status, payload) {
     'Content-Type': 'application/json; charset=utf-8',
     'Access-Control-Allow-Origin': allowedOrigin,
     'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS'
+    'Access-Control-Allow-Methods': 'GET, PUT, POST, OPTIONS'
   });
   res.end(JSON.stringify(payload));
 }
@@ -165,7 +165,11 @@ async function getFacultyAvailability(req, res) {
   try {
     const query = new URLSearchParams({ select: 'faculty_key,faculty_email,slot_label,status', faculty_key: `eq.${key}`, order: 'slot_label.asc' });
     const upstream = await fetch(`${supabaseUrl}/rest/v1/faculty_availability?${query}`, { headers: supabaseHeaders() });
-    if (!upstream.ok) return sendJson(res, 502, { error: 'database_read_failed' });
+    if (!upstream.ok) {
+      const detail = await upstream.text();
+      console.error(`Supabase availability read returned ${upstream.status}: ${detail.slice(0, 500)}`);
+      return sendJson(res, 502, { error: 'database_read_failed', upstreamStatus: upstream.status });
+    }
     return sendJson(res, 200, { slots: await upstream.json() });
   } catch (error) {
     console.error('AskProf availability read failed:', error.message);
@@ -199,7 +203,11 @@ async function saveDemoFacultyAvailability(req, res) {
         headers: supabaseHeaders({ Prefer: 'resolution=merge-duplicates,return=minimal' }),
         body: JSON.stringify(rows)
       });
-      if (!upstream.ok) return sendJson(res, 502, { error: 'database_write_failed' });
+      if (!upstream.ok) {
+        const detail = await upstream.text();
+        console.error(`Supabase availability write returned ${upstream.status}: ${detail.slice(0, 500)}`);
+        return sendJson(res, 502, { error: 'database_write_failed', upstreamStatus: upstream.status });
+      }
     }
     return sendJson(res, 200, { saved: rows.length });
   } catch (error) {
