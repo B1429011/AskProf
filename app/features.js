@@ -21,6 +21,27 @@
   }
   save = persist;
 
+  // Keep already-open AskProf tabs in the same browser in sync. GitHub Pages
+  // has no shared database, so this only synchronizes tabs on this browser.
+  function refreshSharedBrowserData() {
+    try {
+      const availability = JSON.parse(localStorage.getItem('learningNavFacultyAvailability') || '{}');
+      if (availability && typeof availability === 'object' && !Array.isArray(availability)) state.facultyAvailability = availability;
+      const appointments = JSON.parse(localStorage.getItem('learningNavAppointments') || 'null');
+      if (Array.isArray(appointments)) state.appointments = appointments;
+      const tutors = JSON.parse(localStorage.getItem('learningNavTutorAvailability') || '{}');
+      if (tutors && typeof tutors === 'object' && !Array.isArray(tutors)) state.tutorAvailability = tutors;
+    } catch { /* Keep the last valid in-memory data if browser storage is malformed. */ }
+  }
+  window.addEventListener('storage', event => {
+    if (!['learningNavFacultyAvailability', 'learningNavAppointments', 'learningNavTutorAvailability'].includes(event.key)) return;
+    refreshSharedBrowserData();
+    if (state.role === 'student' && state.view === 'professors') renderProfessors();
+    else if (state.role === 'student' && state.view === 'tutors') renderTutors();
+    else if (state.view === 'appointments') renderAppointments();
+    else if (state.role === 'professor' && !['appointments', 'professors'].includes(state.view)) renderProfessor();
+  });
+
   function currentFaculty() {
     const email = String(state.auth?.email || '').toLowerCase();
     if (email === demoFaculty.email) return demoFaculty;
@@ -67,6 +88,7 @@
   };
 
   openProfessorModal = function (id) {
+    refreshSharedBrowserData();
     if (id === demoFaculty.id) {
       const slots = selectedFacultySlot(demoFaculty.key);
       openModal(`<button class="modal-close" data-action="close-modal">×</button><h2>${esc(demoFaculty.name)}</h2><p class="modal-sub">${esc(demoFaculty.dept)}｜${esc(demoFaculty.degree)}</p><div class="appointment-highlight" style="margin-bottom:14px"><span class="label">展示帳號說明</span><div class="date" style="font-size:17px">${esc(demoFaculty.tags.join(' × '))}</div><div class="desc">${esc(demoFaculty.research)}</div></div><div class="public-detail-list"><div><span>展示信箱</span><strong>${esc(demoFaculty.email)}</strong></div><div><span>展示分機</span><strong>${esc(demoFaculty.phone)}</strong></div><div><span>展示地點</span><strong>${esc(demoFaculty.location)}</strong></div></div><h3 style="font-size:13px;margin:18px 0 7px">可預約時段</h3><div class="slot-options">${slots.length ? slots.map((slot, i) => `<button class="slot-option ${i === 0 ? 'selected' : ''}" data-slot-choice="${esc(slot.label)}"><strong>${esc(slot.label)}</strong><span>30 分鐘</span></button>`).join('') : '<div class="empty-state">請先用教師展示帳號新增時段</div>'}</div><div class="field"><label>想討論的主題</label><textarea id="topicInput" placeholder="例如：測試預約與取消流程"></textarea></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">關閉</button><button class="primary-btn" data-action="confirm-faculty-book" data-faculty-id="${demoFaculty.id}" ${slots.length ? '' : 'disabled'}>確認預約</button></div>`);
@@ -89,6 +111,7 @@
 
   const officialRenderProfessors = renderProfessors;
   renderProfessors = function () {
+    refreshSharedBrowserData();
     officialRenderProfessors();
     const grid = document.getElementById('profGrid');
     if (!grid || state.role !== 'student') return;
