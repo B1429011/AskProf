@@ -9,6 +9,8 @@ const port = Number(process.env.PORT || 8787);
 const baseUrl = (process.env.CGU_LLM_BASE_URL || 'https://air.cgu.edu.tw/cgullmapi/v1').replace(/\/$/, '');
 const model = process.env.CGU_MODEL || 'gpt-5.6-luna';
 const allowedOrigin = process.env.ASKPROF_ALLOWED_ORIGIN || '*';
+const supabaseUrl = String(process.env.SUPABASE_URL || '').replace(/\/$/, '');
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const rateWindow = 60_000;
 const rateLimit = 30;
 const requests = new Map();
@@ -22,6 +24,10 @@ const mimeTypes = {
   '.jpg': 'image/jpeg',
   '.svg': 'image/svg+xml'
 };
+
+function health(req, res) {
+  return sendJson(res, 200, { ok: true, databaseConfigured: Boolean(supabaseUrl && supabaseServiceKey) });
+}
 
 function sendJson(res, status, payload) {
   res.writeHead(status, {
@@ -142,6 +148,66 @@ async function analyzeLearning(req, res) {
   }
 }
 
+function supabaseHeaders(extra = {}) {
+  return {
+    apikey: supabaseServiceKey,
+    Authorization: `Bearer ${supabaseServiceKey}`,
+    'Content-Type': 'application/json',
+    ...extra
+  };
+}
+
+async function getFacultyAvailability(req, res) {
+  if (!supabaseUrl || !supabaseServiceKey) return sendJson(res, 503, { error: 'database_not_configured' });
+  const requestUrl = new URL(req.url, 'http://localhost');
+  const key = requestUrl.searchParams.get('key') || '';
+  if (!key || key.length > 120) return sendJson(res, 400, { error: 'invalid_faculty_key' });
+  try {
+    const query = new URLSearchParams({ select: 'faculty_key,faculty_email,slot_label,status', faculty_key: `eq.${key}`, order: 'slot_label.asc' });
+    const upstream = await fetch(`${supabaseUrl}/rest/v1/faculty_availability?${query}`, { headers: supabaseHeaders() });
+    if (!upstream.ok) return sendJson(res, 502, { error: 'database_read_failed' });
+    return sendJson(res, 200, { slots: await upstream.json() });
+  } catch (error) {
+    console.error('AskProf availability read failed:', error.message);
+    return sendJson(res, 502, { error: 'database_unavailable' });
+  }
+}
+
+async function saveDemoFacultyAvailability(req, res) {
+  if (!supabaseUrl || !supabaseServiceKey) return sendJson(res, 503, { error: 'database_not_configured' });
+  if (!withinRateLimit(req)) return sendJson(res, 429, { error: 'rate_limited' });
+  let payload;
+  try { payload = await readBody(req); } catch { return sendJson(res, 400, { error: 'invalid_request' }); }
+  // The public demo account can only change its clearly labelled demo record.
+  // Real faculty write access must wait for verified CGU SSO sessions.
+  if (payload.facultyKey !== 'demo:faculty' || payload.facultyEmail !== 'faculty.demo@askprof.test') {
+    return sendJson(res, 403, { error: 'verified_faculty_login_required' });
+  }
+  if (!Array.isArray(payload.slots) || payload.slots.length > 80) return sendJson(res, 400, { error: 'invalid_slots' });
+  const rows = payload.slots.map(slot => ({
+    faculty_key: 'demo:faculty',
+    faculty_email: 'faculty.demo@askprof.test',
+    slot_label: String(slot.label || '').slice(0, 120),
+    status: ['open', 'paused', 'booked'].includes(slot.status) ? slot.status : 'open',
+    updated_at: new Date().toISOString()
+  })).filter(slot => slot.slot_label);
+  try {
+    if (rows.length) {
+      const query = new URLSearchParams({ on_conflict: 'faculty_key,slot_label' });
+      const upstream = await fetch(`${supabaseUrl}/rest/v1/faculty_availability?${query}`, {
+        method: 'POST',
+        headers: supabaseHeaders({ Prefer: 'resolution=merge-duplicates,return=minimal' }),
+        body: JSON.stringify(rows)
+      });
+      if (!upstream.ok) return sendJson(res, 502, { error: 'database_write_failed' });
+    }
+    return sendJson(res, 200, { saved: rows.length });
+  } catch (error) {
+    console.error('AskProf availability write failed:', error.message);
+    return sendJson(res, 502, { error: 'database_unavailable' });
+  }
+}
+
 async function serveStatic(req, res) {
   let pathname;
   try { pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); } catch { res.writeHead(400); return res.end('Bad request'); }
@@ -157,7 +223,10 @@ async function serveStatic(req, res) {
 
 const server = http.createServer((req, res) => {
   if (req.method === 'OPTIONS') return sendJson(res, 204, {});
+  if (req.method === 'GET' && new URL(req.url, 'http://localhost').pathname === '/api/health') return health(req, res);
   if (req.method === 'POST' && new URL(req.url, 'http://localhost').pathname === '/api/analyze-learning') return analyzeLearning(req, res);
+  if (req.method === 'GET' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-availability') return getFacultyAvailability(req, res);
+  if (req.method === 'PUT' && new URL(req.url, 'http://localhost').pathname === '/api/faculty-availability') return saveDemoFacultyAvailability(req, res);
   if (req.method === 'GET') return serveStatic(req, res);
   return sendJson(res, 405, { error: 'method_not_allowed' });
 });

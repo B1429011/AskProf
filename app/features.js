@@ -7,6 +7,8 @@
   const demoVerificationCode = '246810';
   const demoStudent = { email: 'student.demo@askprof.test', password: 'AskProfStudent2026!', role: 'student' };
   const demoFaculty = { id: 'demo:faculty', key: 'demo:faculty', name: 'AskProf 展示教師', initials: 'A', role: 'faculty', dept: '展示教師帳號｜電子工程學系', department: '展示教師帳號｜電子工程學系', degree: '展示用帳號', tags: ['展示預約', '系統測試', 'RFID'], research: '這是專門用來驗證搜尋、預約、取消、師生時段同步與 AI 流程的展示教師資料，不代表真實師資。', specialty: '展示預約、系統測試、RFID', email: 'faculty.demo@askprof.test', password: 'AskProfFaculty2026!', phone: 'Demo-0000', location: 'AskProf 展示空間', profileUrl: '', isDemo: true };
+  const sharedApiBase = String(window.ASKPROF_API_BASE || '').replace(/\/$/, '');
+  let remoteRefreshPending = false;
   const originalIsCguEmail = isCguEmail;
   isCguEmail = value => originalIsCguEmail(value) || [demoStudent.email, demoFaculty.email].includes(String(value || '').trim().toLowerCase());
 
@@ -20,6 +22,29 @@
     localStorage.setItem('learningNavCourses', JSON.stringify(state.courses));
   }
   save = persist;
+
+  async function loadSharedAvailability(key) {
+    if (!sharedApiBase || !key) return false;
+    try {
+      const response = await fetch(`${sharedApiBase}/api/faculty-availability?key=${encodeURIComponent(key)}`, { headers: { Accept: 'application/json' } });
+      if (!response.ok) return false;
+      const data = await response.json();
+      if (!Array.isArray(data.slots)) return false;
+      state.facultyAvailability[key] = data.slots.map(slot => ({ label: slot.slot_label, status: slot.status || 'open' }));
+      localStorage.setItem('learningNavFacultyAvailability', JSON.stringify(state.facultyAvailability));
+      return true;
+    } catch { return false; }
+  }
+
+  function saveSharedAvailability(key) {
+    if (!sharedApiBase || key !== demoFaculty.key) return;
+    const slots = facultySlots(key);
+    fetch(`${sharedApiBase}/api/faculty-availability`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ facultyKey: key, facultyEmail: demoFaculty.email, slots })
+    }).catch(() => {});
+  }
 
   // Keep already-open AskProf tabs in the same browser in sync. GitHub Pages
   // has no shared database, so this only synchronizes tabs on this browser.
@@ -87,8 +112,9 @@
     </article>`;
   };
 
-  openProfessorModal = function (id) {
+  openProfessorModal = async function (id) {
     refreshSharedBrowserData();
+    if (id === demoFaculty.id || String(id).startsWith('f:')) await loadSharedAvailability(id === demoFaculty.id ? demoFaculty.key : id);
     if (id === demoFaculty.id) {
       const slots = selectedFacultySlot(demoFaculty.key);
       openModal(`<button class="modal-close" data-action="close-modal">×</button><h2>${esc(demoFaculty.name)}</h2><p class="modal-sub">${esc(demoFaculty.dept)}｜${esc(demoFaculty.degree)}</p><div class="appointment-highlight" style="margin-bottom:14px"><span class="label">展示帳號說明</span><div class="date" style="font-size:17px">${esc(demoFaculty.tags.join(' × '))}</div><div class="desc">${esc(demoFaculty.research)}</div></div><div class="public-detail-list"><div><span>展示信箱</span><strong>${esc(demoFaculty.email)}</strong></div><div><span>展示分機</span><strong>${esc(demoFaculty.phone)}</strong></div><div><span>展示地點</span><strong>${esc(demoFaculty.location)}</strong></div></div><h3 style="font-size:13px;margin:18px 0 7px">可預約時段</h3><div class="slot-options">${slots.length ? slots.map((slot, i) => `<button class="slot-option ${i === 0 ? 'selected' : ''}" data-slot-choice="${esc(slot.label)}"><strong>${esc(slot.label)}</strong><span>30 分鐘</span></button>`).join('') : '<div class="empty-state">請先用教師展示帳號新增時段</div>'}</div><div class="field"><label>想討論的主題</label><textarea id="topicInput" placeholder="例如：測試預約與取消流程"></textarea></div><div class="modal-actions"><button class="ghost-btn" data-action="close-modal">關閉</button><button class="primary-btn" data-action="confirm-faculty-book" data-faculty-id="${demoFaculty.id}" ${slots.length ? '' : 'disabled'}>確認預約</button></div>`);
@@ -110,8 +136,15 @@
   };
 
   const officialRenderProfessors = renderProfessors;
-  renderProfessors = function () {
+  renderProfessors = function (skipRemote = false) {
     refreshSharedBrowserData();
+    if (sharedApiBase && !skipRemote && !remoteRefreshPending) {
+      remoteRefreshPending = true;
+      loadSharedAvailability(demoFaculty.key).then(() => {
+        remoteRefreshPending = false;
+        if (state.role === 'student' && state.view === 'professors') renderProfessors(true);
+      });
+    }
     officialRenderProfessors();
     const grid = document.getElementById('profGrid');
     if (!grid || state.role !== 'student') return;
@@ -213,7 +246,7 @@
       const slots = facultySlots(faculty.key);
       const label = slotLabel(date, time);
       if (slots.some(slot => slot.label === label && slot.status !== 'paused')) return toast('這個時段已經存在。');
-      slots.push({ label, status: 'open' }); persist(); closeModal(); render(); toast('可預約時段已公開。'); return;
+      slots.push({ label, status: 'open' }); persist(); saveSharedAvailability(faculty.key); closeModal(); render(); toast('可預約時段已公開。'); return;
     }
     if (action === 'toggle-faculty-slot') {
       const faculty = currentFaculty();
@@ -221,7 +254,7 @@
       if (!faculty || !Number.isInteger(index)) return;
       const slot = facultySlots(faculty.key)[index];
       if (slot) slot.status = slot.status === 'open' ? 'paused' : 'open';
-      persist(); render(); toast(slot?.status === 'open' ? '時段已重新開放。' : '時段已暫停。'); return;
+      persist(); saveSharedAvailability(faculty.key); render(); toast(slot?.status === 'open' ? '時段已重新開放。' : '時段已暫停。'); return;
     }
     if (action === 'confirm-faculty-book') {
       const key = element.dataset.facultyId;
@@ -233,7 +266,7 @@
       slot.status = 'booked';
       const topic = modal.querySelector('#topicInput')?.value.trim() || '專輔預約';
       state.appointments = [{ id: `a${Date.now()}`, professor: p.name, initials: p.initials, topic, date: dateFromLabel(choice), time: choice, status: 'confirmed', availabilityKey: key, slot: choice, studentEmail: state.auth?.email || '' }, ...state.appointments];
-      persist(); closeModal(); render(); toast('預約成功！時段已標記為已預約。'); return;
+      persist(); saveSharedAvailability(key); closeModal(); render(); toast('預約成功！時段已標記為已預約。'); return;
     }
     if (action === 'confirm-tutor-book') {
       const key = element.dataset.tutorId;
@@ -251,7 +284,7 @@
       state.appointments = state.appointments.filter(item => item.id !== id);
       if (appointment?.availabilityKey && appointment.slot) { const slot = facultySlots(appointment.availabilityKey).find(item => item.label === appointment.slot); if (slot) slot.status = 'open'; }
       if (appointment?.tutorKey && appointment.slot && !state.tutorAvailability[appointment.tutorKey]?.includes(appointment.slot)) state.tutorAvailability[appointment.tutorKey] = [...(state.tutorAvailability[appointment.tutorKey] || []), appointment.slot];
-      persist(); render(); toast('預約已取消，時段已重新開放。'); return;
+      persist(); if (appointment?.availabilityKey) saveSharedAvailability(appointment.availabilityKey); render(); toast('預約已取消，時段已重新開放。'); return;
     }
     return originalHandleAction(action, element);
   };

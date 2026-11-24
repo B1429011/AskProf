@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: askprof-api
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node backend/server.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: ASKPROF_ALLOWED_ORIGIN
+        value: https://b1429011.github.io
