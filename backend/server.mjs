@@ -234,7 +234,8 @@ async function getFacultyAppointments(req, res) {
   const student = requestUrl.searchParams.get('student') || '';
   if (!demoFacultyFilter(key)) return sendJson(res, 403, { error: 'verified_faculty_login_required' });
   try {
-    const params = new URLSearchParams({ select: 'id,faculty_key,faculty_email,slot_label,student_email,topic,status,created_at', faculty_key: `eq.${key}`, status: 'eq.confirmed', order: 'created_at.desc' });
+    const params = new URLSearchParams({ select: 'id,faculty_key,faculty_email,slot_label,student_email,topic,status,cancel_reason,cancelled_by,cancelled_at,created_at', faculty_key: `eq.${key}`, order: 'created_at.desc' });
+    params.set('status', 'in.(confirmed,cancelled)');
     if (student) params.set('student_email', `eq.${student}`);
     const upstream = await fetch(`${supabaseUrl}/rest/v1/appointments?${params}`, { headers: supabaseHeaders() });
     if (!upstream.ok) {

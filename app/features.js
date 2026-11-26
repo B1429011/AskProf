@@ -13,6 +13,15 @@
   let remoteStudentPending = false;
   let remoteAvailabilitySnapshot = '';
   let remoteAppointmentSnapshot = '';
+  let remoteCancelledIds = new Set();
+
+  function notifyUser(message, title = 'AskProf 預約通知') {
+    toast(message);
+    if (typeof Notification === 'undefined') return;
+    const show = () => { try { new Notification(title, { body: message, tag: 'askprof-booking' }); } catch {} };
+    if (Notification.permission === 'granted') show();
+    else if (Notification.permission === 'default' && document.visibilityState === 'hidden') Notification.requestPermission().then(permission => { if (permission === 'granted') show(); }).catch(() => {});
+  }
   const originalIsCguEmail = isCguEmail;
   isCguEmail = value => originalIsCguEmail(value) || [demoStudent.email, demoFaculty.email].includes(String(value || '').trim().toLowerCase());
 
@@ -40,8 +49,8 @@
       remoteAvailabilitySnapshot = snapshot;
       state.facultyAvailability[key] = nextSlots;
       localStorage.setItem('learningNavFacultyAvailability', JSON.stringify(state.facultyAvailability));
-      if (changed && state.role === 'student') toast('教師已更新可預約時段，清單已同步。');
-      if (changed && state.role === 'professor') toast('時段狀態已同步。');
+      if (changed && state.role === 'student') notifyUser('教師已更新可預約時段，清單已同步。');
+      if (changed && state.role === 'professor') notifyUser('時段狀態已同步。');
       return true;
     } catch { return false; }
   }
@@ -66,6 +75,8 @@
       date: dateFromLabel(slot),
       time: slot,
       status: item.status || 'confirmed',
+      cancelReason: item.cancel_reason || '',
+      cancelledBy: item.cancelled_by || '',
       availabilityKey: item.faculty_key,
       slot,
       studentEmail: item.student_email || ''
@@ -85,16 +96,23 @@
       const snapshot = JSON.stringify(mapped.map(item => [item.id, item.slot, item.studentEmail, item.status]));
       const changed = remoteAppointmentSnapshot && remoteAppointmentSnapshot !== snapshot;
       remoteAppointmentSnapshot = snapshot;
+      const cancelled = mapped.filter(item => item.status === 'cancelled');
+      const newCancellations = cancelled.filter(item => !remoteCancelledIds.has(item.id));
+      remoteCancelledIds = new Set(cancelled.map(item => item.id));
+      const active = mapped.filter(item => item.status === 'confirmed');
       if (studentEmail) {
         const other = state.appointments.filter(item => item.availabilityKey !== key);
-        state.appointments = [...mapped, ...other];
+        state.appointments = [...active, ...other];
       } else {
         const other = state.appointments.filter(item => item.availabilityKey !== key);
-        state.appointments = [...mapped, ...other];
+        state.appointments = [...active, ...other];
       }
       localStorage.setItem('learningNavAppointments', JSON.stringify(state.appointments));
-      if (changed && state.role === 'professor') toast('有新的學生預約或預約異動。');
-      if (changed && state.role === 'student') toast('你的預約資料已更新。');
+      if (changed && state.role === 'professor') notifyUser('有新的學生預約或預約異動。');
+      if (changed && state.role === 'student') {
+        const latestCancellation = newCancellations.find(item => item.cancelledBy === 'faculty') || newCancellations[0];
+        notifyUser(latestCancellation ? (latestCancellation.cancelReason ? `教師已取消你的預約：${latestCancellation.cancelReason}` : '教師已取消你的預約，請重新安排時段。') : '你的預約資料已更新。');
+      }
       return true;
     } catch { return false; }
   }
@@ -445,9 +463,9 @@
       if (state.view !== 'tutors' && state.view !== 'university') renderFacultyWorkspace(true);
     } else if (state.role === 'student') {
       await loadSharedAvailability(demoFaculty.key);
+      await loadSharedAppointments(demoFaculty.key, state.auth?.email || '');
       if (state.view === 'professors') renderProfessors(true);
       if (state.view === 'appointments') {
-        await loadSharedAppointments(demoFaculty.key, state.auth?.email || '');
         renderAppointments(true);
       }
     }
