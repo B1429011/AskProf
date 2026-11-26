@@ -17,6 +17,18 @@
 
   function notifyUser(message, title = 'AskProf 預約通知') {
     toast(message);
+    let alert = document.getElementById('askprofBookingAlert');
+    if (!alert) {
+      alert = document.createElement('div');
+      alert.id = 'askprofBookingAlert';
+      alert.className = 'askprof-booking-alert';
+      document.body.appendChild(alert);
+    }
+    alert.innerHTML = `<strong>${esc(title)}</strong><button type="button" aria-label="關閉通知">×</button><p>${esc(message)}</p>`;
+    alert.classList.add('show');
+    alert.querySelector('button').onclick = () => alert.classList.remove('show');
+    window.clearTimeout(alert._timer);
+    alert._timer = window.setTimeout(() => alert.classList.remove('show'), 9000);
     if (typeof Notification === 'undefined') return;
     const show = () => { try { new Notification(title, { body: message, tag: 'askprof-booking' }); } catch {} };
     if (Notification.permission === 'granted') show();
@@ -92,6 +104,7 @@
       if (!response.ok) return false;
       const data = await response.json();
       if (!Array.isArray(data.appointments)) return false;
+      const hadLocalAppointment = state.appointments.some(item => item.availabilityKey === key && (!studentEmail || item.studentEmail === studentEmail));
       const mapped = data.appointments.map(mapSharedAppointment);
       const snapshot = JSON.stringify(mapped.map(item => [item.id, item.slot, item.studentEmail, item.status]));
       const changed = remoteAppointmentSnapshot && remoteAppointmentSnapshot !== snapshot;
@@ -111,7 +124,8 @@
       if (changed && state.role === 'professor') notifyUser('有新的學生預約或預約異動。');
       if (changed && state.role === 'student') {
         const latestCancellation = newCancellations.find(item => item.cancelledBy === 'faculty') || newCancellations[0];
-        notifyUser(latestCancellation ? (latestCancellation.cancelReason ? `教師已取消你的預約：${latestCancellation.cancelReason}` : '教師已取消你的預約，請重新安排時段。') : '你的預約資料已更新。');
+        if (latestCancellation && (changed || hadLocalAppointment)) notifyUser(latestCancellation.cancelReason ? `教師已取消你的預約：${latestCancellation.cancelReason}` : '教師已取消你的預約，請重新安排時段。');
+        else if (changed) notifyUser('你的預約資料已更新。');
       }
       return true;
     } catch { return false; }
